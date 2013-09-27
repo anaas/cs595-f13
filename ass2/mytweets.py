@@ -88,7 +88,7 @@ if __name__ == "__main__":
 			if len(final_l) >= 1000:
 				final_l = final_l[0:1000]
 				break
-f = open("URIsResult.txt","w")
+f = open("res.txt","w")
 for s in final_l:
 	f.write(s+'\n')
 f.close()
