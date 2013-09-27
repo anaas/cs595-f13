@@ -80,8 +80,7 @@ if __name__ == "__main__":
 					p = subprocess.Popen(['curl', '-L','-I','-w%{content_type}\n%{url_effective}\n%{http_code}',url], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 					out, err = p.communicate()
 					s = out.split()				
-					#if (s[-2:][1] == '200') and ('text/html' == s[-3:][0]) and ('utm' not in s[-2:][0]):
-					if (s[-2:][1] == '200') and ('text/html' in out) and ('utm' not in s[-2:][0]):
+					if (s[-2:][1] == '200') and ('text/html' == s[-3:][0]) and ('utm' not in s[-2:][0]):
 						final_l.append(s[-2:][0])
 						print ' link # ',len(final_l),' belongs to the word ',sea
 			final_l = list(set(final_l))
