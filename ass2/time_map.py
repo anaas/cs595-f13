@@ -20,7 +20,7 @@ f = open("res.txt","r")
 list_l = f.readlines()
 f.close()
 
-f2 = open("finalresss.txt","w")
+f2 = open("finalresult.txt","w")
 
 index_num = []
 for s in list_l:
