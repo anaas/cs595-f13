@@ -1,0 +1,75 @@
+   (BUTTON) [1]DC Metro Metrics
+     * [2]Escalators
+          + [3]Directory
+          + [4]Outages
+          + [5]Rankings
+     * [6]Elevators
+     * [7]Stations
+     * [8]Hot Cars
+     * [9]Data
+     * [10]Press
+     * [11]Contact
+
+   [12]Fork me on GitHub
+
+Escalator C07N10
+
+   Station Name          [13]PENTAGON
+   Station Code          C07
+   Station Description
+   Escalator Description Escalator between upper and lower platforms
+
+Summary
+
+   Num. Breaks       4
+   Num. Fixes        4
+   Num. Inspections  4
+   Availability      99.578%
+   Report Time Range 121d 11h 52m
+
+History
+
+            Time                  Status           Duration
+   Thu, 09/26/13 03:16 AM OPERATIONAL             4d 21h 14m
+   Thu, 09/26/13 02:29 AM SAFETY WORK ORDER       00h 47m
+   Wed, 09/25/13 05:46 AM OPERATIONAL             20h 42m
+   Tue, 09/24/13 10:48 PM MINOR REPAIR            06h 58m
+   Tue, 09/24/13 06:10 AM OPERATIONAL             16h 38m
+   Mon, 09/23/13 10:55 PM MINOR REPAIR            07h 14m
+   Wed, 09/11/13 05:37 AM OPERATIONAL             12d 17h 17m
+   Tue, 09/10/13 11:26 PM PREV. MAINT. INSPECTION 06h 11m
+   Wed, 08/14/13 05:42 AM OPERATIONAL             27d 17h 43m
+   Tue, 08/13/13 11:33 PM PREV. MAINT. INSPECTION 06h 09m
+   Wed, 07/17/13 11:31 AM OPERATIONAL             27d 12h 01m
+   Wed, 07/17/13 09:52 AM CALLBACK/REPAIR         01h 39m
+   Fri, 07/12/13 03:52 AM OPERATIONAL             5d 05h 59m
+   Thu, 07/11/13 11:09 PM PREV. MAINT. INSPECTION 04h 42m
+   Sun, 06/30/13 02:14 AM OPERATIONAL             11d 20h 55m
+   Sun, 06/30/13 01:25 AM CALLBACK/REPAIR         00h 49m
+   Fri, 06/07/13 04:43 AM OPERATIONAL             22d 20h 41m
+   Thu, 06/06/13 11:58 PM PREV. MAINT. INSPECTION 04h 44m
+   Sat, 06/01/13 12:38 PM OPERATIONAL             5d 11h 20m
+
+   Page Last Updated: 10/01/13 12:31 AM
+
+   © Lee M. Mendelowitz 2013
+
+   [14]Follow @MetroEscalators [15]Follow @MetroHotCars
+
+References
+
+   1. file://localhost/
+   2. file://localhost/escalators
+   3. file://localhost/escalators/directory
+   4. file://localhost/escalators/outages
+   5. file://localhost/escalators/rankings
+   6. file://localhost/elevators
+   7. file://localhost/stations
+   8. file://localhost/hotcars
+   9. file://localhost/data
+  10. file://localhost/press
+  11. mailto:info@dcmetrometrics.com
+  12. https://github.com/LeeMendelowitz/DCMetroMetrics
+  13. file://localhost/stations/Pentagon
+  14. https://twitter.com/MetroEscalators
+  15. https://twitter.com/MetroHotCars

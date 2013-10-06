@@ -1,0 +1,520 @@
+					
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html class="toolbar-view" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+	
+	<head id="toolbar-head">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="promote music tracks, brand links, track social media links, real time analytics, social media icons, twitter marketing, viral marketing, social media links, click through stats, social media marketing" />
+		<meta name="robots" content="index,follow" />
+
+        <!--Facebook Open Graph Protocol Properties-->
+        <meta property='og:title' content="" />
+				<meta property='og:url' content='http://amansinghcsr.sharedby.co/share/GjPATB' />
+		<meta property='og:site_name' content='Visibli' />
+		<meta property='og:type' content='article' />
+		<meta property="fb:admins" content="502067924" />
+				
+		<link rel="shortcut icon" href="http://sharedby.co/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="/tb/js/jquery-1.4.2.min.js"></script>		
+		<script type="text/javascript" src="/tb/js/dom.js"></script>		<script type="text/javascript" src="/tb/js/toolbar.js"></script>		<script type="text/javascript" src="/tb/js/async_loop.js"></script>		
+		<script type="text/javascript" src="/tb/js/dropdown_manager.js"></script>
+		<script type="text/javascript" src="/tb/js/google_analytics.js"></script>		<script type="text/javascript" src="/tb/js/toolbar_analytics.js"></script>
+				
+		<link rel="stylesheet" type="text/css" href="/tb/css/style.css" />	     
+		<title>  </title>
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+                    /**
+                     *	"Linkifies" a tags in string
+                     *	@usage
+                     *	var x = "....";
+                     *	var y = x.linkfy();
+                     */
+                    String.prototype.linkify = function() {
+                            return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/,
+                                    function(m) {
+                                        return m.link(m);
+                                    }
+                            );
+                    };
+
+                    (function() {
+                            if(parent.location != document.location)
+                                parent.location.replace(document.location);
+                    })();
+
+                    /**
+                     *	Public variables that are passed through the communication component.
+                     */
+                    var Toolbar = new Toolbar(
+                            "sharedlinks",
+                            "http://amansinghcsr.sharedby.co",
+                            "GjPATB"
+                    );
+                    var DropdownManager = new DropdownManager();
+                    var google_analytics = new GoogleAnalytics();
+			
+                    google_analytics.track({'0':Toolbar.getInternalController(),'1':Toolbar.getInternalHash()});
+
+                                
+                    var parameters = {};
+			
+                    (function (){
+                        var hash = Toolbar.getInternalHash();
+
+                        var search_string = hash.substring(hash.indexOf("?")+1);
+                        if (search_string == -1)
+                                return;
+
+                        var name_value_pairs = search_string.split("&");
+                        for (var i in name_value_pairs){
+                             var name_value_pair = name_value_pairs[i].split("=");
+                             parameters[name_value_pair[0]] = name_value_pair[1];
+                        }
+
+                        if (Toolbar.getController() == 'api') {
+                            var full_url = "http://bit.ly/sustyjo";
+                            url = full_url.split("http://")[1];
+                            if (typeof(url) == 'undefined')
+                                url = full_url.split("https://")[1];
+
+                            if (typeof(url) != 'undefined')
+                                parameters['url'] = url;
+                            else
+                                return;
+
+                            //URL FORMATTED VERY SPECIFICALLY TO MEET SOME OLD SCRIPTS EXPECTATIONS IF YOU HAVE A SOUL..... FIX THIS!
+                            if (typeof(parameters['web']) != 'undefined')
+                                google_analytics.track({'0':'webimpression','1':Toolbar.getHash(),'2':url.replace(/\//g, ':'),'3':parameters['web'],'4':'pageview'});
+                            else if (typeof(parameters['dm']) != 'undefined')
+                                google_analytics.track({'0':'webimpression','1':Toolbar.getHash(),'2':url.replace(/\//g, ':'),'3':parameters['dm'],'4':'pageview'});
+                        }
+                        
+                        else if (Toolbar.getController() == 'sharedlinks' || Toolbar.getController() == 'links'){
+                            var full_url = "http://bit.ly/sustyjo";
+                            url = full_url.split("http://")[1];
+                            if (typeof(url) == 'undefined')
+                                url = full_url.split("https://")[1];
+
+                            if (typeof(url) != 'undefined')
+                                parameters['url'] = url;
+                            else
+                                return;
+
+                            parameters['controller'] = Toolbar.getController();
+                        }
+                    })();
+
+                    var ToolbarAnalytics = new ToolbarAnalytics(20547, {"widget_text_196818":"196818","widget_image_196833":"196833","widget_separator_196821":"196821","widget_text_196822":"196822","widget_facebookbutton_196823":"196823","widget_twitterbutton_196824":"196824","widget_linkedin_196826":"196826","widget_wordpress_196828":"196828","widget_twitterfollow_196832":"196832","widget_getyourownbar_196829":"196829","widget_facebooklike_196830":"196830","widget_tweet_196831":"196831"});
+
+                    $(document).ready( function() {
+						jsuid = get_cookie('_visibli');
+					    if (!jsuid) {
+							jsuid = 'unknown';
+						}
+						var r = escape(document.referrer); 
+						var jurl = '/webcookies/ping?uid=' + jsuid + '&r='+r+'&c=sharedlinks&h=GjPATB&u=http%3A%2F%2Fbit.ly%2Fsustyjo&a=ef4f3c26943a1426&callback=?';
+						$.getJSON(jurl, function(data) {
+							if (data.response == 'create') {
+								set_cookie('_visibli', data.uid);
+							}
+						});
+
+                        Toolbar.Initialize();
+                        $("div.tbToolbar-view div.toolbar-close").click(function() {
+                                window.location = document.getElementById('iframe').src;
+                        });
+                    } );
+					var get_cookie = function (name) {
+					    var ca = document.cookie.split(';');
+					    for (var i = 0, l = ca.length; i < l; i++) {
+					        if (eval("ca[i].match(/\\b" + name + "=/)")) return decodeURIComponent(ca[i].split('=')[1]);
+					    }
+					    return '';
+					};
+
+					var set_cookie = function (name, value) {
+					    var ex = new Date;
+					    ex.setTime(ex.getTime() + 315360000 * 1000);
+						var domain = UriParser.parseRootDomain(location.hostname);
+					    document.cookie = name + "=" + value + ";expires=" + ex.toGMTString() + ";path=/;domain=." + domain + ";";
+					};
+					var UriParser =  {
+					 parseRootDomain : function(url) {
+					  var matches = url.match(/^((\w+):\/\/)?((\w+):?(\w+)?@)?([^\/\?:]+):?(\d+)?(\/?[^\?#]+)?\??([^#]+)?#?(\w*)/);
+					  var theDomain = matches[6];
+
+					  if(UriParser.isIp(theDomain)){//if it is an ip address return it as domain
+					   return theDomain;
+					  }
+					  var dots = theDomain.split('.');
+					  var n = dots.length;
+
+					  if(n < 3){//google.com, 2 root words concatenate, 1 word as well i.e. localhost
+					   return dots.join(".");
+					  }
+					  else{//should be greater than or equal to 3 dot split ie. adsense.google.com
+					   var last = dots[n-1];
+					   var second2l = dots[n-2];
+					   var third2l = dots[n-3];
+
+					   var ext;
+					   var root;
+					   if(second2l.length <= 3){//if google.com.ph, or bbc.co.uk
+					    ext = second2l +"."+ last;
+					    root = third2l;
+					   }else{// adsense.google.com
+					    ext = last;
+					    root = second2l;
+					   }
+					   var domain = ""+ root + "." + ext;
+					   return domain;
+					  }
+					 },
+					 isNumber : function (o) {
+					    return !isNaN (o-0);
+					 },
+					 isIp: function(domain){
+					  var exploded = domain.split('.');
+					  for(var i = 0; i < exploded.length; i++){
+					   if(!UriParser.isNumber(exploded[i])){
+					    return false;
+					   }
+					  }
+					  return true;
+					 }
+					}
+		</script>
+
+		<style type="text/css">
+			
+			html { height: 100%; width: 100%; }
+			body { background: #fff; height: 100%; overflow: hidden; }
+
+			
+#toolbar_id_20547 a:link { color:#E6E6DC; }
+#toolbar_id_20547 a:visited { color:#E6E6DC; }
+#toolbar_id_20547 a:hover { color:#E6E6DC; }
+#toolbar_id_20547 a:active { color:#E6E6DC; }
+		
+		</style>
+	
+	</head>
+	
+	<body class="view" scroll="no">
+        <div id="overlay" style="display: none; cursor: pointer; opacity: 0.9; height: 100%; position: fixed; width: 100%; background: url(&quot;/images/home/overlay.png&quot;) repeat scroll 0% 0% transparent; z-index: 1;"></div>
+		<div id="fb-root"></div>
+		</div>
+		
+			<div id="toolbar_id_20547" class="tbToolbar tbToolbar-view" style="height:36px;background-color:#00628B;background-image:url(/tb/themes/shared/gradient.png);background-repeat:no-repeat;background-position:left top;color:#E6E6DC;">
+		
+			<div id="widget_text_196818" class="widget" style="top:8px;width:74px;height:20px;float:left;text-align:center;" data-priority="20">
+				
+<style type="text/css">
+
+#widget_text_196818 span.content {
+	padding: 2px;
+	white-space: nowrap;
+}
+
+</style>		
+
+			<div class="container" style="line-height:20px;">
+		<span class="content" style="font-size:10pt;color:#ffffff;">Shared by</span>
+			</div>
+		
+			</div>
+
+			
+		
+			<div id="widget_image_196833" class="widget" style="top:0px;width:52px;height:36px;float:left;" data-priority="70">
+				<script type="text/javascript"language="javascript">function ImageWidget(widget_id){var analytics=ToolbarAnalytics.getAnalytics(widget_id);$(document).ready(function(){$("#"+widget_id+" a").click(function(){analytics.custom("click",{"0":this.href});});});}
+var widget_image_196833=new ImageWidget("widget_image_196833");</script>
+                <style type="text/css">
+
+                #widget_image_196833 div.image-container {
+                        max-height: 36px;
+                        overflow: hidden;
+                }
+
+                </style><div class="image-container"><a href="http://twitter.com/amansinghcsr" target="_blank">
+				<img class="src" src="/toolbars/uploads/aman_1742439026_1314296621.png"
+				 style="width:52px;height:36px;"
+				 alt="CSR Journalist Aman Singh on Twitter" 
+				 title="CSR Journalist Aman Singh on Twitter"  />
+			 </a></div>
+			</div>
+
+			
+		
+			<div id="widget_separator_196821" class="widget" style="top:0px;width:8px;height:36px;float:left;" data-priority="5">
+				
+			<div class="container" style="width: 8px; height: 36px;">
+				<img class="separator" src="/tb/widgets/separator/separator.png" style="display: block; height: 100%; width: 2px; margin: 0px auto;" />
+			</div>
+		
+			</div>
+
+			
+		
+			<div id="widget_text_196822" class="widget" style="top:8px;width:80px;height:20px;float:left;text-align:center;" data-priority="20">
+				
+<style type="text/css">
+
+#widget_text_196822 span.content {
+	padding: 2px;
+	white-space: nowrap;
+}
+
+</style>		
+
+			<div class="container" style="line-height:20px;">
+		<span class="content" style="font-size:10pt;">Find me on</span>
+			</div>
+		
+			</div>
+
+			
+		
+			<div id="widget_facebookbutton_196823" class="widget" style="top:2px;width:32px;height:32px;float:left;" data-priority="70">
+				<script type="text/javascript"language="javascript">function FacebookButton(widget_id){var analytics=ToolbarAnalytics.getAnalytics(widget_id);$(document).ready(function(){$("#"+widget_id+" a").click(function(){analytics.custom("click",{"0":this.href});});});}
+var widget_facebookbutton_196823=new FacebookButton("widget_facebookbutton_196823");</script>
+                <style type="text/css">
+
+                #widget_facebookbutton_196823 div.image-container {
+                        max-height: 36px;
+                        overflow: hidden;
+                }
+
+                </style><div class="image-container"><a href="https://www.facebook.com/amansinghdas" target="_blank">
+				<img class="src" src="http://links.sharedby.co/tb/widgets/facebookbutton/facebookbutton.png"
+				 style="width:32px;height:32px;"
+				 alt="Aman Singh on Facebook" 
+				 title="Aman Singh on Facebook"  />
+			 </a></div>
+			</div>
+
+			
+		
+			<div id="widget_twitterbutton_196824" class="widget" style="top:2px;width:32px;height:32px;float:left;" data-priority="70">
+				<script type="text/javascript"language="javascript">function TwitterButton(widget_id){var analytics=ToolbarAnalytics.getAnalytics(widget_id);$(document).ready(function(){$("#"+widget_id+" a").click(function(){analytics.custom("click",{"0":this.href});});});}
+var widget_twitterbutton_196824=new TwitterButton("widget_twitterbutton_196824");</script>
+                <style type="text/css">
+
+                #widget_twitterbutton_196824 div.image-container {
+                        max-height: 36px;
+                        overflow: hidden;
+                }
+
+                </style><div class="image-container"><a href="http://twitter.com/amansinghcsr" target="_blank">
+				<img class="src" src="http://links.sharedby.co/tb/widgets/twitterbutton/twitterbutton.png"
+				 style="width:32px;height:32px;"
+				 alt="CSR Journalist Aman Singh on Twitter" 
+				 title="CSR Journalist Aman Singh on Twitter"  />
+			 </a></div>
+			</div>
+
+			
+		
+			<div id="widget_linkedin_196826" class="widget" style="top:2px;width:32px;height:32px;float:left;" data-priority="70">
+				<script type="text/javascript"language="javascript">function LinkedInWidget(widget_id){var analytics=ToolbarAnalytics.getAnalytics(widget_id);$(document).ready(function(){$("#"+widget_id+" a").click(function(){analytics.custom("click",{"0":this.href});});});}
+var widget_linkedin_196826=new LinkedInWidget("widget_linkedin_196826");</script>
+                <style type="text/css">
+
+                #widget_linkedin_196826 div.image-container {
+                        max-height: 36px;
+                        overflow: hidden;
+                }
+
+                </style><div class="image-container"><a href="http://linkedin.com/in/AmanSinghDas" target="_blank">
+				<img class="src" src="http://links.sharedby.co/tb/widgets/linkedin/linkedin.png"
+				 style="width:32px;height:32px;"
+				 alt="CSR Journalist Aman Singh on LinkedIn" 
+				 title="CSR Journalist Aman Singh on LinkedIn"  />
+			 </a></div>
+			</div>
+
+			
+		
+			<div id="widget_wordpress_196828" class="widget" style="top:2px;width:32px;height:32px;float:left;" data-priority="70">
+				<script type="text/javascript"language="javascript">function WordpressWidget(widget_id){var analytics=ToolbarAnalytics.getAnalytics(widget_id);$(document).ready(function(){$("#"+widget_id+" a").click(function(){analytics.custom("click",{"0":this.href});});});}
+var widget_wordpress_196828=new WordpressWidget("widget_wordpress_196828");</script>
+                <style type="text/css">
+
+                #widget_wordpress_196828 div.image-container {
+                        max-height: 36px;
+                        overflow: hidden;
+                }
+
+                </style><div class="image-container"><a href="http://amansinghcsr.wordpress.com/" target="_blank">
+				<img class="src" src="http://links.sharedby.co/tb/widgets/wordpress/wordpress.png"
+				 style="width:32px;height:32px;"
+				 alt="Aman Singh on CSR: Singh Solutions" 
+				 title="Aman Singh on CSR: Singh Solutions"  />
+			 </a></div>
+			</div>
+
+			
+		
+			<div id="widget_twitterfollow_196832" class="widget" style="top:0px;width:63px;height:36px;float:left;" data-priority="70">
+				
+                <style type="text/css">
+
+                #widget_twitterfollow_196832 div.tweet-container {
+                        max-height: 36px;
+                        overflow: hidden;
+                        margin-top: 8px;
+                }
+
+                </style><div class="tweet-container">
+                    <a href="http://twitter.com/AmanSinghCSR" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @AmanSinghCSR</a>
+                    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+			</div>
+
+			
+		<div class="toolbar-close" ></div>
+			<div id="widget_getyourownbar_196829" class="widget" style="top:0px;width:1px;height:36px;float:right;text-align:center;" data-priority="100">
+				
+            <style type="text/css">
+                #widget_getyourownbar_196829 div.container div.text {
+                    color: #ffffff;
+                    font-family: "Verdana";
+                    font-size: 11px;
+                    font-weight: normal;
+                    line-height: 36px;
+                    text-decoration: none;
+                    float: left;
+                }
+
+				#widget_getyourownbar_196829 div.container img.separator {
+					display: block;
+					padding: 0px 0px;
+					float: left;
+				}
+
+				#widget_getyourownbar_196829 div.container div.text a {
+					text-decoration: none;
+					padding: 0px 3px; padding-left:10px;
+				}
+
+				#widget_getyourownbar_196829 div.container div.text a:hover {
+					text-decoration: none;
+                    cursor:pointer;
+				}
+
+                #widget_getyourownbar_196829 div.container {
+                    color: #ffffff;
+                    font-family: "Verdana";
+                    font-size: 11px;
+                    font-weight: bold;
+                    line-height: 36px;
+                    text-decoration: none;
+                }
+
+				#widget_getyourownbar_196829 div.container a {
+					text-decoration: none;
+					padding: 0px 3px;
+				}
+
+				#widget_getyourownbar_196829 div.container a:hover {
+					text-decoration: none;
+                    cursor:pointer;
+				}
+
+            </style>
+            
+            <div class="container">
+                <img class="separator" src="/tb/widgets/separator/separator.png" width="2px" height="100%" style="float:left;" />
+
+                <div class="text">
+                    <a id="powericon" href="http://sharedby.co/register" target="_blank">
+		<img alt="V" src="/tb/widgets/getyourownbar/vinfo.png" border="0" height="20" style="padding-top: 8px;"/>
+                    </a>
+                </div>
+                <img class="separator" src="/tb/widgets/separator/separator.png" width="2px" height="100%" style="float:right;" />
+			</div>
+			<script type="text/javascript" language="javascript" src="/tb/js/getyourownbar_widget.js"></script>
+			<script type="text/javascript" language="javascript">
+				var widget_getyourownbar_196829 = new getyourownbar_widget(
+					"widget_getyourownbar_196829",
+					ToolbarAnalytics.getAnalytics("widget_getyourownbar_196829")
+				);
+			</script>
+		
+			</div>
+
+			
+		
+			<div id="widget_facebooklike_196830" class="widget" style="top:8px;width:92px;height:20px;float:right;" data-priority="40">
+				
+			<script type="text/javascript">
+				//new Facebook();
+                        </script>
+
+			<div class="container" style="position:fixed;top:8px">
+				<fb:like show_faces="false" layout="button_count"
+					action="like" href="http://facebook.com/csrwire"  colorscheme="light">
+				</fb:like>
+			</div>
+		
+			</div>
+
+			
+		
+			<div id="widget_tweet_196831" class="widget" style="top:0px;width:63px;height:36px;float:right;" data-priority="70">
+				
+                <style type="text/css">
+
+                #widget_tweet_196831 div.tweet-container {
+                        max-height: 36px;
+                        overflow: hidden;
+                        margin-top: 8px;
+                }
+
+                </style><div class="tweet-container">
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="none"
+                    data-via="CSRwire" data-related="">Tweet</a>
+                    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+			</div>
+
+			
+		</div>
+		<iframe id="iframe" src="http://bit.ly/sustyjo">
+			Click the close button (above-right) to view the content.
+		</iframe>
+						<div id="poweredby" style="display:none;position:absolute;top:35px;right:50px;"><img src="http://links.sharedby.co/tb/img/poweredby.png" /></div>
+			<script>
+              window.fbAsyncInit = function() {
+                FB.init({appId: '100565233323260', status: true, cookie: true,
+                         xfbml: true});
+              };
+              (function() {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol +
+                  '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+              }());
+            </script>
+<!--	<script type="text/javascript">
+    var GoSquared={};
+    GoSquared.acct = "GSN-868313-E";
+    (function(w){
+        function gs(){
+            w._gstc_lt=+(new Date); var d=document;
+            var g = d.createElement("script"); g.type = "text/javascript"; g.async = true; g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+            var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(g, s);
+        }
+        w.addEventListener?w.addEventListener("load",gs,false):w.attachEvent("onload",gs);
+    })(window);
+</script>-->
+	</body>
+
+</html>                                             
+<!-- 0.1672s -->

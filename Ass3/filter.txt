@@ -1,0 +1,14 @@
+term	allWo	index	page-rank	uri
+------------------------------------
+3	652	128	9	http://www.bbc.co.uk/news/world-africa-24210959
+4	1440	172	3	http://geopoliting.com/ISF
+2	865	235	7	http://www.colbertnation.com/the-colbert-report-videos/429085/september-16-2013/miss-america-2013?xrs=synd_twitter_091713_cn_5
+6	2420	393	7	http://articles.washingtonpost.com/2012-06-13/world/35462541_1_burkina-faso-air-bases-sahara
+6	312	454	7	http://www.politico.com/story/2013/09/why-barack-obama-looks-so-exhausted-97191.html?hp=l10
+5	7523	506	7	http://www.buzzfeed.com/ariellecalderon/27-things-advertising-people-know-to-be-true
+4	14046	510	8	http://www.dailymail.co.uk/news/article-2429074/Pakistan-church-blast-2-suicide-bombers-kill-85-attack-countrys-Christians.html
+17	1675	550	7	http://rt.com/usa/obama-clapper-nsa-panel-240/
+2	3449	583	7	http://www.federalnewsradio.com/
+1	1328	634	6	http://www.americanthinker.com/2011/07/m-the_knockout_game_racial_violence_and_the_conspicuous_silence_of_the_media.html
+8	2855	796	7	http://www.dnaindia.com/world/1893084/report-vladimir-putin-says-syria-violence-could-hit-ex-soviet-bloc
+1	6550	807	0	http://www.storyleak.com/pentagon-prepping-large-scale-economic-breakdown/

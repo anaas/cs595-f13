@@ -1,0 +1,18 @@
+
+   (BUTTON) (BUTTON) [1]THE RED BOOKbeta
+     * [2]PREDICTIONS
+     * [3]LEADERBOARD
+     * [4]ABOUT
+     * [5]LOGOUT
+     * [6]LOGIN
+     * [7]REGISTER
+
+References
+
+   1. file://localhost/
+   2. file://localhost/
+   3. file://localhost/leaderboard
+   4. file://localhost/about
+   5. file://localhost/
+   6. file://localhost/login
+   7. file://localhost/register

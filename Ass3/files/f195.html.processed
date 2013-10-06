@@ -1,0 +1,88 @@
+   (BUTTON) [1]DC Metro Metrics
+     * [2]Escalators
+          + [3]Directory
+          + [4]Outages
+          + [5]Rankings
+     * [6]Elevators
+     * [7]Stations
+     * [8]Hot Cars
+     * [9]Data
+     * [10]Press
+     * [11]Contact
+
+   [12]Fork me on GitHub
+
+Escalator C07S13
+
+   Station Name          [13]PENTAGON
+   Station Code          C07
+   Station Description
+   Escalator Description Escalator between upper and lower platforms
+
+Summary
+
+   Num. Breaks       10
+   Num. Fixes        10
+   Num. Inspections  5
+   Availability      96.346%
+   Report Time Range 121d 11h 39m
+
+History
+
+            Time                  Status           Duration
+   Mon, 09/23/13 05:51 AM OPERATIONAL             7d 18h 26m
+   Mon, 09/23/13 02:41 AM MINOR REPAIR            03h 09m
+   Fri, 09/13/13 05:08 AM OPERATIONAL             9d 21h 33m
+   Thu, 09/12/13 11:26 PM PREV. MAINT. INSPECTION 05h 41m
+   Mon, 08/26/13 04:57 AM OPERATIONAL             17d 18h 29m
+   Sun, 08/25/13 11:24 PM PREV. MAINT. INSPECTION 05h 32m
+   Sun, 08/25/13 10:36 AM OPERATIONAL             12h 47m
+   Sat, 08/24/13 06:33 PM INCIDENT/ACCIDENT       16h 02m
+   Sat, 08/24/13 11:21 AM OPERATIONAL             07h 12m
+   Sat, 08/24/13 10:25 AM CALLBACK/REPAIR         00h 56m
+   Wed, 07/31/13 07:26 PM OPERATIONAL             23d 14h 58m
+   Wed, 07/31/13 03:49 PM CALLBACK/REPAIR         03h 36m
+   Wed, 07/17/13 05:28 AM OPERATIONAL             14d 10h 21m
+   Wed, 07/17/13 01:03 AM PREV. MAINT. INSPECTION 04h 24m
+   Sat, 07/06/13 01:21 PM OPERATIONAL             10d 11h 41m
+   Sat, 07/06/13 08:26 AM SAFETY INSPECTION       04h 54m
+   Sat, 07/06/13 06:43 AM OPERATIONAL             01h 42m
+   Sat, 07/06/13 02:38 AM CALLBACK/REPAIR         04h 05m
+   Tue, 07/02/13 06:38 AM OPERATIONAL             3d 20h 00m
+   Mon, 07/01/13 10:54 PM CALLBACK/REPAIR         07h 43m
+   Wed, 06/19/13 09:31 AM OPERATIONAL             12d 13h 23m
+   Wed, 06/19/13 07:39 AM CALLBACK/REPAIR         01h 52m
+   Tue, 06/11/13 05:07 AM OPERATIONAL             8d 02h 31m
+   Mon, 06/10/13 09:10 PM CALLBACK/REPAIR         07h 56m
+   Mon, 06/10/13 01:48 PM OPERATIONAL             07h 21m
+   Mon, 06/10/13 12:13 PM CALLBACK/REPAIR         01h 35m
+   Sun, 06/09/13 07:00 PM OPERATIONAL             17h 12m
+   Sun, 06/09/13 07:02 AM MINOR REPAIR            11h 58m
+   Fri, 06/07/13 07:12 AM CALLBACK/REPAIR         1d 23h 49m
+   Mon, 06/03/13 05:15 AM OPERATIONAL             4d 01h 56m
+   Mon, 06/03/13 12:35 AM PREV. MAINT. INSPECTION 04h 40m
+   Sat, 06/01/13 12:38 PM OPERATIONAL             1d 11h 57m
+
+   Page Last Updated: 10/01/13 12:17 AM
+
+   © Lee M. Mendelowitz 2013
+
+   [14]Follow @MetroEscalators [15]Follow @MetroHotCars
+
+References
+
+   1. file://localhost/
+   2. file://localhost/escalators
+   3. file://localhost/escalators/directory
+   4. file://localhost/escalators/outages
+   5. file://localhost/escalators/rankings
+   6. file://localhost/elevators
+   7. file://localhost/stations
+   8. file://localhost/hotcars
+   9. file://localhost/data
+  10. file://localhost/press
+  11. mailto:info@dcmetrometrics.com
+  12. https://github.com/LeeMendelowitz/DCMetroMetrics
+  13. file://localhost/stations/Pentagon
+  14. https://twitter.com/MetroEscalators
+  15. https://twitter.com/MetroHotCars

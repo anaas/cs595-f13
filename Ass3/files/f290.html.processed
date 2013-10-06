@@ -1,0 +1,9 @@
+                               Config not found!
+
+   The config for this domain has not been found in /_config.inc.php
+
+   $_SERVER['HTTP_HOST'] reported current site as LETURL.COM
+
+   Please update /home/leturl/public_html/_config.inc.php to the correct
+   host:
+   define("_CONFIG_SITE_HOST_URL", "LETURL.COM");

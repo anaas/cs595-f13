@@ -1,0 +1,92 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html ng-app="rdbkApp" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html ng-app="rdbkApp" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html ng-app="rdbkApp" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html ng-app="rdbkApp" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title ng-bind="$root.pageTitle + ' - The Red Book'">The Red Book</title>
+    <meta name="description" content="{{pageDesc}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="fragment" content="!">
+    <base href="/">
+
+    <meta property="fb:app_id" content="144524969084336">
+    <meta property="og:{{ prop.name }}" content="{{ prop.value }}" ng-repeat="prop in ogValues">
+    <meta name="twitter:{{ prop.name }}" content="{{ prop.value }}" ng-repeat="prop in twValues">
+
+    <meta name="robots" content="noindex" ng-if="noIndex">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/462fe2b2.main.css">
+  </head>
+  <body ng-controller="SiteCtrl" data-status="{{ loadStatus }}">
+    <!--[if lt IE 9]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container">
+      <div class="header">
+        <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+
+              <button type="button" ng-class="{'no-display': noSideBar}" class="navbar-toggle navbar-toggle-left" ng-click="click()" sidebar-toggle="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <button type="button" class="navbar-toggle navbar-toggle-right" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="/">THE <span class="red">RED</span> BOOK<span class="version">beta</span></a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav site-links">
+                <li><a href="/">PREDICTIONS</a></li>
+                <li><a href="/leaderboard">LEADERBOARD</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li ng-show="user.username"><a href="/" ng-click="logout()">LOGOUT</a></li>
+                <li ng-hide="user.username"><a href="/login">LOGIN</a></li>
+                <li ng-hide="user.username"><a href="/register">REGISTER</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div ng-view=""></div>
+      </div>
+
+    </div>
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+
+    <script src="scripts/4d64a708.plugins.js"></script>
+
+    <script src="scripts/5f964262.modules.js"></script>
+
+    <script src="scripts/46da9c0f.scripts.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-41191212-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+<html>
+<head>
+	<title>Script PHP per sito di viaggi , script per sito di vacanze , Software per sito turistico</title>
+	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+	<meta name="description" content="ICTraveling è uno script per un sito di offerte di viaggi e pacchetti scontati. Gli agenti di viaggio postano le offerte dei viaggi e gli altri utenti cercano le offerte e contattano gli operatori. Lo script possiede tutte le caratteristiche necessarie che deve avere un sito di viaggi: gestione albergo, gestione viaggio / pacchetto, novità, commenti ed altro ancora." />
+    <meta name="robots" content="Index,ALL"/>
+	<meta name="rating" content="General" />
+	<meta name="distribution" content="Global" />
+    <meta name="googlebot" content="index, follow" /> 
+    <meta name="revisit-after" content="1 day" /> 
+    <meta name="language" content="it" />
+	<link rel='index'  href='http://www.icloudcenter.com/it_products.htm' /> 
+    <link rel='canonical' href='http://www.icloudcenter.com/it_traveling-website-script.htm' />
+    <link href="http://icloudcenter.com/feeds/rss_products.xml" rel="alternate" type="application/rss+xml" title="ICloudCenter Products News" />
+
+		
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script language="JavaScript" src="js/overout.js"></script>
+	<script language="JavaScript" src="js/hover.js"></script>
+
+	<link rel="stylesheet" href="lytebox/css/lytebox.css" type="text/css" media="screen" /> 
+	<script language="JavaScript" src="lytebox/js/lytebox.js"></script> 
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<!--twiiter javascript-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!--facebook javascript-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="fadeslideshow.js">
+</script>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'it'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script type="text/javascript">
+(function() {
+var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'http://widgets.digg.com/buttons.js';
+s1.parentNode.insertBefore(s, s1);
+})();
+</script>
+<script type="text/javascript">
+
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+	dimensions: [268, 67], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+	["images/image1.jpg"],
+	["images/image2.jpg"],
+	["images/image4.jpg"]
+	],
+	displaymode: {type:'auto', pause:2500, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 500, //transition duration (milliseconds)
+	descreveal: "ondemand",
+	togglerid: ""
+})
+
+</script>
+	<style>
+		a.pl{
+			color: #0F4060; text-decoration:none;
+		}
+		a.pl:link{
+			color: #0F4060; text-decoration:none;
+		}
+		a.pl:hover{
+			color: #2F6080; text-decoration:underline;
+		}
+		a.pl:visited:hover{
+			color: #2F6080; text-decoration:underline;
+		}
+		
+		ul{
+			margin-top:5px;
+		}
+		
+		.live_demo{
+			text-decoration: none;
+			color: #123366;
+			margin: 0 auto;
+			height: 46px;
+			}
+		
+		.btn_buy{
+			background: url(images/buttons/buynow_button_empty.png) center no-repeat;
+			height: 46px;
+			width: 126px;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			color: #123366;
+			text-decoration: none;
+			border: none;
+			cursor: pointer;
+			margin: 0 auto;
+			vertical-align: middle;
+			line-height:46px;
+		}
+		
+		.btn_tour{
+			background: url(images/buttons/tour_button_empty.png) center no-repeat;
+			height: 46px;
+			width: 168px;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			color: #123366;
+			text-decoration: none;
+			border: none;
+			cursor: pointer;
+			margin: 0 auto;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+	
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td height="100" background="images/top.jpg">
+		<img src="images/space.gif" alt="Auction software" width="300" height="100" border="0" />
+	</td>
+</tr>
+<tr>
+	<td>
+		<table align="left" width="100%" border="0" cellspacing="0" cellpadding="0" background="images/buttons_bg.gif" ID="Table2">
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td width="60%" align="left" nowrap valign="top" dir="ltr">
+                <A class="white" href="it_index.htm">Home</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <A class="white" href="it_portfolio.htm">Portafoglio</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <A class="white" href="it_services.htm">Servizi</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<A class="white" href="it_products.htm">Prodotti </A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <A class="white" href="it_clients.htm">Clienti </A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <A class="white" href="it_testimonials.htm">Testimonials</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <A class="white" href="it_partners.htm">Partner</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+			</td>
+			<td align="left" nowrap valign="top" dir="ltr"><img src="images/buttons_light.gif" width="120" height="25" border="0" alt="Contact Us and get Quote for web development"></td>
+			
+			<td align="right" nowrap valign="top" dir="ltr">
+                <A href="it_whois.htm" class="white">Su di noi </A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="it_contactus.aspx" class="white">Contattaci </a>
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td width="100%">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="69" background="images/sidel_bg4.jpg">
+			<img src="images/space.gif" alt="Auction script" width="69" height="1" border="0" />
+		</td>
+		<td width="100%" class="text">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td width="100%">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr><td height="6px"><td></tr>
+                                        <tr>
+						<td align="right" nowrap>
+							<a href="traveling-website-script.htm"><img src="images/flags/en.png" width="20px" height="13px" title="English" alt="English" border="0" /></a>&nbsp;
+							<a href="fr_traveling-website-script.htm"><img src="images/flags/fr.png" width="20px" height="13px" title="French" alt="French" border="0" /></a>&nbsp;
+							<a href="nl_traveling-website-script.htm"><img src="images/flags/nl.png" width="20px" height="13px" title="Dutch" alt="Dutch" border="0" /></a>&nbsp;
+							<a href="ru_traveling-website-script.htm"><img src="images/flags/ru.png" width="20px" height="13px" title="Russian" alt="Russian" border="0" /></a>&nbsp;
+							<a href="it_traveling-website-script.htm"><img src="images/flags/it.png" width="20px" height="13px" title="Italian" alt="Italian" border="0" /></a>&nbsp;
+							<a href="pt_traveling-website-script.htm"><img src="images/flags/pt.png" width="20px" height="13px" title="Portuguese" alt="Portuguese" border="0" /></a>&nbsp;										
+							<a href="es_traveling-website-script.htm"><img src="images/flags/es.png" width="20px" height="13px" title="Spanish" alt="Spanish" border="0" /></a>&nbsp;  
+							<a href="ge_traveling-website-script.htm"><img src="images/flags/ge.png" width="20px" height="13px" title="German" alt="German" border="0" /></a>&nbsp;
+						</td>
+					</tr>
+                                        <tr><td height="6px"><td></tr>
+					<tr>
+						<td align="right">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" align="right">
+							<tr>
+								<td dir="ltr">
+									<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td ><img src="images/t_bg4.gif" alt="" border="0" /></td>
+										<td>&nbsp;</td>
+										<td valign="middle" ><a href='http://www.icloudcenter.com/it_traveling-website-script.htm' class=text><h1>ICTraveling – Script PHP per sito di viaggi</h1></a></td>
+										<td >&nbsp;</td>
+										<td><img src="images/t_bg4.gif" alt="" border="0" /></td>
+									</tr>
+									</table>
+								</td>
+								<td width="100px">&nbsp;&nbsp;&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="1" bgcolor="#104060"><img src="images/space.gif" alt="" width="1" height="1" border="0"></td>
+					</tr>
+					<tr>
+						<td><img src="images/space.gif" alt="" width="1" height="5" border="0" /></td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<table width="100%" border="0" cellspacing="5" cellpadding="0">
+							<tr>
+								<td class="text" colspan="3" dir="ltr" height="390px" style="word-wrap: break-word;" valign="top">
+									<table border="0" width="100%">
+									<tr>
+										<td width="250px" class="text" valign="top" align="left" style="padding-right:20px;">
+											<table style="font-size:13px;" cellpadding="0" cellspacing="0">
+											<tr><td><b>Tecnologia:</b> PHP5</td></tr>
+											<tr><td><b>Banca dati :</b> MySQL</td></tr>
+											<tr><td><b>Versione :</b> 2.1</td></tr>
+											<tr><td><b>Licenza:</b> GNU GPL</td></tr>
+											<tr><td><b>Prezzo :</b> &euro;46.39</td></tr>
+											<tr><td>&nbsp;</td></tr>
+											<tr><td>
+												<table cellpadding=0 cellspacing=0 border=0 align=left>
+												<tr>
+													
+													<td width=110>
+														<div style="width:110px;overflow:hidden;">
+														<a href="https://twitter.com/share" class="twitter-share-button"  data-count="horizontal" data-lang="it">Tweet</a>
+														</div>
+													</td>
+													
+													<td width=70>
+														<div style="width:70px;overflow:hidden;">
+														<g:plusone size="medium"></g:plusone>
+														</div>
+													</td>
+													
+													<td> 
+														<div class="fb-like" data-send="false"  data-width="124" data-show-faces="false" data-layout="button_count"></div>
+													</td>
+												</tr>
+												</table>
+											</td></tr>
+											</table>
+										</td>
+										<td align="left" valign="top">
+											<!-- Volete personalizzare questo script? - Siamo qui per aiutarvi! -->
+											<table border=0 width="100%">
+											<tr>
+											<td align="center" valign="top" class="text" style="font-size:14px;font-weight:bold;">
+												Volete personalizzare questo script? - Siamo qui per aiutarvi!<br><br>
+												<!-- webim button --><a href="http://icloudcenter.com/webim/client.php?locale=en" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('http://icloudcenter.com/webim/client.php?locale=en&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"><img src="http://icloudcenter.com/webim/b.php?i=webim&amp;lang=en" border="0" width="163" height="61" alt=""/></a><!-- / webim button -->
+											</td>
+											</tr>
+											</table>										
+										</td>
+									</tr>
+									<tr><td nowrap="nowrap" height="5px"></td></tr>
+									<!--
+									<tr><td colspan="2" class="text"><b>{_full _description}:</b> <br /></td>
+									-->
+									</tr>
+									<tr>
+										<td colspan="2" class="text">
+											<div><b>ICTraveling </b>è uno script per un sito di offerte di viaggi e pacchetti scontati. Gli agenti di viaggio postano le offerte dei viaggi e gli altri utenti cercano le offerte e contattano gli operatori. Lo script possiede tutte le caratteristiche necessarie che deve avere un sito di viaggi: gestione albergo, gestione viaggio / pacchetto, novità, commenti ed altro ancora.&nbsp;</div><div><br></div><div><b>Pannello di amministrazione</b></div><div>Questo script ha un pannello dell’amministratore dal quale può essere gestita e modificata ogni parte del sito.&nbsp;</div><div>- Controllare il numero dell’elenco.&nbsp;</div><div>- Aggiungere / Modificare/ Cancellare i pacchetti.&nbsp;</div><div>- Gestione paesi – L’amministratore può caricare le informazioni del paese dei pacchetti del viaggio e può anche caricare le informazioni del paese come le condizioni metereologi che, la cultura, l’abbigliamento migliore, ecc. – Tutto questo per fornire maggiori informazioni su ogni paese ai visitatori del sito.&nbsp;</div><div>- Dettagli albergo / informazioni del viaggio: L’amministratore può caricare i dettagli del viaggio e dell'albergo per ogni paese come le foto dell'albergo, i suoi prezzi, la sua ubicazione, le sue strutture dal pannello di amministrazione in modo che gli utenti del sito possano vedere tutto ciò quando effettuano l’accesso.&nbsp;</div><div>- Poiché l’amministratore può caricare le foto e le informazioni sugli alberghi e il piano del viaggio, è facile dare ai clienti informazioni nuove ed aggiornate.&nbsp;</div><div>- Novità: L’amministratore può mostrare le ultime novità ai clienti che possono essere caricate e aggiunte dal pannello di amministrazione.&nbsp;</div><div>- Editore del contenuto – Diverse pagine del sito possono essere modificate dall’amministratore come: contattaci, su di noi, termini, ecc.&nbsp;</div><div>- Impostazioni profilo – L’amministratore può modificare il profilo dal pannello di controllo.&nbsp;</div><div>- Impostazione password – L’amministratore può modificare la password dal pannello di controllo.&nbsp;</div><div>Impostazioni e-mail – L’amministratore può impostare facilmente l’e-mail come l’e-mail per la password dimenticata, l’e-mail delle novità ed altro ancora.&nbsp;</div><div><br></div> <br><p><b></b></p><br />	
+										</td>										
+									</tr>
+									<tr>
+										<td class="text" colspan="2" align="left">
+											<b>Caratteristiche principali :</b> <ul>
+<li>
+Iscrizione gratuita e pagata per gli operatori di viaggio
+</li><li>Ricerca dei viaggi, inclusa la ricerca tramite mappe
+</li><li>Pannello dell’operatore per postare i viaggi
+</li><li>Pannello di amministrazione comprendente la gestione del contenuto
+</li>
+<li>pagamenti PayPal</li>
+</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="text" colspan="2" align="left">
+											
+										</td>
+									</tr>
+									
+									</table>									
+								</td>
+								<td>&nbsp;</td>
+								<td width="280px" align="center" valign="top">									
+									<table align="center" border="0">
+									<tr>
+										<td colspan="3" width="250px" class="text" align="center">
+										
+										</td>
+									</tr>
+									<tr><td nowrap="nowrap" height="3px"></td></tr>										
+									<tr>
+										<td colspan="3" width="250px" class="text" valign="middle" align="center">
+											<a href="images/products/img_36_big.jpg" rel="lytebox[vacation]" title="">
+												<H2><img style="border:1px solid #cccccc; margin:5px; filter:alpha(opacity=100);-moz-opacity:1.0; cursor:pointer;" onMouseOver="makevisible(this,1)" onMouseOut="makevisible(this,0)" src="images/products/img_36_thumb.jpg" alt="ICTraveling – Script PHP per sito di viaggi" title="ICTraveling – Script PHP per sito di viaggi" width="240px" /></H2>
+											</a>									
+										</td>
+									</tr>									
+									<tr><td nowrap="nowrap" height="3px"></td></tr>										
+									<tr height="60px">
+										<td valign='top'><div class='btn_buy'><A class='btn_buy' title='ICTraveling – Script PHP per sito di viaggi - Demo' target='_blank' href='http://www.icloudcenter.net/demos/ictraveling/index.php'>Demo</A></DIV></td>
+										<td valign='top' align='center'></td>
+										<td valign='top'>
+                        <FORM style='padding:0px; margin:0px;' action=http://www.ICloudCenter.net/adminpanel/prepayment.php method=post>
+                        <INPUT type=hidden  name='product_price' value='46.39'>
+			<INPUT type=hidden  name='product_currency' value='EUR'>
+                        <INPUT type=hidden name='product_name' value='ICTraveling – Script PHP per sito di viaggi' >
+                        <INPUT type=hidden value='329' name='product_id'>
+                        <INPUT type=submit alt='' class='btn_buy' border=0 name=submit title='ICTraveling – Script PHP per sito di viaggi - Compralo' value='Compralo'>
+                        </FORM></td>
+									</tr>
+									
+									<tr>
+										<td  id="slideshow_3" colspan="3" width="250px" class="text" style="border:3px solid #0f4060; word-wrap:break-word;">
+											<div id="fadeshow1"></div>
+											
+										</td>
+									</tr>
+									<tr><td nowrap="nowrap" height="5px"></td></tr>	
+									<tr>
+										<td colspan="3" width="250px" class="text" style="border:3px dashed #ff0000; word-wrap:break-word;">
+											<img src="images/bestsellers.jpg" alt='' border='0' style='margin-left:30px;margin-top:7px;' />
+											<ul style='margin-left:10px;margin-right:15px;'><li><a class='pl' href='it_penny-auction-script.htm'>ICPennyBid - Sito di aste al centesimo come PrezziPazzi</a></li><li><a class='pl' href='it_unique-low-bid-auction-script.htm'>ICLowBidAuction - Asta unica ad offerta bassa</a></li><li><a class='pl' href='it_mlm-script.htm'>ICMLM - MLM software script</a></li><li><a class='pl' href='it_hotel-reservation-site-script.htm'>ICHotelReservation –Script per sito di albergo</a></li><li><a class='pl' href='it_ebay-like-auction-script.htm'>ICAuction - Script PHP Asta come eBay</a></li><li><a class='pl' href='it_doctor-appointment-script.htm'>ICDoctorAppointment – Script per appuntamenti medici</a></li><li><a class='pl' href='it_restaurant-site-script.htm'>ICRestaurant - Restaurant site script</a></li><li><a class='pl' href='it_traveling-website-script.htm'>ICTraveling – Script PHP per sito di viaggi</a></li><li><a class='pl' href='it_holiday-lettings-script.htm'>ICHolidayLettings – Script per sito di luoghi per la villeggiatura in affitto</a></li><li><a class='pl' href='it_dutch-auction-script.htm'>ICDutchAuction - Script asta olandese</a></li><li><a class='pl' href='it_mini_blog.htm'>Mini Blog</a></li></ul>
+										</td>
+									</tr>
+									<tr><td nowrap="nowrap" height="5px"></td></tr>										
+									<tr>
+										<td colspan="3" class="text" style="word-wrap: break-word;">
+											<br />
+											<b>I nostri altri script </b>: <br />
+											<ul style='margin-left:13px;margin-right:15px;'><li><a class='pl' href='it_dental-clinic-script.htm'>ICDentalClinic – Script per sito di studio dentistico</a></li><li><a class='pl' href='it_time_attendance_script.htm'>ICTimeAttendance</a></li><li><a class='pl' href='it_equipment_renting.htm'>Banca dati prenotazione attrezzatura in affitto script ASP.NET</a></li><li><a class='pl' href='it_limousine-car-hire-script.html'>ICCallLimousine - Limousine hire script</a></li><li><a class='pl' href='it_survey-creating-script.htm'>ICSurvey – Script per la creazione di sondaggi</a></li><li><a class='pl' href='it_music-site-script.htm'>ICMusic – Script per sito di musica</a></li><li><a class='pl' href='it_lawyer-case-document-script.htm'>ICLawyerCaseDocuments – Script per i documenti dei casi giudiziari</a></li><li><a class='pl' href='it_business-directory-script.htm'>ICDirectory – Script directory aziendale in ASP.NET</a></li><li><a class='pl' href='it_domains-marketplace-script.htm'>ICDomains – script di acquisto domini</a></li><li><a class='pl' href='it_real-estate-site-script.htm'>ICRealestate – script per sito per vendite immobiliari - ASP.NET AJAX</a></li><li><a class='pl' href='it_jewelry-site-script.htm'>ICJewelry—Script per sito di una gioielleria</a></li><li><a class='pl' href='it_point-of-sale-script.htm'>ICPos – Script Punto vendita</a></li><li><a class='pl' href='it_games-site-script.htm'>ICGames – Script per sito di giochi</a></li><li><a class='pl' href='it_tutoring-site-script.htm'>ICTutors – Script per sito di tutoraggio</a></li><li><a class='pl' href='it_art-gallery-site-script.htm'>ICArtGallery – Script per sito di una galleria d’arte</a></li><li><a class='pl' href='it_student-course-assessment-test-script.htm'>ICStudents – Script per test di valutazione dei corsi degli studenti</a></li><li><a class='pl' href='it_php-datagrid.htm'>ICDataGrid – Controllo DataGrid PHP</a></li><li><a class='pl' href='it_company-network-script.htm'>ICMembers - Script per la rete aziendale</a></li><li><a class='pl' href='it_support-tickets-helpdesk-script.htm'>ICHelpDesk – Script PHP per helpdesk per le richieste di assistenza</a></li><li><a class='pl' href='it_conference-web-reporting-site.htm'>ICConferenceReporting -Sito per la redazione di rapporti in ASP.NET</a></li><li><a class='pl' href='it_daily_deals_site.htm'>ICGroupDeal - Daily deals site</a></li><li><a class='pl' href='it_jobs-site-script.htm'>ICJobSite – Script per sito di lavori PHP</a></li><li><a class='pl' href='it_grocery-store-supermarket-script.htm'>ICGrocery – Script supermercato negozio di alimentari</a></li><li><a class='pl' href='it_mini_cms.htm'>Mini CMS</a></li><li><a class='pl' href='it_mobile-application-order-pizza.htm'>ICMobilePizza – Applicazione per telefoni cellulari per ordinare la pizza –J2ME</a></li><li><a class='pl' href='it_remote_meetings_software.htm'>ICRemoteMeeting – software incontri remoti ed assistenza</a></li><li><a class='pl' href='it_bpProductConfigurator.htm'>ICProductConfigurator – Script per l’acquisto di prodotti personalizzati</a></li><li><a class='pl' href='it_site-builder-script.htm'>ICSiteBuilder – CMS - Script per la costruzione di siti con e-commerce</a></li><li><a class='pl' href='it_google_map_control.htm'>Controllo per la localizzazione dell’utente con Google map in ASP.NET</a></li><li><a class='pl' href='it_project_bidding_script.htm'>ICProjectBidding - Project bidding script</a></li><li><a class='pl' href='it_craigslist-like-classifieds-script.htm'>ICClassifieds - Classifieds software script like craigslist</a></li><li><a class='pl' href='it_auto-dealer-car-sales-script.htm'>ICAutosales – Script per sito di vendita delle macchine</a></li><li><a class='pl' href='it_Apparel-Store-Script.htm'>ICApparelStore- Script per negozio online di abbigliamento/abiti</a></li><li><a class='pl' href='it_real-estate-marketplace-site.htm'>ICEstate – script per sito per vendite immobiliari in ASP.NET</a></li><li><a class='pl' href='it_affiliates-tracking-script.htm'>ICAffiliateTracking – Script per il tracciamento degli affiliati</a></li><li><a class='pl' href='it_t-shirt.htm'>IC-T-Shirt - Script per negozio online personalizzato di magliette</a></li><li><a class='pl' href='it_php_datagrid.htm'>PHP AJAX DataGrid</a></li></ul>
+										</td>
+									</tr>
+									
+									</table>									
+								</td>
+							</tr>
+							<tr><td colspan="5"><br /></td></tr>
+							<tr><td colspan="5" align="center" valign="top" dir="ltr"></td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					<tr><td><img src="images/space.gif" alt="" width="1" height="5" border="0"></td></tr></tr>
+					</table>
+				</td>
+				<td width="2%">&nbsp;</td>
+			</tr>
+
+			<tr><td colspan=3 nowrap height="12px"></td></tr>
+			
+			<tr>
+				<td width="4%">&nbsp;</td>
+				<td valign='top' align='center'></td>
+					<!--<table width="100%" cellspacing="3" cellpadding="3" style="border: 1px solid #104060">
+					<tr class="text"><td>Cosa è ICloudCenter ? ( <a href=whois.htm>Leggere sull''azienda</a> ) 
+<br><br>
+L’esternalizzazione è il processo di subappalto dello sviluppo web e di software per
+un’organizzazione esterna alla propria azienda. Provatelo oggi! Vi piacerebbe dare in appalto
+Il vostro prossimo progetto ? Aggiungete ai preferiti la nostra homepage per assicurarvi di non dimenticare la nostra
+pagina web la prossima volta in cui avrete bisogno di sviluppare un progetto IT per voi stessi o per la vostra società.
+È facile, divertente e molto economico dare in appalto il vostro progetto a noi. ICloudCenter
+aiuta i webmasters, i web designers, i programmatori, gli sviluppatori di software ed i proprietari delle aziende
+a sviluppare i loro progetti.
+Date in appalto i vostri progetti e guadagnate molto denaro. Ottenere un lavoro economico, programmare e 
+personalizzare il vostro sito web non è mai stato così semplice. Lo sviluppo web non
+deve essere costoso. L’esternalizzazione taglierà le vostre spese di oltre il 50%. Se non avete
+mai provato a contrattare lavoro ad un’altra parte del mondo, avete oggi la vostra possibilità.
+Abbiamo molti <a href=clients.htm>clienti soddisfatti</a> in tutto il mondo.</td></tr>
+					</table>
+					-->	
+				
+				<td width="4%">&nbsp;</td>
+			</tr>	
+			<tr><td>&nbsp;</td></tr>			
+			</table>
+		</td>
+		<td width="69" background="images/sider_bg4.jpg">
+			<img src="images/space.gif" alt="" width="69" height="1" border="0" />
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>

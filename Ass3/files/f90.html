@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="qlTxuZKRaSE5oMSVpFBxG45HqOseML_mvQLYj3ZqEyY" />  
+<meta property="og:title" content="【グラフ】東大・早稲田・慶応の学生が大学４年間でセッ◯スをした人数をごらんください - まとめーたー" />
+<meta property="og:site_name" content="まとめーたー" />
+<meta property="og:description" content="1:弘子:2013/07/27(土)11:51:46.323:捺未:2013/07/27(土)11:52:25.42慶応の女子&hellip;5:恵実:2013/07/27(土)11:52:50.7…"/>  
+<meta property="og:image" content="/app/webroot/media/filter/l/img/51f364dbe7dee.jpg" />  
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.matomater.com/3533/" />
+<meta property="fb:admins" content="100001873651936" />  
+<meta property="fb:app_id" content="422090964517257" />  
+<meta property="og:locale" content="ja_JP" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="copyright" content="&copy;matomater" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="canonical" href="http://www.matomater.com/3533/" />
+<title>【グラフ】東大・早稲田・慶応の学生が大学４年間でセッ◯スをした人数をごらんください | まとめーたー</title>
+<meta name="viewport" content="width=1024" />
+<link href="/app/webroot/css/bootstrap.css?0" rel="stylesheet">
+<link href="/app/webroot/css/original.css?rgse0" rel="stylesheet">
+<link href="/app/webroot/css/icons.css?0" rel="stylesheet">
+<link href="/app/webroot/css/jquery_notification.css?0" rel="stylesheet">
+<link href="/app/webroot/css/jquery.nailthumb.1.1.css?0" rel="stylesheet">
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+<script src="/app/webroot/js/bootstrap.min.js"></script>
+<script src="/app/webroot/js/bootstrap-tooltip.js"></script>
+<script src="/app/webroot/js/bootstrap-tab.js"></script>
+<script src="/app/webroot/js/less-1.3.0.min.js"></script>
+<script src="/app/webroot/js/jquery_notification_v.1.js"></script>
+
+<script src="/app/webroot/js/footerFixed.js"></script>
+
+<script src="/app/webroot/js/jquery.socialbutton.js"></script>
+<script type="text/javascript" src="/app/webroot/js/jquery.exflexfixed-0.3.0.js"></script>
+
+
+<script src="/app/webroot/js/MyThumbnail.js"></script>
+
+<script src="/app/webroot/js/jquery.nailthumb.1.1.js"></script>
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+
+	$(function(){
+		
+		
+		//時間に応じてロゴのidを変更
+		today = new Date();
+		hour = today.getHours();
+		var num = parseInt(hour);
+		if (num % 2 == 0) {
+			$('#logo').addClass('logo2');
+		}
+		else {
+			$('#logo').addClass('logo');
+		}
+
+
+		/*var userAgent = window.navigator.userAgent.toLowerCase();
+		//alert(userAgent.indexOf("msie"));
+		if (userAgent.indexOf("msie") == -1) {
+			$('img').error(function(){
+				//$(this).remove();
+				
+				$(this).attr({src:'/app/webroot/img/article-icon48.png'});
+			});
+		}*/
+	
+		
+		//サムネイル自動生成
+		$('.nailthumb-container').nailthumb();
+		
+
+		
+		$('.dropdown').hover(
+			function(){
+				$(this).addClass('open').find('ul').stop(true,true).hide().slideDown(0);
+			},
+			function(){
+				$(this).removeClass('open').find('ul').stop(true,true).slideUp(0);
+			}
+		);
+		$('.dropdown-menu li').unbind('mouseover').unbind('mouseout');
+	
+		//自サイトへのリンクを全て無効に
+		$('a[href=#]').click(function(){
+			return false;
+		});
+
+		
+		//外部リンクを別タブで開く。同一ドメインへのリンクは同じタブで開く
+		$("a[href^='http']:not([href^='http://" + location.hostname + "'])").attr("target","_blank");
+		
+		
+		
+		
+		$('[rel=tooltip]').tooltip();
+		$('[rel=tooltipShow]').tooltip('show');
+		
+		
+		$('[rel=popover]').popover();
+		
+		//現在のページをハイライト
+		$("a").each(function(){
+			
+		if(encodeURI($(this).attr("href"))==location.pathname)
+			$(this).toggleClass("active");
+		});
+		
+		
+		//div要素丸ごとクリック
+		$(".click,.nclick").click(function(){
+			 window.location=$(this).find("a").attr("href");
+			 return false;
+		});
+		
+		function is_smartPhone () {  
+		  if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+				return true;
+			} else {
+				return false;	
+			}
+		}
+		
+		
+		//pcのみのviewを指定。 mypage が url にあれば、スマートフォンへボタンを出さない
+		function is_pcOnly () {  
+		  var media = [  
+			'mypage'
+			];  
+		  var pattern = new RegExp(media.join('|'), 'i');
+		  return pattern.test(location.pathname);  
+		}
+		
+		  
+		if (is_smartPhone()) {  
+			$(document.body).prepend('<div align="center" class="change"><a href="/defaults/change/" class="btn btn-primary btn-large" style="padding:50px;font-size:50px;margin:15px;">スマートフォン版に切替</a></div>')  
+		}
+		
+		
+		
+	});
+	
+	
+	
+
+		
+		
+	
+	
+	
+</script>
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2091651-22']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+//google順位計測
+if (document.referrer.match(/google\.(com|co\.jp)/gi) && document.referrer.match(/cd/gi)) {
+  var myString = document.referrer;
+  var r        = myString.match(/cd=(.*?)&/);
+  var rank     = parseInt(r[1]);
+  var kw       = myString.match(/q=(.*?)&/);
+  
+  if (kw[1].length > 0) {
+    var keyWord  = decodeURI(kw[1]);
+  } else {
+    keyWord = "(not provided)";
+  }
+
+  var p        = document.location.pathname;
+  _gaq.push(['_trackEvent', 'RankTracker', keyWord, p, rank, true]);
+}
+
+
+</script>
+</head>
+
+
+<script type="text/javascript">
+	$(function() {
+		$('.tuizui').exFlexFixed({
+			container : 'body'
+		});
+	});
+</script>
+
+<body>
+<!-- ヘッダ -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=422090964517257";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="head">
+		
+        <div class="container">
+            <div class="row">
+	<div class="span6 offset3">
+		<div align="center">
+			<h1 id="logo"><a href="/"><span>まとめーたー</span></a></h1>
+		</div>
+	</div>
+	<div class="span3">
+		<div style="margin:10px 0;">
+			
+			
+			
+		
+							<a href="/works/">まとめーたーとは</a> - <a href="/matomeru/add/">まとめ作成</a>
+						
+						 
+		</div>
+	</div>
+</div>        </div>
+   <hr>     
+</div>
+        
+		<!-- ここまでヘッダ -->
+
+<div class="container">
+
+
+
+	
+ 
+<div class="loginAlert click">
+    <div class="row">
+        <div class="span2">
+            <a href="/users/login/" class="btn btn-info btn-large">今すぐ登録</a>
+        </div>
+        <div class="span9">
+            <p>
+				カンタン3分。<br />
+                記事を投稿するだけでお金が貰える！<br />
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+	<div class="row"> 
+		
+		<!-- メイン -->
+		<div class="span9">
+			<div class="topicpath">
+				<ol id="topicpath"><li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="home"><a href="/" itemprop="url"><span itemprop="title">まとめーたー トップ</span></a><span class="topicarrow"></span></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="/articles/categoryshow/87/"><span itemprop="title">恋愛</span></a><span class="topicarrow"></span></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="/articles/categoryshow/422/"><span itemprop="title">モテる方法</span></a><span class="topicarrow"></span></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="/articles/categoryshow/430/"><span itemprop="title">メール術</span></a><span class="topicarrow"></span></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">【グラフ】東大・早稲田・慶応の学生が大学４年間でセッ◯スをした人数をごらんください</span></li></ol>			</div>
+			
+
+
+<link href="/app/webroot/css/articleview.css?1380603596" rel="stylesheet">
+<link href="/app/webroot/css/ckeditor-view.css?1380603596" rel="stylesheet">
+<link href="/matomeru/css/matome.css?1380603596" rel="stylesheet">
+<link href="/app/webroot/img/sprite.css?1380603596" rel="stylesheet">
+
+<link rel="stylesheet" href="/app/webroot/css/prettify.css?1380603596" />
+
+<script type="text/javascript" src="/app/webroot/js/prettify/prettify.js"></script>
+<script type="text/javascript" src="/app/webroot/js/jquery.grrrid-1.0.0.js"></script>
+
+
+<script>
+var src = new Array();
+	$(function() {
+	
+		
+		$('.ckeditor .twitter-div').hover(function(){
+			//https://twitter.com/intent/tweet?in_reply_to=367211993649778690
+			tweet_id = $(this).find(".span11").data('tweet_id');
+			screen_name = $(this).find(".span11").data('screen_name');
+			
+			$(this).find("p").append('<span class="social"><a href="https://twitter.com/intent/tweet?in_reply_to=' + tweet_id +'"><span class="sprite henshin"></span></a><a href="https://twitter.com/intent/retweet?tweet_id=' + tweet_id +'"><span class="sprite retweet"></span></a><a href="https://twitter.com/intent/favorite?tweet_id=' + tweet_id + '"><span class="sprite bookmark"></span></a></span>');
+		},function(){
+			$('.ckeditor .social').remove();
+		});
+				
+				
+		
+		
+		
+		$('.kanren ul li').grrrid( 'equalize', 'height' );
+		
+		$('pre').addClass("prettyprint");
+		prettyPrint();
+		
+		//ニコニコ動画のリンク切れを防ぐ
+		$('.ckeditor iframe[src]').each(function(i){	
+			src[i] = $(this).attr('src');
+		
+		});
+		
+		
+		//指定要素の親要素全て
+		$('#ArticleCategory_id').parents().map(function () {
+			
+			//NavParent class を持つ物全てをクリック
+			if(this.className == 'NavParent'){
+				$(this).children('span').click()
+			}
+		})
+				
+			
+		$('.ckeditor p , .ckeditor h1 , .ckeditor h2 , .ckeditor h3 ,.ckeditor h4 ,.ckeditor h5 , .ckeditor h6').each(function(){
+			$(this).html( jQuery(this).html().replace(/((http|https|ftp):\/\/[\w?=&.\/-;#~%-]+(?![\w\s?&.\/;#~%"=-]*>))/g, '<a href="$1">$1</a> ') );
+		});
+
+		$('.ckeditor a[href^=http]').each(function(){
+			$(this).not('[href*="'+location.hostname+'"]').attr('target','_blank').addClass('extlink');
+		});
+		
+		$('blockquote a , .ckeditor pre a').each(function(){	
+			$(this).contents().unwrap();//preの中のリンクを削除
+		});
+		
+		$('.twitter-div a').each(function(){	
+			
+			$(this).removeClass('extlink');
+			
+		});
+		
+		
+		//ニコニコ動画がリンク切れになるので、戻す
+		$('.ckeditor iframe[src]').each(function(i){	
+			$(this).attr('src',src[i]);
+		});
+		
+				
+		
+		
+		
+	});
+	
+	//ページビュー数はユニークユーザーも取得するため、イベントで取得。
+	_gaq.push(['_trackEvent', 'ac', '3533',location.href,1,true]);
+	_gaq.push(['_trackEvent', 'uc', '213',location.href,1,true]);
+</script>
+
+
+
+
+
+
+
+<!-- ここまでパンクズ -->
+<h1>【グラフ】東大・早稲田・慶応の学生が大学４年間でセッ◯スをした人数をごらんください</h1>
+
+  
+
+<script src="/app/webroot/js/jquery.socialbutton.js"></script>
+<script type="text/javascript">	  
+	  $(function() {
+
+	
+		$('.hatena').socialbutton('hatena', {
+			//button: 'vertical'
+			url: 'http://www.matomater.com/3533/'
+		});
+	
+		$('.twitter').socialbutton('twitter', {
+			//button: 'vertical',
+			button: 'horizontal',
+			url: 'http://www.matomater.com/3533/',
+			text: '【グラフ】東大・早稲田・慶応の学生が大学４年間でセッ◯スをした人数をごらんください - まとめーたー'
+		});
+		
+		
+		$('.google_plusone').socialbutton('google_plusone', {
+			lang: 'ja',
+			size: 'medium',
+			url: 'http://www.matomater.com/3533/'
+		});
+	
+		/*$('#facebook_like').socialbutton('facebook_like', {
+			button: 'box_count'
+		});*/
+	
+		/*$('.facebook_share').socialbutton('facebook_like', {
+			button: 'button_count'
+		});
+	*/
+	
+	});
+
+</script>
+
+
+  
+
+<div class="row" style="padding-top:10px;">
+
+
+    <!-- メイン -->
+<div class="span1">
+    <div class="hatena">
+        
+    </div>
+</div>
+<div class="span1" style="margin-right:0px;">
+    <div class="twitter" >
+        
+    </div>
+</div>
+<div class="span1">
+    <div class="google_plusone" style="margin-left:30px;">
+        
+    </div>
+</div>
+
+
+<div class="span1">
+    <fb:like href="http://www.matomater.com/3533/" send="false" layout="button_count" show_faces="false" style="margin-left:30px;"></fb:like>
+</div>
+
+<div class="span5" align="right">
+    <div align="right">
+		 <span class="counter">
+		 	
+                        	2931<span style="color:#999;">view </span>
+                        
+         </span>
+         
+		 
+		 
+		 
+		   
+         		 
+		 
+		 
+         	
+            		
+		
+				
+		
+		
+		
+	
+    </div>
+</div>
+</div>
+
+
+<div align="center" style="margin-top:15px;">
+
+
+<!-- admax -->
+<script type="text/javascript" src="http://adm.shinobi.jp/s/e175f1b3ee10a8bb179063a0dde89811"></script>
+<!-- admax -->
+
+<!--
+	<script type="text/javascript">
+		google_ad_client = "ca-pub-8647597541914706";
+	
+		google_ad_slot = "9723227317";
+		google_ad_width = 468;
+		google_ad_height = 60;
+	
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+-->
+
+</div>
+
+
+
+<!-- 応用記事があるよ -->
+
+
+
+
+<div class="ckeditor" style="padding-top:5px;">
+	<div class="view-2ch"><dl class="black_push" id="2ch_1"><dt>1 :弘子 : 2013/07/27(土) 11:51:46.32</dt><dd><br /><div class="nailthumb-container thumb-120" style="overflow: hidden; padding: 0px; width: 120px; height: 120px;"><a href="img/51f364dbe7dee.jpg"><img class="nailthumb-image" src="/app/webroot/media/filter/l/img/51f364dbe7dee.jpg" style="position: relative; width: 208px; height: 120px; top: 0px; left: -44px;" /></a></div><div></div></dd></dl><dl class="black_push" id="2ch_3"><dt>3 :捺未 : 2013/07/27(土) 11:52:25.42</dt><dd>慶応の女子&hellip;</dd></dl><dl class="black_push" id="2ch_5"><dt>5 :恵実 : 2013/07/27(土) 11:52:50.74</dt><dd>慶応の女は(笑)</dd></dl><dl class="black_push" id="2ch_7"><dt>7 :和広 : 2013/07/27(土) 11:53:08.43</dt><dd>東大男ｗｗｗｗｗｗｗｗ</dd></dl><dl class="red_push" id="2ch_8"><dt>8 :一枝 : 2013/07/27(土) 11:53:50.50</dt><dd>慶応女子を見たら非処女だと思え</dd></dl><dl class="black_push" id="2ch_9"><dt>9 :美来 : 2013/07/27(土) 11:54:11.41</dt><dd>早稲田より慶応生の方がやりまくってるのか<br />東大男子(&acute;・&omega;・｀)</dd></dl><dl class="black_push" id="2ch_11"><dt>11 :紹子 : 2013/07/27(土) 11:55:03.26</dt><dd>東大男でこれなら凍工や一ツ橋は更に童貞率が酷いんだろうなぁ・・・</dd></dl><dl class="black_push" id="2ch_15"><dt>15 :大輔 : 2013/07/27(土) 11:56:24.90</dt><dd>慶応許さん</dd></dl><dl class="black_push" id="2ch_20"><dt>20 :香好 : 2013/07/27(土) 11:57:57.52</dt><dd>早稲田より東大の女の方がビッチなのは意外</dd></dl><dl class="black_push" id="2ch_22"><dt>22 :麻貴子 : 2013/07/27(土) 11:58:35.69</dt><dd>東大半分童貞じゃんｗｗｗｗ</dd></dl><dl class="black_push" id="2ch_24"><dt>24 :あす香 : 2013/07/27(土) 12:00:06.25</dt><dd>東大男は正直だわ<br />しかし女は本当イージーモードだな</dd></dl><dl class="black_push" id="2ch_27"><dt>27 :梨沙 : 2013/07/27(土) 12:00:49.56</dt><dd>自分のために貼り直し<br /><div class="nailthumb-container thumb-120" style="overflow: hidden; padding: 0px; width: 120px; height: 120px;"><a href="img/51f364dc9635b.jpg"><img class="nailthumb-image" src="/app/webroot/media/filter/l/img/51f364dc9635b.jpg" style="position: relative; width: 208px; height: 120px; top: 0px; left: -44px;" /></a></div></dd></dl><dl class="black_push" id="2ch_33"><dt>33 :佳穂 : 2013/07/27(土) 12:01:54.54</dt><dd>やっぱりお前らインテリ美女とセックスしたいのか？</dd></dl><dl class="black_push" id="2ch_34"><dt>34 :博喜 : 2013/07/27(土) 12:01:59.63</dt><dd>慶應の学生は恥を知らんのか</dd></dl><dl class="black_push" id="2ch_36"><dt>36 :友紀子 : 2013/07/27(土) 12:02:38.88</dt><dd>慶應って大学じゃないからな<br />特殊部落育ちの工作員養成施設</dd></dl><dl class="black_push" id="2ch_40"><dt>40 :耕平 : 2013/07/27(土) 12:03:32.18</dt><dd>東大女が一番意外だわ</dd></dl><dl class="black_push" id="2ch_47"><dt>47 :智香子 : 2013/07/27(土) 12:05:05.34</dt><dd>いかに一部のイケメンが独占して<br />チンポ乾かないか分かるグラフだな</dd></dl><dl class="black_push" id="2ch_55"><dt>55 :明弘 : 2013/07/27(土) 12:06:25.14</dt><dd>都の性欲はオナニーで解消できます</dd></dl><dl class="black_push" id="2ch_59"><dt>59 :恵実 : 2013/07/27(土) 12:07:08.14 発言回数 : 3 回目</dt><dd>慶應と早稲田の女は俺の体感に合ってる。<br />慶應女子のリア充度は半端ないよ。金持ちばかりだし。<br />逆に早稲田女はサブカルみたいな暗いのが多い。</dd></dl><dl class="black_push" id="2ch_61"><dt>61 :玄淨 : 2013/07/27(土) 12:07:25.61</dt><dd>こりゃあ、官僚や官僚出身議員が表現規制に走ったり、痴漢に走るわけだわ<br />若い時に女とできなかったコンプレックスからか</dd></dl><dl class="black_push" id="2ch_67"><dt>67 :幸久 : 2013/07/27(土) 12:09:39.66</dt><dd>東大女が純情である確率がマシなのか</dd></dl><dl class="black_push" id="2ch_72"><dt>72 :二兆 : 2013/07/27(土) 12:11:47.78 発言回数 : 2 回目</dt><dd>大学四年間どころか卒業後十年もしてねえよ<br />ムカつくスレたてんな</dd></dl><dl class="black_push" id="2ch_78"><dt>78 :研大 : 2013/07/27(土) 12:12:31.71</dt><dd>東大じゃなくて慶応に入ればよかったorz</dd></dl><dl class="black_push" id="2ch_88"><dt>88 :飛鳥 : 2013/07/27(土) 12:16:18.34</dt><dd>慶應女子はセックスが必修科目ですｷｬﾋﾟ</dd></dl><dl class="black_push" id="2ch_91"><dt>91 :進吾 : 2013/07/27(土) 12:17:25.29</dt><dd>現実を受け入れられない童貞たち<br />学部別のデータも欲しいが、慶応は何処でもいけるな</dd></dl><dl class="black_push" id="2ch_97"><dt>97 :朝気 : 2013/07/27(土) 12:19:50.98</dt><dd>慶応は新歓期の4月5月に普通にサークルやら入れば9割がた彼女彼氏できてその時点でもうヤリヤリだろ俺もいきなり同棲までいったし理工とかでも余裕だろな。<br />逆に東大理系から院の流れだと研究室に籠ったりで彼女なんて作るやつそういないだろう。<br />このアンケートは結構実態に則してるよ。</dd></dl><dl class="black_push" id="2ch_128"><dt>128 :枝里子 : 2013/07/27(土) 12:38:08.83</dt><dd>少なくとも男のアンケ結果は信用出来ない<br />童貞でも経験してるとか言いそう<br />そう考えると東大は正直だな</dd></dl></div>	
+</div>
+
+<div class="row" style="padding-top:10px;">
+    <!-- メイン -->
+    <div class="span1">
+    <div class="hatena">
+        
+    </div>
+</div>
+<div class="span1" style="margin-right:25px;">
+    <div class="twitter">
+        
+    </div>
+</div>
+<div class="span1">
+    <div class="google_plusone" style="margin-left:30px;">
+        
+    </div>
+</div>
+
+
+<div class="span1">
+    <div class="fb-like" data-href="http://www.matomater.com/3533/" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" style="margin-left:30px;">
+        
+    </div>
+</div>
+
+<div class="span4" align="right">
+    <div align="right">
+		 <span style="color:#999;">2013年08月06日</span>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="youwrite spacer">
+  <dl>
+	<dt><span>記事を書いて高額報酬</span> [メール術]モテる方法<span>に関する</span>記事を書いてみましょう</dt>
+  </dl>
+  <p><a href="/matomeru/add/" class="btn btn-info btn-large"><i class="icon-edit icon-white"></i> 記事を書く</a></p>
+</div>
+				
+
+<div class="t-c">
+<!--
+<script type="text/javascript">
+
+google_ad_client = "ca-pub-8647597541914706";
+
+google_ad_slot = "8699914851";
+google_ad_width = 336;
+google_ad_height = 280;
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+-->
+</div>
+
+<div align="center" class="spacer">
+
+
+
+<!-- admax -->
+<script type="text/javascript" src="http://adm.shinobi.jp/s/30d425c3b2fb0289b63c5ac29c2138d8"></script>
+<!-- admax -->
+
+
+</div>
+<hr>
+<div class="kanren">
+	<h2><a href="/articles/categoryshow/430/">メール術</a> の他の記事</h2>
+    <p>
+    	    </p>
+	
+    <ul>
+          	<li class="nclick">
+        
+        <dl>
+          <dt> 
+		    <div class="nailthumb-container thumb-45">
+									<img src="http://www.matomater.com/app/webroot/media/filter/s/img/51d69365592da.jpg" class="thumb">
+							</div>
+          </dt>
+          <dd>
+            <b><a href="/2769/">【不倫】「奈々！おはよー！チュッ（笑）」「かわいい奈々を見せてね！ チュッ」阪神・和田監督が不倫相手に送ったメールがキモすぎると話題に</a></b>
+          </dd>
+        </dl>
+     
+      	</li>
+          	<li class="nclick">
+        
+        <dl>
+          <dt> 
+		    <div class="nailthumb-container thumb-45">
+									<img src="/app/webroot/media/filter/s/img/520f678a4b21c.jpg" class="thumb">
+							</div>
+          </dt>
+          <dd>
+            <b><a href="/5400/">「サトシ」にメールを送ると返事がもらえるサービスが凄い　高性能過ぎてワロタ　ｗｗｗｗｗ </a></b>
+          </dd>
+        </dl>
+     
+      	</li>
+          
+         </ul>
+	
+	<p class="sonota">
+		<a href="/articles/categoryshow/430/">全3件の「メール術」の記事を読む</a>
+	</p>
+	  
+</div>
+
+
+
+
+<div class="spacer">
+       		<ol class="topicpath-m">
+			            
+            	            	<li><a href="/articles/categoryshow/266/"><span itemprop="title">ビジネス・経済</span></a><span class="topicarrow"></span></li>
+            	            	
+                        
+            	            	<li><a href="/articles/categoryshow/357/"><span itemprop="title">政治経済(457)</span></a></li>
+            	            	
+            	
+   		</ol>
+       		<ol class="topicpath-m">
+			            
+            	            	<li><a href="/articles/categoryshow/166/"><span itemprop="title">趣味・娯楽</span></a><span class="topicarrow"></span></li>
+            	            	
+                        
+            	            	<li><a href="/articles/categoryshow/103/"><span itemprop="title">エンターテイメント</span></a><span class="topicarrow"></span></li>
+            	            	
+                        
+            	            	<li><a href="/articles/categoryshow/536/"><span itemprop="title">テレビ番組(83)</span></a></li>
+            	            	
+            	
+   		</ol>
+       		<ol class="topicpath-m">
+			            
+            	            	<li><a href="/articles/categoryshow/23/"><span itemprop="title">その他(560)</span></a></li>
+            	            	
+            	
+   		</ol>
+       		<ol class="topicpath-m">
+			            
+            	            	<li><a href="/articles/categoryshow/95/"><span itemprop="title">語学・学習</span></a><span class="topicarrow"></span></li>
+            	            	
+                        
+            	            	<li><a href="/articles/categoryshow/549/"><span itemprop="title">受験・進学(12)</span></a></li>
+            	            	
+            	
+   		</ol>
+    </div>
+
+<div class="spacer">
+	<div class="fb-comments" data-href="http://www.matomater.com/3533/" data-num-posts="5" data-width="700"></div>
+</div>
+
+
+
+
+
+
+
+
+
+		</div>
+		<!-- ここまでメイン --> 
+		
+		<!-- 右メニュー -->
+		<div class="span3 spacer rightmenu">
+			<div class="tuizui">
+			
+				<a href="/users/ranking/"><img src="/app/webroot/img/rank.png" alt="ランキング"></a>
+				
+				<hr>
+			
+								<a href="/pages/premium/" class="label label">ノーマルライター</a>				<div class="row spacer" style="margin-bottom:40px;">
+				
+					
+					<div class="span1"> <img src="http://a0.twimg.com/profile_images/3711133793/39763b4707ba7c20dea6477fbc7a405f_normal.png"> </div>
+					<div class="span2"> <a href="/users/mypage/213/">
+						ミサイルマン						</a> さん
+						
+													<a class="btn btn-mini" style="margin:10px 0;" href="https://twitter.com/yonepo665">運営サイト</a>
+												
+						<p>
+							色々とまとめていきます。よろしくお願いします。記事にしてほしい出来事があれば、ツイッターまでお願いします。
+【RT、拡散歓迎】
+						</p>
+					</div>
+				</div>
+								
+				<div align="center">
+				<!-- admax -->
+<script type="text/javascript" src="http://adm.shinobi.jp/s/b8c055f582f86982c1a28effb9dea80b"></script>
+<!-- admax -->
+				
+				</div>
+				
+<h2 class="spacer">
+恋愛 最新ランキング</h2>
+
+
+
+
+
+
+<div class="row spacer ranking">
+
+
+
+
+
+
+<div class="row spacer ranking">
+
+	
+	<div class="span1">
+		
+		<div class="nailthumb-container thumb-45">
+					
+			<a href="/10060/"><img src="/app/webroot/media/filter/s/img/5244008be77f8.jpg"></a>
+					</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/10060/">クレジットカード登録だけで28,700円をゲットする！！</a></h3>
+	</div>
+</div>
+
+
+<div class="row spacer ranking">
+
+	
+	<div class="span1">
+		
+		<div class="nailthumb-container thumb-45">
+					
+			<a href="/643/"><img src="http://www.matomater.com/app/webroot/media/filter/s/img/5152d60d13bc4.jpg"></a>
+					</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/643/">パソコンをどれだけやっても目が痛くならない、疲れない4つの方法</a></h3>
+	</div>
+</div>
+
+
+<div class="row spacer ranking">
+
+	
+	<div class="span1">
+		
+		<div class="nailthumb-container thumb-45">
+					
+			<a href="/9399/"><img src="/app/webroot/media/filter/s/img/52369b29c3ada.jpg"></a>
+					</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/9399/">全身つるりん永久脱毛への道・・・</a></h3>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	
+<div class="row spacer ranking">
+	<div class="span1">
+		
+		<div>
+		
+		<div class="nailthumb-container thumb-45">
+				
+		<a href="/3533/"><img src="/app/webroot/media/filter/s/img/51f364dbe7dee.jpg"></a>
+				</div>
+		
+		
+		</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/3533/">【グラフ】東大・早稲田・慶応の学生が大学４年間でセッ◯スをした人数をごらんください</a></h3>
+	</div>
+</div>
+
+	
+<div class="row spacer ranking">
+	<div class="span1">
+		
+		<div>
+		
+		<div class="nailthumb-container thumb-45">
+				
+		<a href="/3599/"><img src="http://www.matomater.com/app/webroot/media/filter/s/img/51f60ec77730e.jpg"></a>
+				</div>
+		
+		
+		</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/3599/">スマホで浮気がバレる！陥りやすい落とし穴5つ</a></h3>
+	</div>
+</div>
+
+	
+<div class="row spacer ranking">
+	<div class="span1">
+		
+		<div>
+		
+		<div class="nailthumb-container thumb-45">
+				
+		<a href="/2769/"><img src="http://www.matomater.com/app/webroot/media/filter/s/img/51d69365592da.jpg"></a>
+				</div>
+		
+		
+		</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/2769/">【不倫】「奈々！おはよー！チュッ（笑）」「かわいい奈々を見せてね！ チュッ」阪神・和田監督が不倫相手に送ったメールがキモすぎると話題に</a></h3>
+	</div>
+</div>
+
+	
+<div class="row spacer ranking">
+	<div class="span1">
+		
+		<div>
+		
+		<div class="nailthumb-container thumb-45">
+				
+		<a href="/2919/"><img src="http://www.matomater.com/app/webroot/media/filter/s/img/51dce209d9348.jpg"></a>
+				</div>
+		
+		
+		</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/2919/">女性「逃げると家の場所が知られると思った」→一緒にホテルに行き裸の写真撮られ脅される　脅した市立小学校教諭　大塚裕（28）を逮捕</a></h3>
+	</div>
+</div>
+
+	
+<div class="row spacer ranking">
+	<div class="span1">
+		
+		<div>
+		
+		<div class="nailthumb-container thumb-45">
+				<a href="/4401/"><img src="http://a0.twimg.com/profile_images/1671086949/illust31_thumb_normal.gif"></a>
+				</div>
+		
+		
+		</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/4401/">胸キュン男と女の胸キュンの違いとは...！？</a></h3>
+	</div>
+</div>
+
+	
+<div class="row spacer ranking">
+	<div class="span1">
+		
+		<div>
+		
+		<div class="nailthumb-container thumb-45">
+				
+		<a href="/5400/"><img src="/app/webroot/media/filter/s/img/520f678a4b21c.jpg"></a>
+				</div>
+		
+		
+		</div>
+		
+	</div>
+	<div class="span2">
+		<h3><a href="/5400/">「サトシ」にメールを送ると返事がもらえるサービスが凄い　高性能過ぎてワロタ　ｗｗｗｗｗ </a></h3>
+	</div>
+</div>
+
+				
+				<p align="right" class="spacer"><a href="/users/ranking/">賞金獲得ランキング</a></p>
+				
+				<div class="spacer">
+					<a href="/users/intro/"><img src="http://www.matomater.com/img/220x60.png"></a>
+				</div>
+				
+				<!--
+				<div class="spacer" align="right">
+					<a href="http://www.host-ice.com/lpo/">PR: 彼氏代行してみませんか？</a>
+				</div>
+				-->
+				<div align="center" class="spacer">
+				
+					<!-- admax -->
+					<script type="text/javascript" src="http://adm.shinobi.jp/s/b8c055f582f86982c1a28effb9dea80b"></script>
+					<!-- admax -->
+				
+				
+				
+				</div>
+				
+				
+				
+
+				
+								
+				
+			</div>
+		</div>
+		<!-- ここまで右メニュー --> 
+	</div>
+	<div class="row spacer" id="footer">
+    
+    <div class="span12 bottom">
+        
+        <ul>
+			<li><a href="/works/">まとめーたーとは</a></li>
+			<li><a href="/pages/koukoku/">広告主募集</a></li>
+			<li><a href="/pages/premium/">プレミアムライター</a></li>
+            <li><a href="/pages/brand/">会社概要</a></li>
+            <li><a href="/pages/kiyaku/">利用規約</a></li>
+            <li><a href="/helps/">ヘルプ</a></li>
+			
+			
+            <li><a href="/faqs/contact/">お問い合わせ</a></li>
+        </ul>
+        
+    </div>
+    
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+        <title>Three poor kids sitting at construction site..Color pencil effect | RedGage</title>
+	<meta name="description" content="Poor kids sitting at a construction sitecolor pencil effect">
+	<meta name="author" content="bharatsharma">
+	<meta name="keywords" content="Photo, effect, COLOR, pencil, ">
+
+	<!-- Le styles -->
+
+<link href="/css/bootstrap.css?ver=1380017653" rel="stylesheet">
+<link href="/css/redgage.css?ver=1380017653" rel="stylesheet">
+<link href="/css/admin.css?ver=1380017653" rel="stylesheet">
+<link href="/css/popup.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/about.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/collection.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/content.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/contest.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/dashboard.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/gettingstarted.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/help.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/main.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/manager.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/multiplier.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/profile.css?ver=1380017653" rel="stylesheet">
+<link href="/css/page/upload.css?ver=1380017653" rel="stylesheet">
+
+
+
+<link href="/css/jquery.meow.css" rel="stylesheet">
+<link rel="stylesheet" href="/js/plugin/fancybox/jquery.fancybox.css?v=2.0.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="/js/plugin/fancybox/helpers/jquery.fancybox-buttons.css?v=2.0.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="/js/plugin/fancybox/helpers/jquery.fancybox-thumbs.css?v=2.0.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="/js/plugin/mediaelement/mediaelementplayer.css?v=2.11.2" type="text/css" media="screen" />
+<!--link rel="stylesheet" href="/js/plugin/tiny_mce/themes/advanced/skins/default/ui.css" type="text/css" media="screen" /-->
+<!--link rel="stylesheet" href="/js/plugin/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css" type="text/css" media="screen" -->
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<style type="text/css">
+		#header #logo{
+			background:url(/img/logo.png) no-repeat;
+		}
+	</style>
+<![endif]-->
+
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+
+<script type="text/javascript" charset="utf-8" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/plugin/jquery.oembed.js"></script>
+</head>
+
+<body>
+
+	<header id="header" class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<div class="pull-left" style="min-width:650px">
+				<a data-bind="click: main.trigger" id="logo" class="brand" href="/">RedGage</a>
+				<form id="mainSearch" class="navbar-search pull-left" action="/search" method="POST" onsubmit="return false">
+					<input data-bind="searchResult: search.searchValue" id="search-input" type="text" value="" class="search-query span3" placeholder="Search">
+					<a data-bind="click: search.searchInput" class="wIcon search"></a>
+				</form>
+				<ul id="headerIcons" class="nav pull-left">
+					<li><a data-bind="click: main.trigger" href="/"><span class="wIcon all"></span><div class="hoverName">All Content</div></a></li>
+					<li><a data-bind="click: main.trigger" href="/blogs/"><span class="wIcon blog"></span><div class="hoverName">Blogs</div></a></li>
+					<li><a data-bind="click: main.trigger" href="/photos/"><span class="wIcon photo"></span><div class="hoverName">Photos</div></a></li>
+					<li><a data-bind="click: main.trigger" href="/videos/"><span class="wIcon video"></span><div class="hoverName">Videos</div></a></li>
+					<li><a data-bind="click: main.trigger" href="/links/"><span class="wIcon link"></span><div class="hoverName">Links</div></a></li>
+				</ul>
+				<ul class="nav pull-left">
+					<li><a data-bind="click: main.trigger" href="/upload/">Upload</a></li>
+				</ul>
+			</div>
+			<ul id="header-loading" class="headerLoading nav pull-right">
+				<li></li>
+				<img src="/img/icons/loading16.gif"/>
+			</ul>
+			<ul id="header-logged-out" class="headerLoggedOut nav pull-right" style="display: none">
+				<li><a data-bind="click: access.popupLogin" class="triggerPopupLogin" tabindex="0">Login</a></li>
+				<li class="divider-vertical"></li>
+				<li><a class="" data-bind="click: signup.popupSignUp" tabindex="0">Sign Up</a></li>
+			</ul>
+			<ul id="header-logged-in" class="headerLoggedIn nav pull-right" style="display: none">
+				<li><a data-bind="click: main.trigger" href="/dashboard">Dashboard</a></li>
+					<li data-bind="visible: notificationCounters.total() > 0">
+						<a href="/dashboard" data-bind="click: main.trigger, text: notificationCounters.total" class="noticeNumber"></a>
+					</li>
+				<li class="divider-vertical"></li>
+				<li class="dropdown">
+					<a id="userDropdown" class="dropdown-toggle" data-toggle="dropdown"><span class="username"></span><b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a data-bind="click: main.trigger" id="ddUser" href="/">Profile</a></li>
+						<li class="divider"></li>
+						<li><a data-bind="click: main.trigger" href="/money/">Money Balance</a></li>
+						<li><a data-bind="click: main.trigger" href="/managecontent/">Manage Content</a></li>
+						<li><a data-bind="click: main.trigger" href="/editfriends/">Edit Friends</a></li>
+						<li><a data-bind="click: main.trigger" href="/account">Account Settings</a></li>
+						<li><a data-bind="click: access.logout" class="triggerActionLogout">Log Out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="testingOverlay"></div>
+
+<style type="text/css">
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	#header #logo{
+		background-image:url(/img/logo@2x.png);
+		background-size:122px 32px;
+	}
+	.wIcon, .btnWrap .btnSocialPopover .btnSocialPopoverTriangle, .nav.featuredNav li a{
+		background-image:url(/img/icons/icons@2x.png);
+		background-size:300px 340px;
+	}
+	.wIcon.blogLg, .wIcon.photoLg, .wIcon.videoLg, .wIcon.linkLg{
+		background-image:url(/img/icons/uploadicons@2x.png);
+		background-size:240px 52px;
+	}
+	.nav.contentNav li a.contentNavNext, .nav.contentNav li a.contentNavPrev, .nav.contentNav li a.contentNavExpand{
+		background-image:url(/img/icons/contentNav@2x.png);
+		background-size:72px 84px;
+	}
+}
+</style>
+
+	<div class="pitchBanner pitchBannerSm">
+	<div class="container">
+		<a class="wIcon close white"></a>
+		<h3 class="pull-left">RedGage is the best way to earn real money from your photos, videos, blogs, and links.</h3>
+		<div class="btnGroup pull-right">
+			<a class="btn btnDulltriggerPopupPromoVideo">View the Video</a>
+			<a class="btn btn-danger triggerPopupSignup">Sign Up</a>
+		</div>
+	</div>
+</div>
+
+	<div id="wrapper" class="wrapContent container">
+		<div class="row">
+		  <!-- CONTENT -->
+			<input id="meta-template-version" type="hidden" value="YM6L1rxCq2LdVo6fHVKK0Q==" />
+<input id="meta-template-version-signature" type="hidden" value="31049BDD671F" />
+
+<div id="primaryContent" class="primary primaryContent pull-left span8">
+    <!-- CONTENT (INCLUDES CONTENT NAV) -->
+<h3 class="pageHeading pageHeadingphoto">
+	<span class="wIcon photo"></span>
+    <span id="content-title">Three poor kids sitting at construction site..Color pencil effect</span>
+	<div class="nav contentNav">
+    
+
+    
+    
+    
+	<li><a class="contentNavPrev" id="content-next" data-bind="click: main.trigger"
+           href="/photos/bharatsharma/tree-standing-in-queues-with-sun-in-support.html" title="Tree standing in queues with sun in support">Next</a></li>
+    
+    
+
+    
+    
+    
+	<li><a class="contentNavNext" id="content-previous" data-bind="click: main.trigger"
+           href="/photos/bharatsharma/tree-standing-in-a-queue-with-sun-in-the-support-sepia-effect.html" title="Tree standing in a queue with sun in the support_Sepia effect">Previous</a></li>
+    
+    
+
+    
+</div>
+
+
+</h3>
+<div class="photoEntry">
+
+    
+        <div class="photoEntry">
+
+	<div class="photoNoScript">
+		<img src="/photos/bharatsharma/thumbnails/2162845.jpg" alt="Three poor kids sitting at construction site..Color pencil effect"/>
+	</div>
+	<div class="photoScript">
+		<a class="photoEntryLink fancybox" href="/photos/bharatsharma/images/2162845.jpg">
+			<img src="" alt="Three poor kids sitting at construction site..Color pencil effect">
+		</a>
+	</div>
+
+</div>
+    
+
+</div>
+
+
+<!-- META -->
+<!--
+<div class="row metaRow">
+	<div class="pull-left">
+		<div class="ratingWrap pull-left">
+			<div class="rating pull-left triggerPopupLogin"></div>
+			<span class="count">
+                            <span data-bind="text: content.rated">0</span>
+                            Rating<span data-bind="visible: content.rated()>1">s</span>
+                        </span>
+		</div>
+		<div class="favWrap pull-left">
+		    <a class="wIcon fav triggerPopupLogin" rel="tooltip" data-original-title="Save to favorites"
+                       data-bind="click: content.favorite,
+                                  css: {dull: !main.content.unfavorite()}"
+                       ></a>
+			<span class="count" data-bind="text: content.favorited">0</span>
+		</div>
+		<div class="viewsWrap pull-left	">
+			<span class="wIcon views"></span>
+			<span class="count" data-bind="text: content.viewed">1</span>
+		</div>
+	</div>
+	<div class="pull-right">
+		<a class="btn btnPlain shareLink dull">Share</a>
+		<a class="btn btnPlain flagLink triggerPopupLogin triggerPopupFlagContent" rel="tooltip" data-original-title="Flag as inappropriate"><span class="wIcon flag"></span></a>
+	</div>
+</div>
+-->
+
+<!-- SHARE/ADROW (DOESN'T NEED REGENRATION PER CONTENT PAGE) -->
+<div class="notice rateNotice">
+    <div class="noticeText">
+        <span class="wIcon rate"></span>Thanks. Your rating has been saved.
+        <a class="wIcon close"></a>
+    </div>
+</div>
+
+<div class="favNotice notice" data-bind="visible: $.inArray(content.contentId(), main.social.favorites())>=0">
+    <div class="noticeText">
+        <span class="wIcon fav"></span>You've added this content to your <a class="noRedBg">favorites</a>.
+        <!--<a class="wIcon close"></a>-->
+    </div>
+</div>
+
+<div class="shareAdRow">
+	<!--
+<div class="row shareRow">
+	<div class="shareLinkUrl">
+		<strong>Full Link: </strong>
+		<input data-bind="value : content.shareUrl"type="text" />
+		<a class="btn">Shorten URL</a>
+	</div>
+	<div class="shareButtons">
+		<label>Share on:</label>
+		<a class="btn" data-bind="click:content.shareTwitter">
+			<span class="wIcon twitter"></span>
+			Twitter
+		</a>
+		<a class="btn" data-bind="click:content.shareFacebook">
+			<span class="wIcon facebook"></span>
+			Facebook
+		</a>
+		<a class="btn" data-bind="click:content.shareGoogle">
+			<span class="wIcon gplus"></span>
+			Google+
+		</a>
+		<a class="btn" data-bind="click:content.shareTumblr">
+			<span class="wIcon tumblr"></span>
+			Tumblr
+		</a>
+		<a class="btn" data-bind="click:content.shareStumbleUpon">
+			<span class="wIcon stumble"></span>
+			Stumbleupon
+		</a>
+	</div>
+</div>
+-->
+	<div class="row dualAdRow">
+	<div class="pull-left">
+
+	<!-- photo ad -->
+	<!-- 468 ad -->
+<div id="ad468" class="module ad468">
+	<div id="azk42853" data-type="photo"></div>
+</div>
+
+	</div>
+
+	<div class="pull-right">
+
+	<!-- photo ad -->
+	<!-- 120 ad -->
+<div id="ad120" class="module ad120">
+	<div id="azk83945"></div>
+</div>
+
+
+	</div>
+</div>
+</div>
+
+
+<!-- COMMENTS -->
+<div class="moduleGroup moduleShow contentComments">
+    <ul class="nav nav-tabs singleTab">
+        <li class="tab tab1 active">
+            <a id="loadhtml-content-comments">
+                <span data-bind="text: content.commented">0</span>
+                Comment<span data-bind="visible: content.commented() != 1">s</span>
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane module module1 active">
+            <div data-bind="with: content" class="commentResults ajaxParent ajaxNotSetup ajaxHide">
+                <div class="result resultUser resultComment desktopOnly" id="comment-form">
+                    <a class="thumb pull-left link-to-profile" href="#" data-bind="click: comment.showProfile">
+                        <img src="/img/profiles/userm_medium.jpg" alt="" />
+                    </a>
+                    <div class="details pull-right">
+                        <textarea rows="3" placeholder="write your comment..."></textarea>
+                    </div>
+                    <div class="rightBtnFix">
+                        <a data-bind="click: comment.post" class="btn btn-danger pull-right triggerPopupLogin post">Post your comment</a>
+                    </div>
+                </div>
+                <div id="content-comments" class="loadhtml" data-loadhtml-trigger="#loadhtml-content-comments"></div>
+                <div class="loadMoreBtn feed">
+	<a class="btn">Load More</a>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<div class="secondary secondaryContent pull-right span4">
+    <div id="content-details" class="moduleGroup moduleShow contentDetails">
+	<div class="contentMeta">
+	<div class="result resultMeta">
+		<a data-bind="click: main.trigger" href="/bharatsharma" class="thumb pull-left">
+			<img src="/profiles/bharatsharma/images/profile-small.jpg" alt="" />
+		</a>
+		<div class="details pull-left">
+			<a data-bind="click: main.trigger" href="/bharatsharma" class="btn btnPlain title">bharatsharma</a>
+			<div>
+				<a class="btn btnPlain subscribeLink triggerPopupLogin ajaxParent ajaxNotSetup ajaxLoaded"
+                   data-bind="visible: 'bharatsharma' !=main.username, click:function(){main.subscribeTo('bharatsharma');}">
+					<span class="wIcon subSm"></span>
+					Subscribe
+				</a>
+				<a class="btn btnPlain unsubscribeLink triggerPopupLogin ajaxParent ajaxNotSetup ajaxHide"
+                   data-bind="visible: 'bharatsharma' !=main.username, click:function(){main.unsubscribeFrom('bharatsharma');}">
+					<span class="wIcon subSm"></span>
+					Unsubscribe
+				</a>
+			</div>
+		</div>
+		<div class="pull-right showDetails">
+			<a class="btn mineShow triggerPopupEditContent">Edit</a>
+			<a class="btn triggerShowDetails">Show Details</a>
+		</div>
+		<div class="clearfix"></div>
+		<div class="metaActions">
+                    
+                        <!-- metaActions -->
+			<div class="favWrap pull-left">
+				<a class="wIcon fav triggerPopupLogin" 
+					rel="tooltip" 
+					data-original-title="Save to favorites"
+					data-bind="click: content.favorite,
+					css: {dull: !main.content.unfavorite()}">
+				</a>
+				<div class="ratingWrap pull-left">
+					<div class="rating pull-left triggerPopupLogin"></div>
+				</div>
+			</div>
+			<div class="pull-right">
+				<a class="shareLink triggerPopupShare" data-bind="click: content.showSharePopup">Share</a>
+			</div>
+			<div class="clearfix"></div>
+                    
+		</div>
+	</div>
+	<div class="expandedDetails">
+		<div class="expandedStats">
+                    
+			<div class="pull-left">
+				<span class="stat statFavorite">
+					<i class="icon-heart"></i> <span data-bind="text: content.favorited">0</span>
+				</span>
+				<span class="stat statRating">
+					<i class="icon-star"></i> <span data-bind="text: content.rated">0</span>
+				</span>
+				<span class="stat statViews">
+					<i class="icon-eye-open"></i> <span data-bind="text: content.viewed">1</span>
+				</span>
+			</div>
+			<div class="pull-right">
+				<span class="time time-2013-02-01_03:44:30"></span>
+			</div>
+			<div class="clearfix"></div>
+                    
+		</div>
+		<div class="chunk">
+			<h5>Description</h5>
+			<p>Poor kids sitting at a construction sitecolor pencil effect</p>
+		</div>
+		<div class="chunk tagGroup">
+			<h5>Tags</h5>
+			<div>
+				
+					<a href="/tag?q=Photo" class="btn btnTag">Photo</a>
+				
+					<a href="/tag?q=effect" class="btn btnTag">effect</a>
+				
+					<a href="/tag?q=COLOR" class="btn btnTag">COLOR</a>
+				
+					<a href="/tag?q=pencil" class="btn btnTag">pencil</a>
+				
+					<a href="/tag?q=" class="btn btnTag"></a>
+				
+			</div>
+		</div>
+	</div>
+    <input id="search-user-input" type="hidden" value="bharatsharma" />
+    <input id="meta-content-id" type="hidden" value="2162845" />
+    <input id="meta-content-version" type="hidden" value="20130918060358Z" />
+    <input id="meta-content-type" type="hidden" value="photo" />
+    <input id="meta-content-url" type="hidden" value="three-poor-kids-sitting-at-construction-site-color-pencil-effect" />
+    <input id="meta-content-shorturl" type="hidden" value="" />
+
+</div>
+
+</div>
+<div class="earningsBadge">
+	<div class="earningsAmount">
+		<div class="pull-left" data-bind="text: '$' + main.showMoney(content.earned())">$0.00</div>
+		<div class="pull-right">Start earning on RedGage just like bharatsharma!</div>
+	</div>
+</div>
+
+
+
+    <!-- photo ad -->
+    <div class="module ad300">
+	<div id="azk69853" data-type="photo"></div>
+</div>
+
+
+<div class="moduleGroup moduleShow">
+	<ul class="nav nav-tabs">
+
+		<li class="tab tab1 hide">
+			<a>Related</a>
+		</li>
+		<li class="tab tab2">
+			<a id="loadhtml-content-user">
+                bharatsharma's Content
+            </a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane module module1 active">
+			<div class="scrollBg"></div>
+			<div class="results contentResults scrolly">
+				<div id="related-results">
+    
+</div>
+
+			</div>
+		</div>
+		<div class="tab-pane module module2">
+            <div class="section scrolly results">
+                <div class="noResults feed" style="display:none">
+                  <h2>Sorry!</h2>
+                	This user has no other content.
+                </div>
+                <div id="profile-content-user" class="loadhtml" data-loadhtml-trigger="#loadhtml-content-user">
+                    <div class="loadingContainer">
+                        <img src="/img/icons/loading.gif" />
+                    </div>
+                </div>
+			    <div class="loadMoreBtn feed">
+	<a class="btn">Load More</a>
+</div>
+            </div>
+		</div>
+	</div>
+</div>
+<div class="flagContentLink pull-right">
+	<a class="btn btnPlain triggerPopupFlagContent">Flag This Content</a>
+	<div class="clearfix"></div>
+</div>
+</div>
+
+
+		</div>
+        
+        
+        <!-- photo ad -->
+        <!-- 728 ad -->
+<div id="ad728" class="module ad728">
+	<div id="azk89732" data-type="photo"></div>
+</div>
+
+        
+
+	</div> <!-- /container -->
+
+	<!-- FOOTER -->
+<div class="container">
+	<footer id="footer" class="footer">
+		<div class="row-fluid">
+			<ul class="nav pull-left">
+				<li>&copy; 2013 RedGage, LLC</li>
+				<li><a data-bind="click: main.trigger" href="/privacy">Privacy Policy</a></li>
+				<li><a data-bind="click: main.trigger" href="/terms">Terms of Service</a></li>
+			</ul>
+			<ul class="nav pull-right">
+				<li><a data-bind="click: main.trigger" href="/about">About</a></li>
+				<li><a class="hideForTesting" data-bind="click: main.trigger" href="/blog" rel="tooltip" data-original-title="Coming soon">Blog</a></li>
+				<li><a data-bind="click: main.trigger" href="/mobile">Mobile</a></li>
+				<li><a data-bind="click: main.trigger" href="/help">Help</a></li>
+			</ul>
+		</div>
+	</footer>
+</div>
+
+
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+<!-- THE ABOVE SCRIPT MAY NEED TO BE LOADED DIFFERENTLY -->
+
+<script type="text/javascript">
+	console.log('Inline Analytics Initiated');
+
+//	Chartbeat
+var _sf_startpt=(new Date()).getTime()
+var _sf_async_config={};
+/** CONFIGURATION START **/
+_sf_async_config.uid = 6946;
+_sf_async_config.domain = "redgage.com";
+/** CONFIGURATION END **/
+(function(){
+	function loadChartbeat() {
+		window._sf_endpt=(new Date()).getTime();
+		var e = document.createElement("script");
+		e.setAttribute("language", "javascript");
+		e.setAttribute("type", "text/javascript");
+		e.setAttribute("src",
+			(("https:" == document.location.protocol) ?
+				"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
+				"http://static.chartbeat.com/") +
+				"js/chartbeat.js");
+		console.log('Chartbeat...');
+		document.body.appendChild(e);
+	}
+	var oldonload = window.onload;
+	window.onload = (typeof window.onload != "function") ?
+		loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+
+//	Gaug.es
+var _gauges = _gauges || [];
+(function() {
+	var t   = document.createElement('script');
+	t.type  = 'text/javascript';
+	t.async = true;
+	t.id    = 'gauges-tracker';
+	t.setAttribute('data-site-id', '5170229b613f5d41ce000108');
+	t.src = '//secure.gaug.es/track.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+	console.log('Gauges...');
+})();
+
+//	Google Analytic
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5900712-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		console.log('Google Analytics...');
+  })();
+
+  //	Pingdom
+var _prum={
+	id: "5166ec20e6e53d5c0d000000"
+};
+var PRUM_EPISODES=PRUM_EPISODES || {};
+PRUM_EPISODES.q=[];
+PRUM_EPISODES.mark=function(b, a) {
+	PRUM_EPISODES.q.push(["mark", b, a || new Date().getTime()])
+};
+PRUM_EPISODES.measure = function(b, a) {
+	PRUM_EPISODES.q.push(["measure", b, a || new Date().getTime()])
+};
+PRUM_EPISODES.done = function(a) {
+	PRUM_EPISODES.q.push(["done", a])
+};
+PRUM_EPISODES.mark("firstbyte");
+(function() {
+	var b = document.getElementsByTagName("script")[0];
+	var a = document.createElement("script");
+	a.type = "text/javascript";
+	a.async = true;
+	a.charset = "UTF-8";
+	a.src = "//rum-static.pingdom.net/prum.min.js";
+	console.log('Pingdom...');
+	b.parentNode.insertBefore(a, b)
+})();
+
+
+//	Reinvigorate
+try {
+	reinvigorate.track("sf395-07t64kuo69");
+	console.log('Reinvigorate...');
+} catch(err) {}
+
+
+//	Quancast
+var _qevents = _qevents || [];
+(function() {
+	var elem = document.createElement('script');
+	elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+	elem.async = true;
+	elem.type = "text/javascript";
+	var scpt = document.getElementsByTagName('script')[0];
+	scpt.parentNode.insertBefore(elem, scpt);
+	console.log('Quancast...');
+})();
+_qevents.push({
+	qacct:"p-ceUkjGpd9jnew"
+});
+
+</script>
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-ceUkjGpd9jnew.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+
+
+<script id="main-require" rendered="1380017653" data-main="/js/require/main.js" src="/js/require/require-jquery.js"></script>
+
+
+
+</body>
+
+</html>

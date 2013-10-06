@@ -1,0 +1,14 @@
+<html>
+<script>
+function refresh() {
+  var exdate=new Date();
+  exdate.setDate(exdate.getDate() + 365);
+  document.cookie="agentok=1";
+  window.location.reload();
+} 
+</script>
+<body>
+<h3>You have reached AppBrain</h3>
+<a href="#" onclick="javascript:refresh()">Please click here to continue.</a>
+</body>
+</html>

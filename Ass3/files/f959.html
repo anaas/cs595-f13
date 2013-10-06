@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"/>
+		<meta charset="utf-8"/>
+		<meta name="Description" content="Twitter ücretsiz retweet kazanma,arttırma,yükseltme sitesi.Twitter'ın retweet meydanı.Bu site api kodlarıyla çalışır.Tamamen ücretsizdir.Retweet kazanırsınız."/>
+		<meta name="Keywords" content="retwit, retweet, retweet kazan, retweet yap, retwit yap, retwit kazan, ücretsiz rt, ücretsiz retwit, ücretsiz retweet, twitteri.org, twitteri, twitter, twitter retwit, twitter retweet, bedava retweet, bedava retwit, bedava rt"/>
+		<meta name="author" content="Kadir ERKİŞ"/>
+		<title>Twitter Otomatik Retweet ve Favori Arttırma Hilesi</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+	    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	</head>
+	<body><div id="header">
+							<div id="link" style="width:327px; height:15px; margin:0 auto; padding:7px;">
+					<a href="index.php" style="font-size:15px;">Anasayfa</a>
+					<a href="http://takipci.biz" target=_blank style="font-size:15px; margin-left:25px;">Takipçi Uygulaması</a>
+					<a href="login.php" style="font-size:15px;margin-left:25px;color:yellow;">Giriş YAP</a>
+				</div>
+							
+		</div>
+<img alt="full screen background image" src="images/bg.jpg" style="z-index: -999;min-height: 100%;min-width: 1024px;width: 100%;height: auto;position: fixed;top: 0;left: 0;" />
+		<center>
+		<h1 style="font-family: 'Qwigley', cursive;color:white;font-size:50px;margin-top:35px;">Retwit.org</h1><br>																										<br>
+<div id="bas">
+				<div id="bas_ust">
+					BİLGİLER !
+				</div>
+				<div id="bas_alt">
+				Retwit.org <b>otomatik retweet ve favori arttırma</b> uygulamasıdır.<br><br>
+					İlk kez giriş yapıyorsanız retwit.org size <b>50 jeton</b> gönderecektir.<br><br>
+					Jetonlar ile <b>retweet & favori</b> kazanabilirsiniz.<br><br># <b>50 Jeton = 50 Retweet & Favori</b> #<br><br>
+					Asla reklam tweeti <b>paylaşmaz.</b><br>
+					<div id="normalIc"><img id="normal" onmouseover="javascript:normal_hover_over();" onmouseout="javascript:normal_hover_out();" style="padding-top:20px; cursor:pointer;" src="images/normal.png" /></div><div class="clear"></div>
+					<div id="preloaded-images"> 
+						<img src="images/normal_hover.png" width="0" height="0" /> 
+						<img src="images/normal_loading.png" width="0" height="0" /> 
+					</div>
+					<script>
+						function normal_hover_over() {
+							$("#normal").attr("src","images/normal_hover.png");
+						}
+						function normal_hover_out() {
+							$("#normal").attr("src","images/normal.png");
+						}
+						$("#normal").click(function () {
+							$("#normalIc").html("<img style='padding-top:20px; cursor:wait;' src='images/normal_loading.png' />");
+							window.location.href="./login.php";
+						});
+					</script> 
+				</div>
+			</div>﻿<div id="footer_bas">
+				<div id="footer_alt">
+					<a href="http://www.tutaste.gen.tr" alt="takipçi al" target="_blank"><img src="http://retwitci.org/images/tutaste.png"></a>
+				</div>
+			</div>
+		</center>
+	</body>
+</html>																																																																																																																																																											

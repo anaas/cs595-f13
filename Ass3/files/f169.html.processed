@@ -1,0 +1,486 @@
+    #[1]Search Engine Watch (SEW) - Latest News [2]publisher
+
+     * [3]ClickZ
+     * [4]ClickZ Intel
+     * [5]ClickZ Academy
+     * [6]SES Conference
+
+   [7]Search Engine Watch
+   SEO News
+
+     * Search ______________________________
+     * [BUTTON Input] (not implemented)______
+
+     * [8]Industry
+     * [9]SEO
+     * [10]PPC
+     * [11]Analytics
+     * [12]Social
+     * [13]Local
+     * [14]Mobile
+     * [15]Video
+     * [16]Content
+     * [17]Development
+
+     * â¢[18]Page One Power
+     * â¢[19]gShift
+       Labs
+     * â¢[20]Marin
+       Software
+     * â¢[21]ClickZ
+       Intel
+     * â¢[22]SES
+       Conference
+     * â¢[23]SIM
+       Partners
+     *
+     *
+     *
+     *
+
+   [24]craver-thom
+
+Goodbye, Keyword Data: Google Moves Entirely to Secure Search
+
+   by [25]Thom Craver, September 23, 2013 [26] Comments
+
+   IFRAME:
+   [27]http://platform.twitter.com/widgets/tweet_button.html?count=horizon
+   tal&counturl=http://searchenginewatch.com/article/2296351/Goodbye-Keywo
+   rd-Data-Google-Moves-Entirely-to-Secure-Search&enableNewSizing=false&id
+   =twitter-widget-0&lang=en&original_referer=http://searchenginewatch.com
+   /article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-S
+   earch&related=clickz&related=clickzasia&related=sesconf&size=m&text=Goo
+   dbye%2C%20Keyword%20Data%3A%20Google%20Moves%20Entirely%20to%20Secure%2
+   0Search by
+   @thomcraver&data-related=thomcraver&url=http%3A%2F%2Fsewat.ch%2F16tF9ow
+   &via=sewatch
+
+   â¢ [28]ClickZ Intel is a resource hub for online marketers. Gain access
+   to white papers, webinars, case studies and more!
+
+   query-encryption-not-provided-keywords The day many SEO professionals
+   hoped would never come, but feared eventually would, apparently has
+   arrived today. It appears that Google has cut off keyword data
+   altogether.
+
+   Nearly two years after making one of the [29]biggest changes to secure
+   search that resulted in a steady rise in "(not provided)" data, Google
+   has switched all searches over to encrypted searches using HTTPS. This
+   means no more keyword data will be passed to site owners.
+
+   Encrypted Google searches don't pass the keyword data through to
+   websites, thereby eliminating the ability to track users by their
+   keyword searches. The biggest impact for many site owners has been not
+   being able to segment users by keywords within their web analytics
+   software.
+
+   To publish any intention of Google's motives for this move would be
+   pure speculation. Not wanting to feed the rumor mill or feed any false
+   speculation, Search Engine Watch has reached out to Google for a
+   comment.
+
+   "We added SSL encryption for our signed-in search users in 2011, as
+   well as searches from the Chrome omnibox earlier this year," a Google
+   spokesperson told Search Engine Watch. "We’re now working to bring this
+   extra protection to more users who are not signed in."
+
+   When encrypted search [30]initially launched in May 2010, Google
+   initially had encrypted search on a separate URL. A year later, in late
+   2011, Google started redirecting [31]all U.S. users who were signed
+   into their Google Accounts to the encrypted version at
+   https://google.com. This led to the now-infamous "(not provided)" row
+   in keywords data in Google Analytics and other web traffic software
+   packages.
+
+   When questioned, Cutts was quick to respond that it was estimated that
+   the amount of "(not provided)" visits "even at full roll-out ... would
+   still be in the single-digit percentages of all Google searchers on
+   Google.com."
+
+   As time rolled on, the conversion to encrypted search expanded
+   [32]globally to all signed-in users then even further to include
+   [33]default searching in Firefox
+
+   Just last month, BrightEdge released a study fining the percentage of
+   "(not provided)" data was [34]over 50 percent for some industries.
+
+   There are methods around [35]determining "(not provided)" data via
+   Webmaster Tools. While the method isn't fullproof, it can be useful to
+   determine trends.
+
+   At this point, it seems even when you aren't logged in, using private
+   browsing (or incognito mode) and forcibly type HTTP://www.google.com,
+   you are being redirected to the HTTPS version, thereby encrypting your
+   search and no doubt leading to a total removal of keyword data – at
+   least from Google search visitors. Remember, keyword data from other
+   search engines – like Bing, for example – still send keyword data
+   through.
+
+   If you're a practitioner, how will you be adjusting your strategies and
+   practices? How will you begin the conversation with your clients? Sound
+   off in the comments. We'll have reactions and more coverage as this
+   story develops.
+    Learn More: Keyword Data, Secure Search & "(not provided)"
+     * [36]Google Webmaster Tools Search Query Data is Accurate (and
+       Valuable)
+     * [37]5 Ways to Create Productive B2B SEO Benchmarks in a 'Not
+       Provided' World
+     * [38]5 Tips for Handling (Not Provided) Data
+     * [39]How to Understand Your Google “Not Provided” Traffic
+     * [40]Google Encrypted Search: 9 Key Points B2B Marketers Need to
+       Know
+     __________________________________________________________________
+
+   [41]SES Chicago [42]Last chance to save on SES Chicago
+   Nov. 4-7, 2013: This year's SES Chicago [43]agenda focuses on aligning
+   paid, owned and earned media to help you drive quality traffic and
+   increase conversions.
+   [44]Register today and save up to $400!
+   Early Bird rate expires October 3.
+
+Recommend this story
+
+   IFRAME:
+   [45]http://platform.twitter.com/widgets/tweet_button.html?count=horizon
+   tal&counturl=http://searchenginewatch.com/article/2296351/Goodbye-Keywo
+   rd-Data-Google-Moves-Entirely-to-Secure-Search&enableNewSizing=false&id
+   =twitter-widget-0&lang=en&original_referer=http://searchenginewatch.com
+   /article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-S
+   earch&related=clickz&related=clickzasia&related=sesconf&size=m&text=Goo
+   dbye%2C%20Keyword%20Data%3A%20Google%20Moves%20Entirely%20to%20Secure%2
+   0Search by
+   @thomcraver&data-related=thomcraver&url=http%3A%2F%2Fsewat.ch%2F16tF9ow
+   &via=sewatch
+
+   [46]Buffer
+   [47][pin_it_button.png]
+
+→ Read more on [48]Analytics
+
+     * [49]Related
+     * [50]Popular
+     * [51]Topics
+     * [52]From Around the Web
+
+Related
+
+     * [53]Google '(Not Provided)' Keywords: 10 Ways to Get Organic Search
+       Data
+       September 30, 2013
+     * [54]5 Ways the Internet Celebrated '(Not Provided)'
+       September 28, 2013
+     * [55]Google '(Not Provided)' Traffic Highest for Tech Industry
+       Brands at 56% [Study]
+       August 28, 2013
+     * [56]3 Places to Source Data Beyond Google Analytics
+       August 13, 2013
+     * [57]My Top 5 Most Used Custom Reports in Google Analytics
+       June 27, 2013
+     * [58]How to Use Google Webmaster Tools to Maximize Your SEO Campaign
+       June 10, 2013
+
+Popular
+
+     * → [59]Goodbye, Keyword Data: Google Moves Entirely to Secure Search
+       September 23, 2013
+     * → [60]How to Turn the Google Analytics Visitors Flow Report Into
+       Your Secret CRO Weapon
+       September 20, 2013
+     * → [61]Google '(Not Provided)' Keywords: 10 Ways to Get Organic
+       Search Data
+       September 30, 2013
+     * → [62]Google Keyword Data Goes Missing Again, This Time From
+       Webmaster Tools
+       September 30, 2013
+
+Topics
+
+   [63]Google • [64]Matt Cutts • [65]Search engine optimization • [66]Web
+   search engine • [67]Search Engine Watch • [68]Global Communication •
+   [69]Google Search • [70]Google Analytics
+   [71]Commenting policy Add a Comment
+    Comments
+   Tweets
+   Discussion Highlights
+
+   Updates Sign up for daily ([72]or weekly) newsletters
+   [73]Sign Up Enter email address Enter email address_ Subscribe
+   [74]RSS
+
+   IFRAME:
+   [75]http://platform.twitter.com/widgets/follow_button.html?screen_name=
+   sewatch&show_screen_name=false
+
+   IFRAME: [76]http://sesconference.com/_includes/sew/events.html
+
+   [77]Send us a story tip
+
+   IFRAME: [78]http://sesconference.com/_includes/sew/live.html
+
+   IFRAME: [79]http://sesconference.com/_includes/sew/webinars.html
+
+Trending
+
+     * [80]Most Views
+     * [81]Most Likes
+     * [82]Most Tweets
+     * [83]Trending Topics
+
+     *
+          + [84]Goodbye, Keyword Data: Google Moves Entirely to Secure
+            Search
+          + [85]Google Celebrates Birthday With Playable PiÃ±ata Doodle
+            Game
+          + [86]Google Hummingbird Takes Flight: Biggest Change to Search
+            Since Caffeine
+          + [87]5 Steps to Dominate Your Niche on Google
+          + [88]Google in 1998: New Easter Egg Takes You Back in Time
+          + [89]How Search Engines Rank Web Pages
+          + [90]9 Interview Questions to Ask Your SEO Hires
+          + [91]How to Turn the Google Analytics Visitors Flow Report Into
+            Your Secret CRO Weapon
+          + [92]Understanding Link-Based Negative SEO
+          + [93]New Google Bar, Logo Begins Rolling Out
+     *
+          + [94]Goodbye, Keyword Data: Google Moves Entirely to Secure
+            Search 2427
+          + [95]Google Hummingbird Takes Flight: Biggest Change to Search
+            Since Caffeine 302
+          + [96]Google Celebrates Birthday With Playable PiÃ±ata Doodle
+            Game 219
+          + [97]How Search Engines Rank Web Pages 190
+          + [98]Google: 70% of Mobile Searchers Call a Business Directly
+            From Search Results [Study] 148
+          + [99]Understanding Link-Based Negative SEO 133
+          + [100]5 Steps to Dominate Your Niche on Google 133
+          + [101]Fake Online Reviews Cost 19 Companies $350,000 124
+          + [102]Why Is It So Hard to Increase Your Search Rankings By One
+            Spot? 117
+          + [103]How to Turn the Google Analytics Visitors Flow Report
+            Into Your Secret CRO Weapon 116
+     *
+          + [104]Goodbye, Keyword Data: Google Moves Entirely to Secure
+            Search 1985
+          + [105]How Search Engines Rank Web Pages 602
+          + [106]Major Search Engines and Directories 584
+          + [107]New Study Finds Google+ Shares Don't Cause Higher Search
+            Rankings 553
+          + [108]How to Turn the Google Analytics Visitors Flow Report
+            Into Your Secret CRO Weapon 524
+          + [109]Why Is It So Hard to Increase Your Search Rankings By One
+            Spot? 516
+          + [110]Top 3 Ways SEO and Social Can Work Together to Make Each
+            Other Insanely Successful 515
+          + [111]Understanding Link-Based Negative SEO 512
+          + [112]5 Steps to Dominate Your Niche on Google 501
+          + [113]Google: 70% of Mobile Searchers Call a Business Directly
+            From Search Results [Study] 491
+     *
+          + [114]Facebook
+          + [115]Google Analytics
+          + [116]webmaster tools
+          + [117]CMS
+          + [118]Japan
+          + [119]motivational theory
+          + [120]reputation management
+          + [121]professional web designers
+          + [122]Google search engine
+          + [123]Groups of people
+
+   IFRAME: [124]http://sesconference.com/_includes/sew/whitepapers.html
+
+   IFRAME: [125]http://sesconference.com/_includes/sew/jobs.html
+
+     * [126]Home
+     * [127]A-Z
+     * [128]Events
+     * [129]Jobs
+     * [130]Newsletters
+     * [131]SEO Tool
+     * [132]Stats
+     * [133]Tools
+     * [134]Training
+     * [135]Webinars
+     * [136]Whitepapers
+
+   [137]About us | [138]Contact SEW | [139]FAQ | [140]Write for SEW |
+   [141]Advertise | [142]Report a bug | [143]Newsletter problems? |
+   [144]Site Map | [145]Copyright and Licensing | [146]Privacy Policy |
+
+   [147]Incisive Media
+
+   Incisive Interactive Marketing LLC.
+
+   © 2013 All rights reserved. 55 Broad St, 22nd Floor, New York, NY 10004
+
+   Accreditations:
+   [148]Incisive Media - AOP Digital Publisher of the Year 2010 & 2013
+
+   Quantcast
+
+   DCSIMG
+
+References
+
+   Visible links
+   1. file://localhost/rss
+   2. https://plus.google.com/117807232814593418955
+   3. http://www.clickz.com/
+   4. http://www.clickzintel.com/
+   5. http://www.clickzacademy.com/
+   6. http://sesconference.com/
+   7. http://searchenginewatch.com/
+   8. file://localhost/industry
+   9. file://localhost/seo
+  10. file://localhost/ppc
+  11. file://localhost/analytics
+  12. file://localhost/social
+  13. file://localhost/local
+  14. file://localhost/mobile
+  15. file://localhost/video
+  16. file://localhost/content
+  17. file://localhost/development
+  18. http://www.pageonepower.com/?utm_source=Industry+Link&utm_medium=cpc&utm_campaign=Industry+Link
+  19. http://www.gshiftlabs.com/
+  20. http://www.marinsoftware.com/?utm_source=sew&utm_medium=textad&utm_campaign=sew-navtext
+  21. http://intel.clickzacademy.com/?utm_source=sew&utm_medium=textad-nav&utm_content=clickz-intel&utm_campaign=clickz-intel
+  22. http://sesconference.com/?utm_source=sew&utm_medium=textad-nav&utm_content=ses-conference&utm_campaign=ses
+  23. http://www.simpartners.com/?utm_source=Search%2BEngine%2BWatch&utm_medium=banner&utm_content=SEW&utm_campaign=SEW%2BSponsorship
+  24. http://searchenginewatch.com/author/1888/thom-craver
+  25. http://searchenginewatch.com/author/1888/thom-craver
+  26. file://localhost/home/anaas/WebScienceCS595/assignment3/files/f169.html#comment
+  27. http://platform.twitter.com/widgets/tweet_button.html?count=horizontal&counturl=http://searchenginewatch.com/article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search&enableNewSizing=false&id=twitter-widget-0&lang=en&original_referer=http://searchenginewatch.com/article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search&related=clickz&related=clickzasia&related=sesconf&size=m&text=Goodbye%2C%20Keyword%20Data%3A%20Google%20Moves%20Entirely%20to%20Secure%20Search%20by%20@thomcraver&data-related=thomcraver&url=http%3A%2F%2Fsewat.ch%2F16tF9ow&via=sewatch
+  28. http://intel.clickzacademy.com/?utm_source=sew&utm_medium=textad-cat&utm_content=resource-hub&utm_campaign=clickz-intel
+  29. http://searchenginewatch.com/article/2118494/SEOs-Strike-Out-as-Google-Encrypts-Signed-in-Search-Data
+  30. http://googleblog.blogspot.com/2010/05/search-more-securely-with-encrypted.html
+  31. http://googleblog.blogspot.com/2011/10/making-search-more-secure.html
+  32. http://searchenginewatch.com/article/2157519/Google-Encrypted-Search-Going-Global
+  33. http://searchenginewatch.com/article/2164077/Encrypted-Google-Search-by-Default-Coming-to-Firefox
+  34. http://searchenginewatch.com/article/2291379/Google-Not-Provided-Traffic-Highest-for-Tech-Industry-Brands-at-56-Study
+  35. http://searchenginewatch.com/article/2158540/Recovering-Not-Provided-Keyword-Data
+  36. http://searchenginewatch.com/article/2287606/Google-Webmaster-Tools-Search-Query-Data-is-Accurate-and-Valuable
+  37. http://searchenginewatch.com/article/2265886/5-Ways-to-Create-Productive-B2B-SEO-Benchmarks-in-a-Not-Provided-World
+  38. http://searchenginewatch.com/article/2227114/5-Tips-for-Handling-Not-Provided-Data
+  39. http://searchenginewatch.com/article/2143123/How-to-Understand-Your-Google-Not-Provided-Traffic
+  40. http://searchenginewatch.com/article/2124297/Google-Encrypted-Search-9-Key-Points-B2B-Marketers-Need-to-Know
+  41. http://sesconference.com/chicago/?utm_source=sew&utm_medium=article-promo&utm_content=logo&utm_campaign=seschi
+  42. http://sesconference.com/chicago/?utm_source=sew&utm_medium=article-promo&utm_content=last-chance&utm_campaign=seschi
+  43. http://sesconference.com/chicago/agenda.php?utm_source=sew&utm_medium=article-promo&utm_content=agenda&utm_campaign=seschi
+  44. http://sesconference.com/chicago/registration-details.html?utm_source=sew&utm_medium=article-promo&utm_content=register-save&utm_campaign=seschi
+  45. http://platform.twitter.com/widgets/tweet_button.html?count=horizontal&counturl=http://searchenginewatch.com/article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search&enableNewSizing=false&id=twitter-widget-0&lang=en&original_referer=http://searchenginewatch.com/article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search&related=clickz&related=clickzasia&related=sesconf&size=m&text=Goodbye%2C%20Keyword%20Data%3A%20Google%20Moves%20Entirely%20to%20Secure%20Search%20by%20@thomcraver&data-related=thomcraver&url=http%3A%2F%2Fsewat.ch%2F16tF9ow&via=sewatch
+  46. http://bufferapp.com/add
+  47. http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fsearchenginewatch.com%2Farticle%2F2296351%2FGoodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search&media=http%3A%2F%2Fcms.searchenginewatch.com%2FIMG%2F447%2F205447%2Fquery-encryption-not-provided-keywords-320x198.jpg&description=Goodbye%2C%20Keyword%20Data%3A%20Google%20Moves%20Entirely%20to%20Secure%20Search
+  48. file://localhost/analytics
+  49. file://localhost/home/anaas/WebScienceCS595/assignment3/files/f169.html#ukn-tabs1
+  50. file://localhost/home/anaas/WebScienceCS595/assignment3/files/f169.html#ukn-tabs2
+  51. file://localhost/home/anaas/WebScienceCS595/assignment3/files/f169.html#ukn-tabs3
+  52. file://localhost/collection/article/2296351
+  53. file://localhost/article/2297674/Google-Not-Provided-Keywords-10-Ways-to-Get-Organic-Search-Data
+  54. file://localhost/article/2297420/5-Ways-the-Internet-Celebrated-Not-Provided
+  55. file://localhost/article/2291379/Google-Not-Provided-Traffic-Highest-for-Tech-Industry-Brands-at-56-Study
+  56. file://localhost/article/2288394/3-Places-to-Source-Data-Beyond-Google-Analytics
+  57. file://localhost/article/2097048/My-Top-5-Most-Used-Custom-Reports-in-Google-Analytics
+  58. file://localhost/article/2273660/How-to-Use-Google-Webmaster-Tools-to-Maximize-Your-SEO-Campaign
+  59. file://localhost/article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search
+  60. file://localhost/article/2295813/How-to-Turn-the-Google-Analytics-Visitors-Flow-Report-Into-Your-Secret-CRO-Weapon
+  61. file://localhost/article/2297674/Google-Not-Provided-Keywords-10-Ways-to-Get-Organic-Search-Data
+  62. file://localhost/article/2297717/Google-Keyword-Data-Goes-Missing-Again-This-Time-From-Webmaster-Tools
+  63. file://localhost/topic/google
+  64. file://localhost/topic/matt_cutts
+  65. file://localhost/topic/search_engine_optimization
+  66. file://localhost/topic/web_search_engine
+  67. file://localhost/topic/search_engine_watch
+  68. file://localhost/topic/global_communication
+  69. file://localhost/topic/google_search
+  70. file://localhost/topic/google_analytics
+  71. file://localhost/page/about#commenting
+  72. file://localhost/page/newsletters
+  73. file://localhost/page/newsletters
+  74. http://searchenginewatch.com/rss
+  75. http://platform.twitter.com/widgets/follow_button.html?screen_name=sewatch&show_screen_name=false
+  76. http://sesconference.com/_includes/sew/events.html
+  77. http://searchenginewatch.com/page/contact
+  78. http://sesconference.com/_includes/sew/live.html
+  79. http://sesconference.com/_includes/sew/webinars.html
+  80. file://localhost/home/anaas/WebScienceCS595/assignment3/files/f169.html#ukn-u-1
+  81. file://localhost/home/anaas/WebScienceCS595/assignment3/files/f169.html#ukn-u-3
+  82. file://localhost/home/anaas/WebScienceCS595/assignment3/files/f169.html#ukn-u-4
+  83. file://localhost/home/anaas/WebScienceCS595/assignment3/files/f169.html#ukn-u-5
+  84. file://localhost/article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search
+  85. file://localhost/article/2297168/Google-Celebrates-Birthday-With-Playable-Piata-Doodle-Game
+  86. file://localhost/article/2297160/Google-Hummingbird-Takes-Flight-Biggest-Change-to-Search-Since-Caffeine
+  87. file://localhost/article/2296382/5-Steps-to-Dominate-Your-Niche-on-Google
+  88. file://localhost/article/2297164/Google-in-1998-New-Easter-Egg-Takes-You-Back-in-Time
+  89. file://localhost/article/2064539/How-Search-Engines-Rank-Web-Pages
+  90. file://localhost/article/2295280/9-Interview-Questions-to-Ask-Your-SEO-Hires
+  91. file://localhost/article/2295813/How-to-Turn-the-Google-Analytics-Visitors-Flow-Report-Into-Your-Secret-CRO-Weapon
+  92. file://localhost/article/2295568/Understanding-Link-Based-Negative-SEO
+  93. file://localhost/article/2296363/New-Google-Bar-Logo-Begins-Rolling-Out
+  94. file://localhost/article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search
+  95. file://localhost/article/2297160/Google-Hummingbird-Takes-Flight-Biggest-Change-to-Search-Since-Caffeine
+  96. file://localhost/article/2297168/Google-Celebrates-Birthday-With-Playable-Piata-Doodle-Game
+  97. file://localhost/article/2064539/How-Search-Engines-Rank-Web-Pages
+  98. file://localhost/article/2296626/Google-70-of-Mobile-Searchers-Call-a-Business-Directly-From-Search-Results-Study
+  99. file://localhost/article/2295568/Understanding-Link-Based-Negative-SEO
+ 100. file://localhost/article/2296382/5-Steps-to-Dominate-Your-Niche-on-Google
+ 101. file://localhost/article/2296366/Fake-Online-Reviews-Cost-19-Companies-350000
+ 102. file://localhost/article/2296062/Why-Is-It-So-Hard-to-Increase-Your-Search-Rankings-By-One-Spot
+ 103. file://localhost/article/2295813/How-to-Turn-the-Google-Analytics-Visitors-Flow-Report-Into-Your-Secret-CRO-Weapon
+ 104. file://localhost/article/2296351/Goodbye-Keyword-Data-Google-Moves-Entirely-to-Secure-Search
+ 105. file://localhost/article/2064539/How-Search-Engines-Rank-Web-Pages
+ 106. file://localhost/article/2048976/Major-Search-Engines-and-Directories
+ 107. file://localhost/article/2295171/New-Study-Finds-Google-Shares-Dont-Cause-Higher-Search-Rankings
+ 108. file://localhost/article/2295813/How-to-Turn-the-Google-Analytics-Visitors-Flow-Report-Into-Your-Secret-CRO-Weapon
+ 109. file://localhost/article/2296062/Why-Is-It-So-Hard-to-Increase-Your-Search-Rankings-By-One-Spot
+ 110. file://localhost/article/2296065/Top-3-Ways-SEO-and-Social-Can-Work-Together-to-Make-Each-Other-Insanely-Successful
+ 111. file://localhost/article/2295568/Understanding-Link-Based-Negative-SEO
+ 112. file://localhost/article/2296382/5-Steps-to-Dominate-Your-Niche-on-Google
+ 113. file://localhost/article/2296626/Google-70-of-Mobile-Searchers-Call-a-Business-Directly-From-Search-Results-Study
+ 114. http://searchenginewatch.com/topic/facebook
+ 115. http://searchenginewatch.com/topic/google_analytics
+ 116. http://searchenginewatch.com/topic/webmaster_tools
+ 117. http://searchenginewatch.com/topic/cms
+ 118. http://searchenginewatch.com/topic/japan
+ 119. http://searchenginewatch.com/topic/motivational_theory
+ 120. http://searchenginewatch.com/topic/reputation_management
+ 121. http://searchenginewatch.com/topic/professional_web_designers
+ 122. http://searchenginewatch.com/topic/google_search_engine
+ 123. http://searchenginewatch.com/topic/groups_people
+ 124. http://sesconference.com/_includes/sew/whitepapers.html
+ 125. http://sesconference.com/_includes/sew/jobs.html
+ 126. http://searchenginewatch.com/
+ 127. file://localhost/atoz
+ 128. http://sesconference.com/
+ 129. http://jobs.searchenginewatch.com/
+ 130. file://localhost/page/newsletters
+ 131. http://seotool.searchenginewatch.com/
+ 132. file://localhost/stats
+ 133. file://localhost/tools
+ 134. http://www.clickzacademy.com/onsite-training.php
+ 135. http://www.clickzacademy.com/webinars.php
+ 136. http://intel.clickzacademy.com/
+ 137. file://localhost/page/about
+ 138. file://localhost/page/contact
+ 139. file://localhost/page/about#faqs
+ 140. file://localhost/page/write-for-sew
+ 141. file://localhost/page/advertise
+ 142. file://localhost/page/contact
+ 143. file://localhost/page/contact-newsletter-help
+ 144. file://localhost/atoz
+ 145. http://www.incisivemedia.com/static/copyright-licensing
+ 146. http://www.incisivemedia.com/static/privacy-policy
+ 147. http://www.incisivemedia.com/
+ 148. http://www.incisivemedia.com/accreditations
+
+   Hidden links:
+ 150. http://ad.doubleclick.net/jump/sew.us/analytics;page=article;artid=2296351;topcat=;cat=analytics;static=analytics;sect=site;tag=;pos=wp;tile=1;sz=1x1;ord=123456789?
+ 151. http://ad.doubleclick.net/jump/sew.us/analytics;page=article;artid=2296351;topcat=;cat=analytics;static=analytics;sect=site;tag=;pos=lb1;tile=2;sz=234x60,468x60,728x90;ord=9373422?
+ 152. http://ad.doubleclick.net/jump/sew.us/analytics;page=article;artid=2296351;topcat=;cat=analytics;static=analytics;sect=site;tag=;pos=bby1;tile=3;sz=212x90;ord=9373422?
+ 153. javascript:;
+ 154. javascript:;
+ 155. javascript:;
+ 156. http://ad.doubleclick.net/jump/sew.us/analytics;page=article;artid=2296351;cat=analytics;static=analytics;sect=site;tag=;pos=mpu1;tile=4;sz=200x200,300x250,336x280,300x600;ord=9373422?
+ 157. http://ad.doubleclick.net/jump/sew.us/analytics;page=article;artid=2296351;cat=analytics;static=analytics;sect=site;tag=;pos=mpu2;tile=5;sz=200x200,300x250,336x280,300x600;ord=9373422?
+ 158. http://ad.doubleclick.net/jump/sew.us/analytics;page=article;artid=2296351;topcat=;cat=analytics;static=analytics;sect=site;tag=;pos=lb2;tile=6;sz=234x60,468x60,728x90;ord=9373422?
+ 159. http://ad.doubleclick.net/jump/sew.us/analytics;page=article;artid=2296351;topcat=;cat=analytics;static=analytics;sect=site;tag=;pos=bby2;tile=7;sz=212x90;ord=9373422?

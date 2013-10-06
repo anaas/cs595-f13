@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- ### Standard Meta Data Elements START  ### -->
+	<meta name="author" content="ST PAULS Online" />
+	<meta name="robots" content="index, follow" />
+	<meta name="revisit-after" content="1 days" />
+	<meta name="rating" content="general" />
+	<meta http-equiv="distribution" content="global" />
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- ###  Meta Data End ### --> 
+<div class="globalNotification"></div>
+<title>
+ST PAULS Online | Books</title>
+
+<link href="http://www.stpauls.ph/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.stpauls.ph/images/favicon.ico">
+
+
+<!-- cufon -->
+<script src="http://www.stpauls.ph/js/cufon-yui.js" type="text/javascript"></script>
+<script src="http://www.stpauls.ph/js/gill.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+	Cufon.replace('h1');
+</script>
+
+
+<!--form to form wizard-->
+<script type="text/javascript" src="http://www.stpauls.ph/js/jquery-1.6.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.stpauls.ph/css/formwizard.css" />
+<script src="http://www.stpauls.ph/js/formwizard.js" type="text/javascript"></script>
+<script type="text/javascript">
+var myform=new formtowizard({
+	formid: 'feedbackform',
+	persistsection: true,
+	revealfx: ['fade', 500]
+})
+</script>
+
+
+<script src="http://cdn.jquerytools.org/1.2.6/jquery.tools.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.stpauls.ph/css/tabs.css" />
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+		var x;
+		    });
+</script>
+
+<!--news coinslider-->
+<script type="text/javascript" src="http://www.stpauls.ph/js/jcarousellite_1.0.1c4.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(".newsticker-jcarousellite").jCarouselLite({
+		vertical: true,
+		hoverPause: false,
+		visible:2,
+		auto:2500,
+		speed:1000
+	});
+});
+</script>
+
+
+<!--pretty photo-->
+<link rel="stylesheet" type="text/css" href="http://www.stpauls.ph/css/prettyPhoto.css" />
+<script type="text/javascript" src="http://www.stpauls.ph/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'dark_rounded',slideshow:3000, autoplay_slideshow: false});
+	});
+</script>
+
+
+<!-- jquery -->
+<script type="text/javascript">
+$(window).load(function() {		
+	$('img').each(function() {
+		if(this.naturalWidth == 0 || this.src==""){
+			// image was broken, replace with your new image
+			this.src = 'http://www.stpauls.ph/images/picnotavailable.jpg';
+		}
+	});
+	
+	$(".close").click(
+		function () {
+			$(this).parent().fadeTo(400, 0, function () { // Links with the class "close" will close parent
+				$(this).slideUp(400);
+			});
+			return false;
+		}
+	);
+	
+	$(".menu").click(
+		function () {
+			$(this).parent().nextAll().children("a").removeClass("minus");
+			$(this).parent().prevAll().children("a").removeClass("minus");
+			$(this).parent().siblings().children().next().slideUp(1000);
+			$(this).siblings("div").slideToggle(1000);
+			$(this).toggleClass("minus");
+			
+			return false;
+		}
+	);
+	
+	$(".sm_menu").click(
+		function () {
+			$(this).parent().toggleClass("sm_plus");
+			$(this).siblings("ul").toggle(400);
+			return false;
+		}
+	);
+	
+	$(".sm_submenu").click(
+		function () {
+			//$(this).parent().toggleClass("sm_plus");
+			$(this).siblings("ul").toggle(400);
+			return false;
+		}
+	);
+	
+	$(".sm_subsubmenu").click(
+		function () {
+			//$(this).parent().toggleClass("sm_plus");
+			$(this).siblings("ul").toggle(400);
+			return false;
+		}
+	);
+	
+		
+	$("ul.tabs").tabs("div.panes > div");
+	
+	$(".opensub").click(
+		function () {
+			$(this).parent().siblings().children().next().slideUp(400);
+			$(this).siblings("ul").toggle(400);
+			setHT();
+			return false;
+		}
+	);
+	
+	ctr = 0;
+	tmp = document.getElementById('content').clientHeight;
+});
+
+function setHT(){
+	var xxx = document.getElementById('category').clientHeight;
+	var yyy = document.getElementById('content').clientHeight;
+	var zzz = document.getElementById('wrapper').clientHeight;
+
+	if(xxx>yyy){
+		document.getElementById('content').style.height = (xxx+2)+'px';
+		ctr++;
+	}else{
+		document.getElementById('content').style.height = tmp+'px';
+		ctr = 0;
+	}
+	
+	if(ctr==0){
+		ctr++;
+		setTimeout('setHT()', 500);
+	}
+}
+
+$(document).ready(function() {	
+    $(".number").keydown(function(event) {
+        // Allow only backspace and delete
+        if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 37 || event.keyCode == 38 || event.keyCode == 39 || event.keyCode == 40 ) {
+            // let it happen, don't do anything
+        }
+        else {
+            // Ensure that it is a number and stop the keypress
+            if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                event.preventDefault(); 
+            }   
+        }
+    });
+});
+</script>
+
+<script type="text/javascript">
+function usebilling(obj){
+	if(obj.checked){
+		document.getElementById('txtShippingAddress').value = '';
+		document.getElementById('chkUseShip').checked = false;
+	}else{
+		document.getElementById('txtShippingAddress').value = '';
+	}
+}
+
+function useshipping(obj){
+	if(obj.checked){
+		document.getElementById('txtShippingAddress').value = '';
+		document.getElementById('chkUseBill').checked = false;
+	}else{
+		document.getElementById('txtShippingAddress').value = '';
+	}
+}
+</script>
+
+
+<!--scroll to top-->
+<script type="text/javascript" src="http://www.stpauls.ph/js/scrolltopcontrol.js"></script>
+
+
+<script type="text/javascript" src="http://www.stpauls.ph/js/swfobject.js"></script>
+<script type="text/javascript">
+	swfobject.embedSWF("http://www.stpauls.ph/flash/banner.swf", "flashads", "529", "181", "9.0.0", "flash/expressInstall.swf", {/*'flashvars'*/}, {/*'params'*/menu: 'false', wmode: 'transparent'}, {/*'attributes'*/});
+</script>
+
+
+<!--google analytics-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28968425-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><script type="text/javascript" src="http://www.stpauls.ph/js/books.js"></script>
+<body>
+<div id="container">
+<div id="wrapper">
+
+	<div id="leftcontainer" class="left">
+    <div id="logo">
+        <a href="http://www.stpauls.ph/">this is the logo</a>
+    </div>
+    
+    <div id="category">
+        <div id="search">
+            <form action="http://www.stpauls.ph/books/search/" method="post">
+            	<input id="button" type="submit" value="" name="btnSearch" class="right">
+                <input id="text" type="text" placeholder="search product here" value="search product here" onclick="this.value=''" name="txtSearch">
+            </form>
+        </div>
+    
+        <h2>MAIN MENU</h2>
+        <ul>
+            <li><a href="http://www.stpauls.ph/about-us/">About Us</a></li>
+            <li><a href="http://www.stpauls.ph/branches/">Branches</a></li>
+            <li><a href="http://www.stpauls.ph/contact-us/">Contact Us</a></li>
+        </ul>
+        
+        <h2>CATEGORIES</h2>
+        <ul>
+            <li><a href="#" class="opensub">Asceticism</a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/Asceticism/Books/">&raquo; Books</a></li><li><a href="http://www.stpauls.ph/books/Asceticism/Prayer-Books/">&raquo; Prayer Books</a></li></ul></li><li><a href="#" class="opensub">Audiovisuals</a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/Audiovisuals/CDs/">&raquo; CDs</a></li><li><a href="http://www.stpauls.ph/books/Audiovisuals/DVDs/">&raquo; DVDs</a></li><li><a href="http://www.stpauls.ph/books/Audiovisuals/VCDs/">&raquo; VCDs</a></li></ul></li><li><a href="http://www.stpauls.ph/books/Bible/">Bible</a></li><li><a href="http://www.stpauls.ph/books/Biblical-Initiatives/">Biblical Initiatives</a></li><li><a href="http://www.stpauls.ph/books/Catechetics/">Catechetics</a></li><li><a href="#" class="opensub">General References</a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/General-References/Academic-Materials/">&raquo; Academic Materials</a></li><li><a href="http://www.stpauls.ph/books/General-References/Retreat-Materials/">&raquo; Retreat Materials</a></li><li><a href="http://www.stpauls.ph/books/General-References/Vatican-Documents/">&raquo; Vatican Documents</a></li></ul></li><li><a href="http://www.stpauls.ph/books/Hagiography/">Hagiography</a></li><li><a href="#" class="opensub">Holy Rosary</a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/Holy-Rosary/Bracelet-Rosaries/">&raquo; Bracelet Rosaries</a></li><li><a href="http://www.stpauls.ph/books/Holy-Rosary/Ring-Rosary/">&raquo; Ring Rosary</a></li><li><a href="http://www.stpauls.ph/books/Holy-Rosary/Wooden-Rosary/">&raquo; Wooden Rosary</a></li></ul></li><li><a href="http://www.stpauls.ph/books/Inspirationals/">Inspirationals</a></li><li><a href="http://www.stpauls.ph/books/Literature-for-Children/" class="underline">Literature for Children</a></li><li><a href="http://www.stpauls.ph/books/Liturgical-Song-Book/">Liturgical Song Book</a></li><li><a href="#" class="opensub">Liturgical Vestments</a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/Liturgical-Vestments/Mass-Linens/">&raquo; Mass Linens</a></li><li><a href="http://www.stpauls.ph/books/Liturgical-Vestments/Stole-and-Chasuble/">&raquo; Stole and Chasuble</a></li></ul></li><li><a href="http://www.stpauls.ph/books/Liturgy/">Liturgy</a></li><li><a href="http://www.stpauls.ph/books/Mariology/">Mariology</a></li><li><a href="#" class="opensub">Other Liturgical Items</a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/Other-Liturgical-Items/Bible-Stand/">&raquo; Bible Stand</a></li><li><a href="http://www.stpauls.ph/books/Other-Liturgical-Items/Certificates/">&raquo; Certificates</a></li><li><a href="http://www.stpauls.ph/books/Other-Liturgical-Items/Chime-Bells/">&raquo; Chime Bells</a></li><li><a href="http://www.stpauls.ph/books/Other-Liturgical-Items/Host/">&raquo; Host</a></li><li><a href="http://www.stpauls.ph/books/Other-Liturgical-Items/Mass-Kit/">&raquo; Mass Kit</a></li></ul></li><li><a href="http://www.stpauls.ph/books/Periodicals/">Periodicals</a></li><li><a href="#" class="opensub">Sacred Images</a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/Sacred-Images/Baby-Jesus/">&raquo; Baby Jesus</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Belen-Set/">&raquo; Belen Set</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Guardian-Angels/">&raquo; Guardian Angels</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Hanging-Crucifix/">&raquo; Hanging Crucifix</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Holy-Family/">&raquo; Holy Family</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Jesus-Christ/">&raquo; Jesus Christ</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Last-Supper/">&raquo; Last Supper</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Life-size-statues/">&raquo; Life size statues</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Marian-Statues/">&raquo; Marian Statues</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Medals-and-Pins/">&raquo; Medals and Pins</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Men-Saints/">&raquo; Men Saints</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Plaque-of-the-Sacred-Heart-of-Jesus-/">&raquo; Plaque of the Sacred Heart of Jesus </a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Religious-Frames/">&raquo; Religious Frames</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Religious-Posters/">&raquo; Religious Posters</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Santo-Nino/">&raquo; Santo Nino</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Standing-Crucifix/">&raquo; Standing Crucifix</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Way-of-The-Cross/">&raquo; Way of The Cross</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Images/Women-Saints/">&raquo; Women Saints</a></li></ul></li><li><a href="http://www.stpauls.ph/books/Sacred-Theology/">Sacred Theology</a></li><li><a href="#" class="opensub">Sacred Vessels</a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Altar-Cover/">&raquo; Altar Cover</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Candle-Holder/">&raquo; Candle Holder</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Chalice/">&raquo; Chalice</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Ciborium/">&raquo; Ciborium</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Cruets/">&raquo; Cruets</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Gong/">&raquo; Gong</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Holy-Water-Sprinkler/">&raquo; Holy Water Sprinkler</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Host-Container/">&raquo; Host Container</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Incense-Censer-and-Boat/">&raquo; Incense Censer and Boat</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Lamp/">&raquo; Lamp</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Monstrance/">&raquo; Monstrance</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Oil-Stock/">&raquo; Oil Stock</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Paschal-Candle/">&raquo; Paschal Candle</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Processional-Cross/">&raquo; Processional Cross</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Pyx/">&raquo; Pyx</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Reliquary/">&raquo; Reliquary</a></li><li><a href="http://www.stpauls.ph/books/Sacred-Vessels/Tabernacle/">&raquo; Tabernacle</a></li></ul></li><li><a href="#" class="opensub">Sambuhay Novena </a><ul style="display:none;"><li><a href="http://www.stpauls.ph/books/Sambuhay-Novena-/Booklets/">&raquo; Booklets</a></li><li><a href="http://www.stpauls.ph/books/Sambuhay-Novena-/Divine-Master/">&raquo; Divine Master</a></li><li><a href="http://www.stpauls.ph/books/Sambuhay-Novena-/Holy-Men/">&raquo; Holy Men</a></li><li><a href="http://www.stpauls.ph/books/Sambuhay-Novena-/Holy-Women/">&raquo; Holy Women</a></li><li><a href="http://www.stpauls.ph/books/Sambuhay-Novena-/Tagalog-Nobena/">&raquo; Tagalog Nobena</a></li></ul></li>        </ul>
+        
+        <h2>ONLINE RESOURCES</h2>
+        <ul>
+            <li><a target="_new" href="http://www.ssp.ph/index.php/sambuhay-online">Sambuhay Online</a></li>
+            <li><a target="_new" href="http://www.ssp.ph/index.php/sambuhay-online/sambuhay-tv">Sambuhay TV Mass</a></li>
+            <li><a target="_new" href="http://www.ssp.ph/index.php/Table/St-Pauls/365-Days-with-the-lord/">365 Days with the Lord</a></li>
+            <li><a target="_new" href="http://www.ssp.ph/youngster/">Youngster</a></li>
+            <li><a target="_new" href="http://www.verbuhay.com">Verbuhay</a></li>
+            <li><a target="_new" href="http://www.graceandspace.org/">Grace and Space</a></li>
+        </ul>
+        <br/>
+        <div style="height:111px;"></div>
+    </div>
+</div>    
+    <div id="rightcontainer" class="right">
+    	<div id="header">
+    <div id="logoname" class="left">
+        <a href="http://www.stpauls.ph/"><h1>ST PAULS Online</h1></a>
+    </div>
+    
+    <div id="navuser" class="right">
+        <div id="account" class="left"><a href="http://www.stpauls.ph/my-account/"><img src="http://www.stpauls.ph/images/misc/account.jpg" />My Account</a></div>
+        <div id="cart" class="left">
+        	<div class="ordernoti"><small>
+            0            </small></div>
+            <a href="http://www.stpauls.ph/books/cart/"><img src="http://www.stpauls.ph/images/misc/cart.jpg" />Cart</a>
+		</div>
+        <div id="help" class="left"><a href="http://www.stpauls.ph/help/"><img src="http://www.stpauls.ph/images/misc/help.jpg" />Help</a></div>
+        <div class="clear"></div>
+        <div id="navtop"> 
+            <ul>
+            	
+							<li><a href="http://www.stpauls.ph/login/">Login</a>&nbsp;|&nbsp;</li>
+							<li><a href="http://www.stpauls.ph/register/">Register</a>&nbsp;|&nbsp;</li>
+							<li><a href="http://www.stpauls.ph/forgot-password/">Forgot Password</a></li>
+						            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div><div id="navigation">
+    <ul>
+        <li><a href="http://www.stpauls.ph/promos-and-events/"><strong>Promos and Events</strong></a>&nbsp;|&nbsp;</li>
+        <li><a href="http://www.stpauls.ph/books/book-of-the-month/"><strong>Book of the Month</strong></a>&nbsp;|&nbsp;</li>
+        <li><a href="http://www.stpauls.ph/books/author-of-the-month/"><strong>Author of the Month</strong></a>&nbsp;|&nbsp;</li>
+        <li><a href="http://www.stpauls.ph/books/recommended-books/"><strong>Recommended Books</strong></a>&nbsp;|&nbsp;</li>
+        <li><a href="http://www.stpauls.ph/books/hot-deals/"><strong>Hot Deals</strong></a></li>
+    </ul>
+</div>        <div id="content">
+        	<div id="leftcontent" class="left">
+                <div id="subcontent">
+                	<h1>BOOKS</h1>
+                    <small><strong>You are here: </strong><a href="http://www.stpauls.ph/books/">Books</a>
+ > <a href="http://www.stpauls.ph/books/Literature-for-Children/">Literature for Children</a> > <a href="http://www.stpauls.ph/books/Literature-for-Children/hot-rod-teddy-a-lesson-in-himility-kit-sp02305/">Hot rod teddy a lesson in himility kit sp02305</a></small>                    <br />
+                    
+											<br />
+											<div class="primary"><a href="http://www.stpauls.ph/admin/images/products/09112013040759Hot Rod Teddy - A Lesson in Himility (KIT-SP02305 copy).jpg" rel="prettyPhoto" title="Hot Rod Teddy - A Lesson in Himility (KIT-SP02305)"><img src="http://www.stpauls.ph/admin/images/products/09112013040759Hot Rod Teddy - A Lesson in Himility (KIT-SP02305 copy).jpg" class="left marginRight marginBottom" /></a></div>
+											<h2>Hot Rod Teddy - A Lesson in Himility (KIT-SP02305)</h2>
+										<small>by RICHARD SMITH</small>
+											<p></p>
+											<p>
+												<span class="label2">price</span>: Php 100.00<br />
+										
+												<span class="label2">weight</span>: 100 <strong>g</strong><br />
+										<span class="label2">size</span>: 9 X 7 inches<br /><span class="label2">no of. pages</span>: 24<br /><span class="label2">ISBN</span>: 978-971-004-177-0<br />
+											</p>
+											<p></p>
+										<p>&nbsp;</p><p><input type="button" onClick="var addtocart = confirm('Are you sure you want to add this item to your cart?'); if(addtocart==true) location.href='http://www.stpauls.ph/add-to-cart/Literature-for-Children/1808/hot-rod-teddy-a-lesson-in-himility-kit-sp02305/'; else return false;" value="Add to Cart" /> <input type="button" value="Back" onClick="location.href='http://www.stpauls.ph/books/Literature-for-Children/'"></p>
+											<p class="clear"></p>
+											<!-- the tabs -->
+											<ul class="tabs">
+										<li><a href="javascript:void(0)">Sypnosis</a></li><li><a href="javascript:void(0)">Editorial Reviews</a></li><li><a href="javascript:void(0)">Customer Reviews</a></li><li><a href="javascript:void(0)">About the Author</a></li>
+											</ul>
+											
+											<!-- tab "panes" -->
+											<div class="panes">
+										
+														<!--sypnosis-->
+														<div class="paddingAll">
+															&nbsp;Hot Rod Teddy is a rising star in the world of toy animal car racing. Slowly though, pride sneaks up on him and swells his plush little head with his new-found fame. Join Teddy and his good friends, Perky Pup and Terry Hound, as they embark on a journey that puts even their strong friendship to the test! This book is intended for little ones 4 to 7 years old as they enjoy themselves on the laps of their reading parents while learning the value of humility.
+														</div>
+													
+														<!--editorial reviews-->
+														<div class="paddingAll">
+															&nbsp;
+														</div>
+													
+														<!--customer reviews-->
+														<div class="paddingAll">
+															&nbsp;
+														</div>
+													
+														<!--about the author-->
+														<div class="paddingAll">
+															&nbsp;
+														</div>
+													
+											</div>
+										                    <div class="clear"></div>
+                </div>
+            </div>
+            <div id="dhtmltooltip"></div>
+            <script type="text/javascript" src="http://www.stpauls.ph/js/tooltip.js"></script>
+            
+            
+<div id="rightcontent" class="right">
+    <div id="social" class="rightbox">
+        <h2>Social Media</h2>
+        <a href="http://www.facebook.com/pages/St-Pauls-Online/266326343415424"><img src="http://www.stpauls.ph/images/misc/facebook.jpg" /></a>&nbsp;
+        <a href="http://twitter.com/STPAULSPinas" target="_new"><img src="http://www.stpauls.ph/images/misc/twitter.jpg" /></a><br />
+        <div style="display:none;" class="fbdiv"><a href="http://www.facebook.com/stpauls.albahouse" target="_new">stpauls.albahouse</a> | <a href="http://www.facebook.com/stpauls.pilipinas" target="_new">stpauls.pilipinas</a></div>
+    </div>
+    
+    <div class="rightbox">
+    	<h2>Shopping Cart</h2>
+        <div class="content">
+        	<form method="post" action="">
+        	<div class="cart">
+            	<ul>
+					<li>There are no items in your shopping cart.</li>                </ul>
+            </div>
+                    </div>
+    </div>
+    
+    <div id="reviews" class="rightbox">
+        <h2>Book Reviews</h2>
+        <div class="content">
+            
+					<p><strong>BETTER MARRIAGE</strong></p>
+					<p>Marriage cannot simply pertain to a piece of paper. It is not just about two gooey-eyed people getting together because they feel for each other. It does not refer to a bunch of [...]</p>
+				            <a class="customButton roundedTop right" href="http://www.stpauls.ph/book-reviews/better-marriage/">read more</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div class="rightbox">
+        <h2>Promos and Events</h2>
+        <br />
+        <div class="news">
+            <div class="newsticker-jcarousellite">
+                <ul class="news">
+                
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2013/08/75/"><strong>ST PAULS AUTHORS WIN...</strong></a>
+                                    <div class="newsContainer">Authors from ST PAULS, once again, reaped awards during the Catholic Mass M [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2013/08/75/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2013/01/74/"><strong>CARDINAL TAGLE LAUNC...</strong></a>
+                                    <div class="newsContainer">Luis Antonio Cardinal Tagle, Archbishop of Manila, launched the 4th Saint P [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2013/01/74/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2013/01/73/"><strong>ST PAULS ONLINE NOW ...</strong></a>
+                                    <div class="newsContainer">ST PAULS Online proudly announces its payment gateway&acute;s newest featur [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2013/01/73/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/09/72/"><strong>34TH CMMA ACKNOWLEDG...</strong></a>
+                                    <div class="newsContainer">The 34th Catholic Mass Media Awards (CMMA) formally presented Fr. Gil Alins [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/09/72/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/09/71/"><strong>ST PAULS REAPS AWARD...</strong></a>
+                                    <div class="newsContainer">INTRAMUROS, Manila&mdash;two authors from ST PAULS Publishing received the  [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/09/71/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/07/70/"><strong>ST PAULS OPENS NEW B...</strong></a>
+                                    <div class="newsContainer">ST PAULS Bookstore, with its continual effort to bring the good news to the [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/07/70/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/05/69/"><strong>ST PAULS LAUNCHES BE...</strong></a>
+                                    <div class="newsContainer">ST PAULS launched Fr. Jude Rebaldo&rsquo;s second book, Better Marriage: Ac [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/05/69/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/03/68/"><strong>ST PAULS LAUNCHES MS...</strong></a>
+                                    <div class="newsContainer">ST PAULS Publishing launched the first books of Msgr. Sarmiento&rsquo;s Cat [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/03/68/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/03/67/"><strong>ST PAULS LAUNCHES MS...</strong></a>
+                                    <div class="newsContainer">ST PAULS Publishing launched the latest book of Msgr. Vengco&rsquo;s Itanon [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/03/67/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/02/66/"><strong>ST PAULS LAUNCHES ON...</strong></a>
+                                    <div class="newsContainer">ST PAULS Publishing launched a life-story book entitled One Life, One Story [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/02/66/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/02/65/"><strong>ST PAULS LAUNCHES MI...</strong></a>
+                                    <div class="newsContainer">ST PAULS Publishing launched a children&rsquo;s book entitled Miss Lumi, th [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/02/65/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/01/64/"><strong>ST PAULS LAUNCHES FR...</strong></a>
+                                    <div class="newsContainer">ST PAULS Launches Fr. Jose Francisco Syquia&rsquo;s Latest Book: 
+EXORCIST [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/01/64/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2012/01/54/"><strong>ST PAULS OPENS A NEW...</strong></a>
+                                    <div class="newsContainer">ST PAULS bookstore in SM Megamall was blessed on September 28, 2011  after  [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2012/01/54/">read more</a>
+									<hr class="clear" />
+                                </li>
+                            
+                                <li>
+                                    <a href="http://www.stpauls.ph/promos-and-events/2011/10/60/"><strong>ST PAULS GOES GREEN,...</strong></a>
+                                    <div class="newsContainer">Sensitive to the worsening effect of global warming, ST PAULS recently made [...]</div>
+									<a class="customButton roundedTop right" href="http://www.stpauls.ph/promos-and-events/2011/10/60/">read more</a>
+									<hr class="clear" />
+                                </li>
+                                            </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <br/>
+    </div>
+    <a href="http://ssp.ph/newsite/index.php/2013-spnbq" target="_new"><img src="http://www.stpauls.ph/images/biblequiz.jpg" /></a><br />
+    <img src="http://www.stpauls.ph/images/misc/payment.jpg" class="payment" />
+</div>            <div class="clear"></div>
+            
+            <div id="dhtmltooltip"></div>
+<script type="text/javascript" src="http://www.stpauls.ph/js/tooltip.js"></script>
+
+<div id="footer">
+<hr/>
+    <div class="left">
+        <ul>
+            <li><a href="http://www.stpauls.ph/">home</a>&nbsp;|&nbsp;</li>
+            <li><a href="http://www.stpauls.ph/terms-and-shipping-policies/">terms and shipping policies</a>&nbsp;|&nbsp;</li>
+            <li><a href="http://www.stpauls.ph/privacy-policy/">privacy policy</a>&nbsp;|&nbsp;</li>
+            <li><a href="http://www.stpauls.ph/help/">help</a>&nbsp;|&nbsp;</li>
+            <li><a href="http://www.stpauls.ph/contact-us/">contact us</a>&nbsp;|&nbsp;</li>
+            <li><a href="mailto:adspromo@stpauls.ph">advertise with us</a>&nbsp;|&nbsp;</li>
+            <li><a href="http://www.stpauls.ph/priesthood/">priesthood</a>&nbsp;|&nbsp;</li>
+            <li><a href="http://www.stpauls.ph/site-map/">site map</a></li>
+        </ul>
+    </div>
+    
+    <div class="right">
+        <p>All rights reserved. ST PAULS Philippines</p>
+    </div>
+    <div class="clear"></div>
+</div>        </div>
+    </div>
+    <div class="clear"></div>
+
+</div>
+</div>
+</body>
+</html>

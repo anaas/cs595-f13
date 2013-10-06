@@ -1,0 +1,1300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<title>Fascinatio lucis Digital Art by Sipo Liimatainen - Fascinatio lucis Fine Art Prints and Posters for Sale</title>
+<meta name="description" content="Fascinatio lucis Digital Art by Sipo Liimatainen, Fascinatio lucis Digital Art, Fascinatio lucis Digital Art for Sale, Fascinatio lucis Fine Art Print, Fascinatio lucis Poster, Sipo Liimatainen Fine Art">
+<meta name="keywords" content="Fascinatio lucis Digital Art by Sipo Liimatainen, Fascinatio lucis Digital Art, Fascinatio lucis Digital Art for Sale, Fascinatio lucis Fine Art Print, Fascinatio lucis Poster, Sipo Liimatainen Fine Art">
+
+<meta property="og:title" content="Fascinatio lucis Digital Art by Sipo Liimatainen - Fascinatio lucis Fine Art Prints and Posters for Sale">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://sipo-liimatainen.artistwebsites.com/featured/fascinatio-lucis-sipo-liimatainen.html">
+<meta property="og:image" content="http://fineartamerica.com/images-stretched-canvas-real-5/fascinatio-lucis-sipo-liimatainen.jpg">
+<meta property="og:site_name" content="Fine Art America">
+<meta property="og:description"	content="Fascinatio lucis Digital Art by Sipo Liimatainen - Fascinatio lucis Fine Art Prints and Posters for Sale">
+<meta property="fb:app_id" content="113101038770813">
+
+<link rel='canonical' href='http://fineartamerica.com/featured/fascinatio-lucis-sipo-liimatainen.html'>
+  
+<link rel="stylesheet" type="text/css" href="../stylesheet.css?timestamp=1380603906">
+<script type='text/javascript' src='../globalscripts.js?timestamp=1380603906'></script>
+<script type='text/javascript' src='../jquery191.js'></script>
+<script type="text/javascript">
+
+	var targetfunction = '';
+
+	var memberidtype = 'none';
+var memberid = 0;
+	
+	var artworkid = 3309543;
+var widthmedium = 500;
+var heightmedium = 700;
+
+	function confirmcommentdelete(id)
+	{
+		result = confirm ('Are you sure you want to delete this comment?');
+		
+		if (result == true)
+		{
+			locationstring = "fascinatio-lucis-sipo-liimatainen.html?deletecommentid="+id;
+			document.location = locationstring;	
+		}
+		
+	}
+
+	function expand()
+	{
+		object = document.getElementById("gallerydiv");
+		object.style.height = "";
+		object.style.overflow = "visible";
+
+
+	}
+
+	function collapse()
+	{
+		object = document.getElementById("gallerydiv");
+		object.style.height = "110px";
+		object.style.overflow = "auto";
+
+
+	}
+
+	function rightclick()
+	{
+		return false;
+	}
+
+
+	var counter = 0;
+
+	function highlightexternalsearchstring()
+	{	
+		object = document.getElementById("externalsearchstring");
+		
+		if(object != null)
+		{	
+			object.style.filter = "alpha(opacity = " + counter*10 + ")";
+			object.style.opacity = counter*0.10;
+			object.style.visibility = "visible";
+			
+			counter ++;
+		
+			if (counter <= 10)
+			{
+				setTimeout("highlightexternalsearchstring()", 100);
+			}
+		}	
+	}
+
+
+	function newHttpReq()
+	{
+		var newRequest = null;
+		
+		try
+		{
+			newRequest = new XMLHttpRequest();
+		}
+		catch(trymicrosoft)
+		{
+			try
+			{
+				newRequest = new ActiveXObject("Msxml2.XMLHTTP");
+			}
+			catch(othermicrosoft)
+			{
+				try
+				{
+					newRequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				catch(failed)
+				{
+					newRequest = null;
+				}			
+			}
+		}
+		
+		return newRequest;
+	
+	}
+
+	var request = newHttpReq();
+	
+	if(!request)
+	{
+		alert("Error Initializing XMLHttpRequest!");
+	}	
+
+	function UpdatePage()
+	{
+   
+   		try 
+		{
+			if(request.readyState == 4)
+			{
+			}
+		
+			if(request.status == 200)
+			{
+			}
+		}
+		catch (e)
+		{
+			return;
+		}
+   
+   
+   		if (request.readyState == 4)
+   		{
+   			if(request.status == 200)
+   			{      			
+   				document.getElementById('promotediv').innerHTML = request.responseText;
+   			}
+   		}
+   }
+
+   function recommendartwork(artworkid)
+   {
+
+		var url = '../recommendartwork.php?artworkid=' + artworkid;		
+		
+     	if((request.readyState != 4) && (request.readyState != 0))
+     	{
+			request.abort();
+			request = newHttpReq();
+     	}
+
+		request.open('GET',url,true);
+     	request.onreadystatechange = UpdatePage;
+     	request.send(null);
+   }
+
+   
+	function bringtotop(artworkid,status)
+	{
+		var tag = document.getElementById('targettag').value;
+		var url = 'http://fineartamerica.com/queries/updateartworktags.php?artworkid=' + artworkid + '&tag=' + tag + '&status='+status;		
+
+		if((request.readyState != 4) && (request.readyState != 0))
+     	{
+			request.abort();
+			request = newHttpReq();
+     	}
+
+		request.open('GET',url,true);
+     	request.onreadystatechange = showmessage;
+     	request.send(null);			
+	
+		return;	
+
+	}   
+
+	
+	function promoteartwork(artworkid,status)
+	{
+	
+		var url = 'http://fineartamerica.com/queries/promoteartwork.php?artworkid=' + artworkid + '&status='+status;		
+     	
+		if((request.readyState != 4) && (request.readyState != 0))
+     	{
+			request.abort();
+			request = newHttpReq();
+     	}
+
+		request.open('GET',url,true);
+     	request.onreadystatechange = showmessage;
+     	request.send(null);			
+	
+		return;	
+
+	}		
+	
+	
+	
+	function promotemember(artworkid,status)
+	{
+	
+		var url = 'http://fineartamerica.com/queries/promotemember.php?artworkid=' + artworkid + '&status='+status;		
+     	
+		if((request.readyState != 4) && (request.readyState != 0))
+     	{
+			request.abort();
+			request = newHttpReq();
+     	}
+
+		request.open('GET',url,true);
+     	request.onreadystatechange = showmessage;
+     	request.send(null);			
+	
+		return;	
+
+	}		
+	
+	
+	function showmessage()
+	{
+
+   		try 
+		{
+			if(request.readyState == 4)
+			{
+			}
+		
+			if(request.status == 200)
+			{
+			}
+		}
+		catch (e)
+		{
+			return;
+		}
+   
+   
+   		if (request.readyState == 4)
+   		{
+   			if(request.status == 200)
+   			{   
+
+				alert(request.responseText);
+				
+   			}
+   		}
+	}	
+
+
+	function confirmdeleteartwork(id)
+	{
+		result = confirm ('Are you sure you want to delete this artwork?');
+		
+		if (result == true)
+		{
+			locationstring = '../index.html?deleteartworkid='+id;
+			document.location = locationstring;	
+		}
+		
+	}
+
+
+	var httpobject = [];
+ 	var requestcount = 0;	
+	
+	function showlogindiv(showerrors)
+	{
+		var backgroundobject = document.getElementById('dimdiv');
+		//backgroundobject.style.display = 'block';
+		backgroundobject.style.width = '100%';
+		backgroundobject.style.height = '100%';
+		backgroundobject.style.visibility = 'visible';		
+				
+		var widthclient = parseInt(document.documentElement.clientWidth);
+		var heightclient = parseInt(document.documentElement.clientHeight);
+		
+		var widthtarget = 400;
+		var heighttarget = 400;
+		
+		var offsetleft = 0;
+		var offsettop = 0;
+
+		if(document.documentElement.scrollTop && !document.body.scrollTop)
+		{
+			offsetleft = document.documentElement.scrollLeft;
+			offsettop = document.documentElement.scrollTop;
+    	}
+		else
+		{
+			offsetleft = document.body.scrollLeft;
+			offsettop = document.body.scrollTop;
+		}		
+		
+		var logindiv = document.getElementById('logindiv');
+		logindiv.style.width = widthtarget + 'px';
+		logindiv.style.height = heighttarget + 'px';
+		logindiv.style.visibility = 'visible';
+		logindiv.innerHTML = "<img src='../Searching.gif' style='float: left;'>";
+		
+		logindiv.style.left = (offsetleft + parseInt((widthclient - widthtarget) / 2)) + 'px';
+		logindiv.style.top = (offsettop + parseInt((heightclient - heighttarget) / 2)) + 'px';
+
+		var localvalue = requestcount;
+		
+		httpobject[localvalue] = newHttpReq();			
+		httpobject[localvalue].onreadystatechange = function(){
+		
+			try 
+			{
+				if(httpobject[localvalue].readyState == 4)
+				{
+				}
+			
+				if(httpobject[localvalue].status == 200)
+				{
+				}
+			}
+			catch (e)
+			{
+				return;
+			}
+			
+			if(httpobject[localvalue].readyState == 4 && httpobject[localvalue].status == 200)
+			{
+				document.getElementById('logindiv').innerHTML = httpobject[localvalue].responseText;
+			}
+		
+		
+		};		
+
+		var url = "../queries/queryloginfacebook.php";
+		var poststring = "showerrors=" + showerrors;
+
+		httpobject[localvalue].open('post',url,true);
+		httpobject[localvalue].setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+		httpobject[localvalue].send(poststring);	
+
+		requestcount += 1;		
+		
+		return;	
+	}
+	
+	
+	function hidelogindiv()
+	{
+		document.getElementById('dimdiv').style.visibility = 'hidden';
+		document.getElementById('logindiv').style.visibility = 'hidden';
+		document.getElementById('logindiv').innerHTML = '&nbsp;';
+	}
+	
+	function facebooklogin()
+	{
+
+		FB.login(function(response) {
+		  if (response.authResponse) {
+			if (true) {
+			  // user is logged in and granted some permissions.
+			  // perms is a comma separated list of granted permissions
+
+			  //alert(response.perms);
+			  
+			  if(true)
+			  {
+				//alert('permission granted');
+				
+				document.getElementById('logindiv').innerHTML = "<img src='../Searching.gif' style='float: left;'>";
+				
+			  
+				FB.getLoginStatus(function(response) {
+				
+					//alert(response.status);
+					//alert(response.session.uid);
+					//alert(response.session.access_token);
+				
+					var facebookuserid = response.authResponse.userID;
+					var facebookaccesstoken = response.authResponse.accessToken;
+					var email = '';
+				
+					FB.api('/me', {access_token: facebookaccesstoken}, function(response) {
+					
+					var poststring = 'facebookuserid=' + facebookuserid + '&facebookaccesstoken=' + facebookaccesstoken + '&email=' + response.email + '&firstname=' + response.first_name + '&lastname=' + response.last_name + '&targetfunction=' + targetfunction;
+					//alert(poststring);
+
+					var localvalue = requestcount;
+					
+					httpobject[localvalue] = newHttpReq();			
+					httpobject[localvalue].onreadystatechange = function(){
+					
+						try 
+						{
+							if(httpobject[localvalue].readyState == 4)
+							{
+							}
+						
+							if(httpobject[localvalue].status == 200)
+							{
+							}
+						}
+						catch (e)
+						{
+							return;
+						}
+						
+						if(httpobject[localvalue].readyState == 4 && httpobject[localvalue].status == 200)
+						{
+							var response = httpobject[localvalue].responseText.split("<EXTRAINSTRUCTIONS>");
+						
+							document.getElementById('logindiv').innerHTML = response[0];
+							
+							if(response[1])
+							{
+								eval(response[1]);
+							}							
+
+						}
+					
+					
+					};		
+
+					var url = "../queries/queryloginfacebookcomplete.php";
+
+					httpobject[localvalue].open('post',url,true);
+					httpobject[localvalue].setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+					httpobject[localvalue].send(poststring);	
+
+					requestcount += 1;	
+
+					
+					});
+
+				});			  
+			  
+			  }
+			  else
+			  {
+				alert('permission denied');
+			  }
+			  
+			} else {
+			  // user is logged in, but did not grant any permissions
+			  
+			   //alert('logged in: permission denied');
+			  
+			}
+		  } else {
+			// user is not logged in
+			//alert('not logged in: permission denied');
+		  }
+		}, {scope:'publish_stream,email'});
+
+	}
+
+
+	function submitlogin()
+	{
+
+		document.getElementById('submitlogindiv').innerHTML = "<img src='../Searching.gif' style='float: right;'>\n";
+	
+		var localvalue = requestcount;
+		
+		httpobject[localvalue] = newHttpReq();			
+		httpobject[localvalue].onreadystatechange = function(){
+		
+			try 
+			{
+				if(httpobject[localvalue].readyState == 4)
+				{
+				}
+			
+				if(httpobject[localvalue].status == 200)
+				{
+				}
+			}
+			catch (e)
+			{
+				return;
+			}
+			
+			if(httpobject[localvalue].readyState == 4 && httpobject[localvalue].status == 200)
+			{
+				var response = httpobject[localvalue].responseText.split("<EXTRAINSTRUCTIONS>");
+			
+				document.getElementById('logindiv').innerHTML = response[0];
+				
+				if(response[1])
+				{
+					eval(response[1]);
+				}							
+
+			}
+		
+		
+		};		
+
+		var poststring = 'username=' + document.getElementById('username').value + '&password=' + document.getElementById('password').value + '&sourcepage=artworkpage&targetfunction=' + targetfunction;
+		
+		//alert(poststring);
+		//return;
+		
+		var url = "../loginvalidationnew.php";
+
+		httpobject[localvalue].open('post',url,true);
+		httpobject[localvalue].setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+		httpobject[localvalue].send(poststring);	
+
+		requestcount += 1;	
+	
+	}
+	
+	function showcomment1()
+	{
+		if(memberidtype == 'none')
+		{
+			targetfunction = "showcomment1()";
+			showlogindiv(false);
+			return;
+		}
+		
+		if(document.getElementById('comment1div').getAttribute('activestatus') == 0)
+		{
+			document.getElementById('comment1div').style.height = '150px';
+			document.getElementById('comment1div').setAttribute('activestatus',1);
+		}
+		else
+		{
+			document.getElementById('comment1div').style.height = '0px';
+			document.getElementById('comment1div').setAttribute('activestatus',0);			
+		}
+
+	}
+	
+	function submitcomment1()
+	{
+		var comment = document.getElementById('comment1').value;
+		
+		if(comment.length < 3)
+		{
+			alert('You must enter at least three characters.');
+			return;
+		}
+		
+		document.getElementById('comment1form').submit();
+	
+	}
+	
+
+	function showcomment2()
+	{
+		if(memberidtype == 'none')
+		{
+			targetfunction = "showcomment2()";
+			showlogindiv(false);
+			return;
+		}
+		
+
+		if(document.getElementById('comment2div').getAttribute('activestatus') == 0)
+		{
+			document.getElementById('comment2div').style.height = '150px';
+			document.getElementById('comment2div').setAttribute('activestatus',1);
+			document.getElementById('comment2div').scrollIntoView(true);
+		}
+		else
+		{
+			document.getElementById('comment2div').style.height = '0px';
+			document.getElementById('comment2div').setAttribute('activestatus',0);			
+		}
+
+	}
+	
+	function submitcomment2()
+	{
+		var comment = document.getElementById('comment2').value;
+		
+		if(comment.length < 3)
+		{
+			alert('You must enter at least three characters.');
+			return;
+		}
+		
+		document.getElementById('comment2form').submit();
+	
+	}
+
+	function showreply(id)
+	{
+
+		if(document.getElementById('replydiv'))
+		{
+			var parentobject = document.getElementById('replydiv').parentNode;
+			parentobject.removeChild(document.getElementById('replydiv'));
+			
+			if(id == replyid)
+			{
+				return;
+			}
+		}
+		
+		replyid = id;
+	
+		var parentobject = document.getElementById('individualcommentdiv['+id+']');
+		
+		var newelement = document.createElement('div');
+		newelement.id = 'replydiv';
+		newelement.style.styleFloat = 'left';
+		newelement.style.width = '100%';
+		newelement.innerHTML = "<div style='float: left; width: 100%; padding-top: 20px;'><form id='replyform' name='replyform' method='post' action='../validatepostcommentreply.php'><input type='hidden' id='childof' name='childof' value='" + replyid + "'><input type='hidden' id='artworkid' name='artworkid' value='3309543'><p style='float: left; width: 100%; font: 8pt arial; font-weight: bold;'>Post Reply</p><div style='float: left; width: 100%; padding-top: 5px;'><textarea id='reply' name='reply' style='float: left; width: 290px; padding: 5px; font: 10pt arial;'></textarea></div><div style='float: left; width: 100%; padding-top: 10px;'><a class='button' href='javascript: submitreply();'><span>Reply</span></a></div></form></div>";
+		
+		parentobject.appendChild(newelement);		
+		
+	}
+
+	function submitreply()
+	{
+		var comment = document.getElementById('reply').value;
+		
+		if(comment.length < 3)
+		{
+			alert('You must enter at least three characters.');
+			return;
+		}
+		
+		document.getElementById('replyform').submit();
+	
+	}
+
+	function twitterpopup(url) 
+	{
+		var width = 600;
+		var height = 400;
+		
+		var leftposition = Number((screen.width/2)-(width/2));
+		var topposition = Number((screen.height/2)-(height/2));
+		
+		window.open(url,'twitterwindow','width=' + width + ',height=' + height + ',resizable=1,toolbar=0,menubar=0,status=0,location=0,left=' + leftposition + ',top=' + topposition); 
+	}
+
+	function facebookpopup(url) 
+	{
+		var width = 680;
+		var height = 400;
+		
+		var leftposition = Number((screen.width/2)-(width/2));
+		var topposition = Number((screen.height/2)-(height/2));
+		
+		window.open(url,'facebookwindow','width=' + width + ',height=' + height + ',resizable=1,toolbar=0,menubar=0,status=0,location=0,left=' + leftposition + ',top=' + topposition); 
+	}
+	
+	function googlepluspopup(url) 
+	{
+		var width = 720;
+		var height = 500;
+		
+		var leftposition = Number((screen.width/2)-(width/2));
+		var topposition = Number((screen.height/2)-(height/2));
+		
+		window.open(url,'googlepluswindow','width=' + width + ',height=' + height + ',resizable=1,toolbar=0,menubar=0,status=0,location=0,left=' + leftposition + ',top=' + topposition);
+	}	
+
+	function pinterestpopup(url) 
+	{
+		var width = 640;
+		var height = 540;
+		
+		var leftposition = Number((screen.width/2)-(width/2));
+		var topposition = Number((screen.height/2)-(height/2));
+		
+		window.open(url,'pinterestwindow','width=' + width + ',height=' + height + ',resizable=1,toolbar=0,menubar=0,status=0,location=0,left=' + leftposition + ',top=' + topposition); 
+	}
+	
+	function checktwittercount(sourceurl)
+	{
+
+		$.get('http://urls.api.twitter.com/1/urls/count.json?url=' + sourceurl, function(data) {
+	
+			if ((data.count != 0) && (data.count != undefined) && (data.count != null)) 
+			{
+				document.getElementById('twittercountdiv').style.display = 'inline-block';
+				document.getElementById('twittercount').innerHTML = data.count;
+			}				
+		},'jsonp');
+	
+	}	
+
+	function checkfacebookcount(sourceurl)
+	{
+		$.get('https://graph.facebook.com/' + sourceurl + '', function(data) {
+			
+			var fbshares = 0;
+			var fblikes = 0;
+			var fbtotal = 0;
+			
+			if ((data.shares != 0) && (data.shares != undefined) && (data.shares != null)) 
+			{
+				fbshares = data.shares;
+			}
+
+			if ((data.likes != 0) && (data.likes != undefined) && (data.likes != null)) 
+			{
+				fblikes = data.likes;
+			}			
+			
+			fbtotal = fbshares + fblikes;
+			
+			if(fbtotal > 0)
+			{
+				document.getElementById('facebookcountdiv').style.display = 'inline-block';
+				document.getElementById('facebookcount').innerHTML = fbtotal;
+			}
+			
+		},'jsonp');
+	
+	}	
+
+	function checkpinterestcount(sourceurl)
+	{
+
+		$.get('http://api.pinterest.com/v1/urls/count.json?url=' + sourceurl, function(data) {
+	
+			if ((data.count != 0) && (data.count != undefined) && (data.count != null)) 
+			{
+				document.getElementById('pinterestcountdiv').style.display = 'inline-block';
+				document.getElementById('pinterestcount').innerHTML = data.count;
+			}				
+		},'jsonp');
+	
+	}
+
+
+	function checkstumbleuponcount(sourceurl)
+	{
+
+		$.get('../queries/querysocialapis.php?target=stumbleupon&url=' + sourceurl, function(data) {
+
+			if ((data != 0) && (data != undefined) && (data != null)) 
+			{
+				document.getElementById('stumbleuponcountdiv').style.display = 'inline-block';
+				document.getElementById('stumbleuponcount').innerHTML = data;
+			}				
+		},'html');
+	
+	}
+
+
+	function checkgooglepluscount(sourceurl)
+	{
+
+		$.get('../queries/querysocialapis.php?target=googleplus&url=' + sourceurl, function(data) {
+		
+			if ((data != 0) && (data != undefined) && (data != null)) 
+			{
+				document.getElementById('googlepluscountdiv').style.display = 'inline-block';
+				document.getElementById('googlepluscount').innerHTML = data;
+			}				
+		},'html');
+	
+	}
+	
+	
+</script>
+
+
+<script type='text/javascript' src='http://fineartamerica.com/fullresolutionnew.js?timestamp=1380603906'></script>
+<script type='text/javascript'>previewenableflag = 1;</script><style type='text/css'>
+
+	
+	input 	{	font-family: arial;
+				font-size: 8pt;
+				float: left;
+			}
+			
+	tr	{ vertical-align: top;}
+
+	img	{	padding: 0px;
+			margin: 0px;
+		}
+
+	p	{margin: 0px;}
+
+	div	{margin: 0px;
+		 float: none;}
+
+	form {margin: 0px;}
+
+
+	
+	.topright       {       background-image: url('http://fineartamerica.com/ShadowTopRight.jpg');                                                                      
+									background-repeat: repeat-y;                                                                                                        
+									overflow: hidden;                                                                                                                   
+							}                                                                                                                                           
+																																										
+	.right          {       background-image: url('http://fineartamerica.com/ShadowRight.jpg');                                                                         
+									background-repeat: repeat-y;                                                                                                        
+									overflow: hidden;                                                                                                                   
+							}                                                                                                                                           
+																																										
+	.bottomleft     {       background-image: url('http://fineartamerica.com/ShadowBottomLeft.jpg');                                                                    
+									overflow: hidden;                                                                                                                   
+							}                                                                                                                                           
+																																										
+	.bottom         {       background-image: url('http://fineartamerica.com/ShadowBottom.jpg');                                                                        
+									overflow: hidden;                           
+							}                                                                                                                                           
+																																										
+	.bottomright    {       background-image: url('http://fineartamerica.com/ShadowBottomRight.jpg');                                                                   
+											overflow: hidden;                                                                                                           
+									}  	
+
+	.shadowright 	{	background-image: url('http://fineartamerica.com/ShadowRightGrayWhite.jpg');
+					}
+
+	.shadowbottomright	{	background-image: url('http://fineartamerica.com/ShadowBottomRightGrayWhite.jpg');
+					}
+
+	.shadowbottom 	{	background-image: url('http://fineartamerica.com/ShadowBottomGrayWhite.jpg');
+					}
+					
+	.toproundedleft	{	float: left; 
+						width: 10px; 
+						height: 30px; 
+						background-image: url('http://fineartamerica.com/CornerRoundedLeftBlue.jpg');
+						background-position: top left;
+						background-repeat: no-repeat;			
+					}	
+		
+	.toproundedmiddle	{	float: left; 
+						height: 30px; 
+						background-image: url('http://fineartamerica.com/HeaderBlueGradient.jpg');
+						background-position: top left;
+						background-repeat: repeat-x;			
+					}
+								
+	.toproundedright	{	float: left; 
+						width: 10px; 
+						height: 30px; 
+						background-image: url('http://fineartamerica.com/CornerRoundedRightBlue.jpg');
+						background-position: top right;
+						background-repeat: no-repeat;			
+					}					
+
+	.bottomroundedleft	{	float: left; 
+						width: 10px; 
+						height: 40px; 
+						background-image: url('http://fineartamerica.com/CornerRoundedBottomLeftBlue.jpg');
+						background-position: bottom left;
+						background-repeat: no-repeat;			
+					}	
+		
+	.bottomroundedmiddle	{	float: left; 
+						height: 40px; 
+						background-image: url('http://fineartamerica.com/HeaderBottomBlueGradient.jpg');
+						background-position: bottom left;
+						background-repeat: repeat-x;			
+					}
+								
+	.bottomroundedright	{	float: left; 
+						width: 10px; 
+						height: 40px; 
+						background-image: url('http://fineartamerica.com/CornerRoundedBottomRightBlue.jpg');
+						background-position: bottom right;
+						background-repeat: no-repeat;			
+					}					
+		
+</style>
+</head>
+
+<body oncontextmenu='return false;' onLoad='javascript: loadflag = 1; highlightexternalsearchstring();' onMouseMove='javascript: MouseMove(event);' style='background-color: #242115; background-image: none;'>
+
+<div id='fb-root'></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({appId: '113101038770813', status: true, cookie: true, xfbml: true});
+			 
+	FB.Event.subscribe('edge.create', function(response) {
+
+		var url = '../recommendartwork.php?artworkid=3309543';		
+		
+     	if((request.readyState != 4) && (request.readyState != 0))
+     	{
+			request.abort();
+			request = newHttpReq();
+     	}
+
+		request.open('GET',url,true);
+     	request.onreadystatechange = UpdatePage;
+     	request.send(null);	
+	
+	
+	});
+			 
+  };
+  
+  (function() {
+    var e = document.createElement('script'); 
+	e.async = true;
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+
+</script>
+
+
+<div class='outerdiv' style="border: 1px solid #444444; border-top: none; border-bottom: none; background-color: #FFFFFF; background-image: none; background-position: top center;">
+	
+	<div id='headercontainer' style='float: left; width: 100%;'>
+<script type='text/javascript'>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-9959301-4']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<div id='headerdiv' style='float: left; width: 100%; height: 100px; overflow: hidden; background-color: #FFFFFF; background-image: url("https://fineartamerica.com/images/images-headers/artistid-41475-1372014013.jpg"); background-position: top left; background-repeat: no-repeat; border: none;'>
+<div style='float: left; width: 920px; padding-left: 25px; padding-right: 25px;'>
+<p id='headertext' style='float: left; width: 100%; padding-top: 33px; font: 22pt arial; font-weight: bold; color: #FFFEFE; text-align: center;'>Sipo Liimatainen, Master of Abstract Surrealism</p>
+</div>
+</div>
+<style>
+#sddm li a {color: #FFFFFF}
+#sddm li a {background-color: #007BAA}
+#sddm li a {background-image: url('https://fineartamerica.com/images-dynamic/divider-007BAA')}
+#sddm li div {background-color: #007BAA}
+</style>
+
+<div style="float: left; width: 100%; height: 31px; background-image: url('https://fineartamerica.com/images-dynamic/thin-007BAA'); background-repeat: repeat-x;">
+
+	<div style='float: left; width: 650px; padding-top: 1px;'>
+
+		<ul id="sddm">
+
+			<li>
+<a href="http://sipo-liimatainen.artistwebsites.com/index.html" style="width: 50px; background-image: none;" onmouseover="mclose()">Home</a>
+</li>
+<li>
+<a href='http://sipo-liimatainen.artistwebsites.com/controlpanel/index.html?tab=memberhomepage' style='width: 50px;' onmouseover='mclose()'>Login</a>
+</li>
+<li>
+<a href='http://sipo-liimatainen.artistwebsites.com/art/all/all/all' style='width: 60px;' onmouseover='mclose()'>Artwork</a>
+</li>
+<li>
+<a href='http://sipo-liimatainen.artistwebsites.com/galleries.html' style='width: 70px;' onmouseover='mclose();'>Galleries</a>
+</li>
+<li>
+<a href="http://sipo-liimatainen.artistwebsites.com/calendar.html" style="width: 60px;" onmouseover="mclose()">Events</a>
+</li>
+<li>
+<a href="http://sipo-liimatainen.artistwebsites.com/myblog.html" style="width: 50px;" onmouseover="mclose()">Blog</a>
+</li>
+
+			<li>
+				<a href="http://sipo-liimatainen.artistwebsites.com/news.html" style="width: 50px;" onmouseover="mclose()">News</a>   
+			</li>
+			<li>
+				<a href="http://sipo-liimatainen.artistwebsites.com/contact.html?newemail=true" style="width: 60px;" onmouseover="mclose()" onmouseout="mclosetime()">Contact</a>  
+			</li>
+
+			<li>
+				<a href="http://sipo-liimatainen.artistwebsites.com/subscribewebsiteemaillist.html" style="width: 75px;" onmouseover="mclose()" onmouseout="mclosetime()">Subscribe</a>  
+			</li>
+			
+						
+		</ul>
+
+	</div>
+
+	<div style='float: right; width: 280px; height: 31px; background-image: url("https://fineartamerica.com/images-dynamic/thick-004CAA"); background-repeat: repeat-x;'>
+<div style='float: left; width: 110px; overflow: hidden; padding-top: 5px; padding-left: 5px;'>
+<form id='searchformheader' name='searchformheader' method='POST' action='http://sipo-liimatainen.artistwebsites.com/art/all/all/all' style='float: left; width: 100%; overflow: hidden;'>
+<input type='hidden' id='product' name='product' value='all'><input style='float: left; border: 1px solid #444444; border-radius: 2px; font-size: 8pt; width: 80px; height: 16px; padding: 1px; padding-left: 5px; margin: 0px; color: #666666; box-shadow: none;' onClick='javascript: this.value = "";' type='text' name='searchtag' size='20' value='search'><a href='javascript: document.searchformheader.submit();' style='font: 10pt arial; font-weight: bold; color: #FFFFFF; text-decoration: none;'><img src='https://fineartamerica.com/images-dynamic/arrow-004CAA' style='float: left; width: 15px; height: 20px; border: none; padding-left: 5px; padding-top: 0px;'></a></form></div><div style='float: left; width: 60px; overflow: hidden; padding-top: 4px; padding-left: 7px;'>
+<select id='currencyid' name='currencyid' onChange='javascript: window.location = "http://sipo-liimatainen.artistwebsites.com/featured/fascinatio-lucis-sipo-liimatainen.html?currencyid=" + document.getElementById("currencyid").value;' style='float: left; width: 50px; height: 18px; overflow: hidden; padding: 0px; margin: 0px; margin-top: 2px; font: 8pt arial; color: #666666; border: 1px solid #444444; border-radius: 0px;'>
+<option value='AUD' >AUD</option>
+<option value='CAD' >CAD</option>
+<option value='EUR' >EUR</option>
+<option value='GBP' >GBP</option>
+<option value='JPY' >JPY</option>
+<option value='USD' selected>USD</option>
+</select>
+</div>
+<p style='float: right; padding-right: 15px; padding-top: 8px; overflow: hidden; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/shoppingcart.html' style='font: 8pt arial; color: #FFFFFF; text-decoration: underline;'>Shopping Cart</a></p></div>
+<img style='float: right; width: 40px; height: 31px;' src='https://fineartamerica.com/images-dynamic/transition-007BAA004CAAFFFFFF'>
+	
+</div></div>
+	
+	<!-- LEFT DIV -->
+	<div id="maindiv" style="float: left; width: 920px; margin: 0px; padding-top: 15px; padding-left: 25px; padding-bottom: 35px;">
+
+		
+		<div style='float: left; width: 100%;'>
+
+			<div style='float: left; width: 100%; padding-bottom: 15px;'>
+
+					
+			
+				<div style='float: left; width: 650px;'>
+
+					<h1 style='float: left; width: 100%; padding: 0px; padding-top: 5px; margin: 0px; font: 22pt arial; font-weight: bold; color: #444444; text-shadow: 2px 2px 4px #CCCCCC;'>Fascinatio lucis - Sipo Liimatainen</h1>					
+				</div>
+				
+				<div style='float: right; width: 250px;'>
+					
+					<p style='float: left; width: 100%; padding-bottom: 5px; font: 9pt arial; color: #444444;'>Artwork: #196 of 340</p>	
+					
+					<a class='button' href='../featured/dies-laetitiae--fractal-art-sipo-liimatainen.html'><span>Previous</span></a>
+					<a class='button' href='../featured/memoria-futurorum--fractal-art-sipo-liimatainen.html'><span>Next</span></a>
+					<a class='button' href='../art/all/all/all' style='margin-right: 0px;'><span>View All</span></a>
+		
+				</div>
+				
+			</div>
+
+
+			<div style='float: left; width: 620px;'>
+<div style='float: left; width: 100%;'>
+<div style='width: 522px; margin: auto;'>
+<img id='mainimage' src='http://images.fineartamerica.com/images-medium-5/fascinatio-lucis-sipo-liimatainen.jpg' title='Fascinatio lucis Digital Art ' alt='Fascinatio lucis Digital Art' onMouseDown='javascript: return false;' onClick='javascript: previewimage();' style='float: left; height: 700px; width: 500px; border: 1px solid #999999; cursor: hand; cursor: pointer; background-color: #FFFFFF; box-shadow: 5px 5px 8px #CCCCCC;'>
+</div>
+</div>
+<div style='float: left; width: 100%; padding-top: 20px; text-align: center; vertical-align: top;'>
+<a href='javascript: showcomment1();'><div style='display: inline-block; min-width: 80px; height: 22px; overflow: hidden; border: 1px solid #BBBBBB; border-radius: 3px; box-shadow: none;'><div style='float: left; width: 80px; height: 100%; overflow: hidden; background-color: #EEEEEE;'><img src='../IconFineArtAmericaSmall.png' style='float: left; width: 16px; height: 16px; padding-left: 5px; padding-top: 3px; border: none;'><p style='float: left; padding-left: 5px; padding-top: 4px; font: 8pt arial; color: #335599;'>Comment</p></div><div style='float: left; display: none; height: 100%; padding-left: 8px; padding-right: 8px; border-left: 1px solid #999999;'><div style='float: left; padding-top: 2px; font: 10pt arial; font-weight: bold; color: #666666;'>44</div></div></div></a>
+<div id='favoritediv' style='display: inline-block; min-width: 76px; margin-left: 10px;'><a href='../addtofavorites.html?artworkid=3309543'><div style='float: left; min-width: 76px; height: 22px; overflow: hidden; border: 1px solid #BBBBBB; border-radius: 3px; box-shadow: none;'><div style='float: left; width: 76px; height: 100%; overflow: hidden; background-color: #EEEEEE;'><img src='../IconFineArtAmericaSmall.png' style='float: left; width: 16px; height: 16px; padding-left: 5px; padding-top: 3px; border: none;'><p style='float: left; padding-left: 5px; padding-top: 4px; font: 8pt arial; color: #335599;'>Favorite</p></div><div style='float: left; display: none; height: 100%; padding-left: 8px; padding-right: 8px; border-left: 1px solid #999999;'><div style='float: left; padding-top: 2px; font: 10pt arial; font-weight: bold; color: #666666;'>44</div></div></div></a></div>
+<a href='../addtowatchlist.html?watchartistid=41475'><div style='display: inline-block; margin-left: 10px; min-width: 70px; height: 22px; overflow: hidden; border: 1px solid #BBBBBB; border-radius: 3px; box-shadow: none;'><div style='float: left; width: 70px; height: 100%; overflow: hidden; background-color: #EEEEEE;'><img src='../IconFineArtAmericaSmall.png' style='float: left; width: 16px; height: 16px; padding-left: 5px; padding-top: 3px; border: none;'><p style='float: left; padding-left: 5px; padding-top: 4px; font: 8pt arial; color: #335599; text-decoration: none;'>Watch</p></div><div style='float: left; display: none; height: 100%; padding-left: 8px; padding-right: 8px; border-left: 1px solid #999999;'><div style='float: left; padding-top: 2px; font: 10pt arial; font-weight: bold; color: #666666;'>44</div></div></div></a>
+<a href='javascript: facebookpopup("http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html&timestamp=1380603906");'><div style='display: inline-block; margin-left: 10px; min-width: 40px; height: 22px; overflow: hidden; border: 1px solid #BBBBBB; border-radius: 3px; box-shadow: none;'><div style='float: left; width: 40px; height: 100%; overflow: hidden; background-color: #EEEEEE;'><img src='../IconFacebookSmall.png' style='float: left; padding-left: 12px; padding-top: 3px; border: none;'></div><div id='facebookcountdiv' style='float: left; display: none; height: 100%; padding-left: 8px; padding-right: 8px; border-left: 1px solid #999999; background-color: #FFFFFF;'><div id='facebookcount' style='float: left; padding-top: 2px; font: 10pt arial; font-weight: bold; color: #666666;'>N/A</div></div></div></a>
+<a onClick='javascript: twitterpopup("http://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html&text=New+print+available+on+sipo-liimatainen.artistwebsites.com%21+-+%27Fascinatio+lucis%27+by+Sipo+Liimatainen+-&url=http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html&via=fineartamerica");' style='cursor: pointer; cursor: hand;'><div style='display: inline-block; margin-left: 10px; min-width: 40px; height: 22px; overflow: hidden; border: 1px solid #BBBBBB; border-radius: 3px; box-shadow: none;'><div style='float: left; width: 40px; height: 100%; overflow: hidden; background-color: #EEEEEE;'><img src='../IconTwitterSmall.png' style='float: left; padding-left: 10px; padding-top: 3px; border: none;'></div><div id='twittercountdiv' style='float: left; display: none; height: 100%; padding-left: 8px; padding-right: 8px; border-left: 1px solid #999999; background-color: #FFFFFF;'><div id='twittercount' style='float: left; padding-top: 2px; font: 10pt arial; font-weight: bold; color: #666666;'>N/A</div></div></div></a>
+<a href='http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html&title=Fine+Art+America' target='_blank'><div style='display: inline-block; margin-left: 10px; min-width: 40px; height: 22px; overflow: hidden; border: 1px solid #BBBBBB; border-radius: 3px; box-shadow: none;'><div style='float: left; width: 40px; height: 100%; overflow: hidden; background-color: #EEEEEE;'><img src='../IconStumbleuponSmall.png' style='float: left; padding-left: 10px; padding-top: 2px; border: none;'></div><div id='stumbleuponcountdiv' style='float: left; display: none; height: 100%; padding-left: 8px; padding-right: 8px; border-left: 1px solid #999999; background-color: #FFFFFF;'><div id='stumbleuponcount' style='float: left; padding-top: 2px; font: 10pt arial; font-weight: bold; color: #666666;'>N/A</div></div></div></a>
+<a href='javascript: googlepluspopup("https://plus.google.com/share?url=http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html?utm_source=GooglePlus&utm_medium=share%2Bbutton&utm_content=Fascinatio+lucis+Digital+Art+by+Sipo+Liimatainen+-+Fascinatio+lucis+Fine+Art+Prints+and+Posters+for+Sale&utm_campaign=social%2Bmedia");'><div style='display: inline-block; margin-left: 10px; min-width: 40px; height: 22px; overflow: hidden; border: 1px solid #BBBBBB; border-radius: 3px; box-shadow: none;'><div style='float: left; width: 40px; height: 100%; overflow: hidden; background-color: #EEEEEE;'><img src='../IconGooglePlusSmall.png' style='float: left; padding-left: 10px; padding-top: 2px; border: none;'></div><div id='googlepluscountdiv' style='float: left; display: none; height: 100%; padding-left: 8px; padding-right: 8px; border-left: 1px solid #999999; background-color: #FFFFFF; '><div id='googlepluscount' style='float: left; padding-top: 2px; font: 10pt arial; font-weight: bold; color: #666666;'>N/A</div></div></div></a>
+<a href='javascript: pinterestpopup("http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html&media=http%3A%2F%2Fartistwebsites.com%2Fimages-medium-5%2Ffascinatio-lucis-sipo-liimatainen.jpg");'><div style='display: inline-block; margin-left: 10px; min-width: 40px; height: 22px; overflow: hidden; border: 1px solid #BBBBBB; border-radius: 3px; box-shadow: none;'><div style='float: left; width: 40px; height: 100%; overflow: hidden; background-color: #EEEEEE;'><img src='../IconPinterestSmall.png' style='float: left; padding-left: 10px; padding-top: 2px; border: none;'></div><div id='pinterestcountdiv' style='float: left; display: none; height: 100%; padding-left: 8px; padding-right: 8px; border-left: 1px solid #999999; background-color: #FFFFFF; '><div id='pinterestcount' style='float: left; padding-top: 2px; font: 10pt arial; font-weight: bold; color: #666666;'>44</div></div></div></a>
+<script type='text/javascript'>
+checktwittercount("http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html");
+checkfacebookcount("http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html");
+checkpinterestcount("http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html");
+checkstumbleuponcount("http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html");
+checkgooglepluscount("http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html");
+</script>
+</div>
+<div style='float: left; width: 100%; padding-top: 15px; overflow: visible; text-align: center; display: none;'>
+<p style='float: left; width: 100%; font: 10pt arial; text-align: center; color: #000000;'>Tags: <a href='../art/all/surrealism/all' style='font: 10pt arial; color: #335599;'>surrealism</a>, <a href='../art/all/surreal/all' style='font: 10pt arial; color: #335599;'>surreal</a>, <a href='../art/all/surrealistic/all' style='font: 10pt arial; color: #335599;'>surrealistic</a>, <a href='../art/all/visionary/all' style='font: 10pt arial; color: #335599;'>visionary</a>, <a href='../art/all/abstract/all' style='font: 10pt arial; color: #335599;'>abstract</a>, <a href='../art/all/modern/all' style='font: 10pt arial; color: #335599;'>modern</a>, <a href='../art/all/contemporary/all' style='font: 10pt arial; color: #335599;'>contemporary</a>, <a href='../art/all/green/all' style='font: 10pt arial; color: #335599;'>green</a>, <a href='../art/all/still+life/all' style='font: 10pt arial; color: #335599;'>still life</a>, <a href='../art/all/fractal/all' style='font: 10pt arial; color: #335599;'>fractal</a>, <a href='../art/all/geometric/all' style='font: 10pt arial; color: #335599;'>geometric</a>, <a href='../art/all/3-d/all' style='font: 10pt arial; color: #335599;'>3-d</a>, <a href='../art/all/symbolism/all' style='font: 10pt arial; color: #335599;'>symbolism</a>, <a href='../art/all/fantasy/all' style='font: 10pt arial; color: #335599;'>fantasy</a>, <a href='../art/all/imagination/all' style='font: 10pt arial; color: #335599;'>imagination</a>, <a href='../art/all/beauty/all' style='font: 10pt arial; color: #335599;'>beauty</a>, <a href='../art/all/reflection/all' style='font: 10pt arial; color: #335599;'>reflection</a>, <a href='../art/all/bright/all' style='font: 10pt arial; color: #335599;'>bright</a>, <a href='../art/all/light/all' style='font: 10pt arial; color: #335599;'>light</a>, <a href='../art/all/digital+art/all' style='font: 10pt arial; color: #335599;'>digital art</a>, <a href='../art/all/mystical/all' style='font: 10pt arial; color: #335599;'>mystical</a>, <a href='../art/all/mythology/all' style='font: 10pt arial; color: #335599;'>mythology</a>, <a href='../art/all/spiral/all' style='font: 10pt arial; color: #335599;'>spiral</a>, <a href='../art/all/imaginative/all' style='font: 10pt arial; color: #335599;'>imaginative</a>, <a href='../art/all/wonderful/all' style='font: 10pt arial; color: #335599;'>wonderful</a>, <a href='../art/all/fantastic/all' style='font: 10pt arial; color: #335599;'>fantastic</a>, <a href='../art/all/excellent/all' style='font: 10pt arial; color: #335599;'>excellent</a>, <a href='../art/all/design/all' style='font: 10pt arial; color: #335599;'>design</a>, <a href='../art/all/sipo+liimatainen/all' style='font: 10pt arial; color: #335599;'>sipo liimatainen</a>, <a href='../art/all/prints/all' style='font: 10pt arial; color: #335599;'>prints</a>, <a href='../art/all/canvas/all' style='font: 10pt arial; color: #335599;'>canvas</a>, <a href='../art/all/vibrant/all' style='font: 10pt arial; color: #335599;'>vibrant</a>, <a href='../art/all/impressive/all' style='font: 10pt arial; color: #335599;'>impressive</a>, <a href='../art/all/expressive/all' style='font: 10pt arial; color: #335599;'>expressive</a>, <a href='../art/all/colorful/all' style='font: 10pt arial; color: #335599;'>colorful</a>, <a href='../art/all/decorative/all' style='font: 10pt arial; color: #335599;'>decorative</a>, <a href='../art/all/inspirational/all' style='font: 10pt arial; color: #335599;'>inspirational</a>, <a href='../art/all/translucent/all' style='font: 10pt arial; color: #335599;'>translucent</a>, <a href='../art/all/curves/all' style='font: 10pt arial; color: #335599;'>curves</a>, <a href='../art/all/decor/all' style='font: 10pt arial; color: #335599;'>decor</a></p></div>
+	
+
+			
+				<div style='float: left; width: 100%; padding-top: 20px; display: none;'>
+					
+										
+					
+					<a href='javascript: showcomment1();'><img src='http://fineartamerica.com/LogoAddComment.jpg' style='float: left; width: 17px; height: 16px; padding-top: 3px; border: none;'></a>
+					<a href='javascript: showcomment1();' style='float: left; font: 10pt arial; text-decoration: none; color: #335599; padding-left: 5px;'>comment</a>
+				
+					<a href='../addtofavorites.html?artworkid=3309543'><img src='http://fineartamerica.com/LogoAddToFavorites.jpg' style='float: left; width: 19px; height: 16px; padding-left: 20px; padding-top: 1px; border: none;'></a>
+					<a href='../addtofavorites.html?artworkid=3309543' style='float: left; font: 10pt arial; text-decoration: none; color: #335599; padding-left: 5px;'>favorite</a>
+
+					<a href='../addtowatchlist.html?watchartistid=41475'><img src='http://fineartamerica.com/LogoAddToWatchList.jpg' style='float: left; width: 19px; height: 18px; padding-left: 20px; padding-top: 0px; border: none;'></a>
+					<a href='../addtowatchlist.html?watchartistid=41475' style='float: left; font: 10pt arial; text-decoration: none; color: #335599; padding-left: 5px;'>watch</a>
+
+					<a href='http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html' target='_blank'><img src='http://fineartamerica.com/LogoStumbleUpon.jpg' style='float: left; width: 16px; height: 16px; padding-left: 20px; border: none;'></a>
+<a href='http://www.stumbleupon.com/submit?url=http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html' target='_blank' style='float: left; font: 10pt arial; text-decoration: none; color: #335599; padding-left: 5px;'>stumble</a>
+<div style='float: left; width: 50px; padding-left: 20px;'>
+<a href='../pdfartworkmenu.php?artworkid=3309543' target='_blank'><img src='../LogoPDF.jpg' style='float: left; width: 15px; height: 16px; border: none;'></a>
+<a href='../pdfartworkmenu.php?artworkid=3309543' target='_blank' style='float: left; font: 10pt arial; text-decoration: none; color: #335599; padding-left: 8px;'>pdf</a>
+</div>
+<div style='float: left; width: 85px; padding-left: 15px; margin-top: -1px;'>
+<fb:like href='http%3A%2F%2Fsipo-liimatainen.artistwebsites.com%2Ffeatured%2Ffascinatio-lucis-sipo-liimatainen.html' layout='button_count' show_faces='false' width='85' action='recommend' font='' ></fb:like>
+</div>
+	
+					
+				</div>
+
+
+				<div id='comment1div' activestatus = '0' style='float: left; width: 100%; height: 0px; overflow: hidden;'>
+<form id='comment1form' method='post' action='../validatepostcommentnew.php'>
+<textarea id='comment1' name='comment1' style='float: left; width: 590px; height: 75px; padding: 5px; margin-top: 15px; font: 10pt arial; border: 1px solid #999999;'></textarea>
+<div style='float: left; width: 100%; padding-top: 10px;'>
+<input type='checkbox' id='addtofavorites1' name='addtofavorites1' style='float: left;' value='yes' >
+<p style='float: left; padding-left: 5px; padding-top: 2px; font: 9pt arial; color: #000000;'>Add This Artwork to Your Favorites Collection</p>
+<p style='float: right; padding-right: 15px;'><a class='button' href='javascript: submitcomment1();' style='float: right; margin-right: 0px;'><span>Comment</span></a></p>
+</div>
+<input type='hidden' name='artworkid1' value='3309543'><input type='hidden' name='artworkpagename1' value='fascinatio-lucis-sipo-liimatainen.html'></form>
+</div>
+<div id='commentdiv' class='featuredartworkcommentdiv' style='float: left; clear: both; padding: 30px; margin-top: 35px; overflow: auto; text-align: left; border: 1px solid #CCCCCC; border-radius: 6px; box-shadow: 0px 0px 12px #CCCCCC;'><div style='float: left; width: 100%; padding-bottom: 15px;'>
+<p style='float: left; padding-top: 2px; font: 12pt arial; font-weight: bold; color: #000000;'>Comments</p>
+<p style='float: right; padding-top: 4px; font: 10pt arial;'><a href='javascript: showcomment1();' style='padding: 0px; margin: 0px; font: 10pt arial; font-weight: bold; color: #335599;'>Post a Comment</a></p></div>
+<div style='float: left; width: 544px; padding-top: 20px; padding-bottom: 20px; border-top: 1px solid #BBBBBB; border-bottom: none;'><a name='comment2763547'></a>
+<div style='float: left; width: 100px; height: 85px; overflow: hidden;'>
+<a href='../profiles/wanda-brandon.html' alt='Wanda Brandon' title='Wanda Brandon'><img src='../images/artistlogos/wanda-brandon-1364503734-square.jpg' style='float: left; width: 70px; height: 70px; border: 1px solid #666666; border-radius: 0px; box-shadow: 4px 4px 8px #CCCCCC;'>
+</a></div>
+<div id='individualcommentdiv[2763547]' style='float: left; width: 332px; overflow: hidden;'>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 9pt arial;'><a href='../profiles/wanda-brandon.html' style='font: 9pt arial; font-weight: bold; color: #335599;'>Wanda Brandon</a> </p></div>
+<p style='float: left; width: 100%; padding-top: 2px; font: 8pt arial; color: #000000;'>Marion, IL - United States</p>
+<p style='float: left; width: 100%; padding-top: 10px; font: 10pt arial; color: #000000;'>amazing abstract. Love the colors, lines, forms and energy. f/v</p><div style='float: left; width: 100%; padding-top: 15px;'>
+<div style='float: left; width: 100%; padding-top: 10px; padding-bottom: 5px;'>
+<a name='comment2773061'></a>
+<a name='comment2763547'></a>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 8pt arial;'><a href='../profiles/sipo-liimatainen.html' style='font: 8pt arial; color: #000000; text-decoration: underline;'>Sipo Liimatainen</a> replied:</p>
+</div>
+<p style='float: left; width: 100%; padding-top: 5px; font: 10pt arial; color: #000000;'> Thank you for your kind comment, Wanda :)</p>
+</div>
+</div>
+</div>
+</div><div style='float: left; width: 544px; padding-top: 20px; padding-bottom: 20px; border-top: 1px solid #BBBBBB; border-bottom: none;'><a name='comment2775413'></a>
+<div style='float: left; width: 100px; height: 85px; overflow: hidden;'>
+<a href='../profiles/me-kozdron.html' alt='ME Kozdron' title='ME Kozdron'><img src='../images/artistlogos/me-kozdron-1299971294-square.jpg' style='float: left; width: 70px; height: 70px; border: 1px solid #666666; border-radius: 0px; box-shadow: 4px 4px 8px #CCCCCC;'>
+</a></div>
+<div id='individualcommentdiv[2775413]' style='float: left; width: 332px; overflow: hidden;'>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 9pt arial;'><a href='../profiles/me-kozdron.html' style='font: 9pt arial; font-weight: bold; color: #335599;'>ME Kozdron</a> </p></div>
+<p style='float: left; width: 100%; padding-top: 2px; font: 8pt arial; color: #000000;'>Wantage, NJ - United States</p>
+<p style='float: left; width: 100%; padding-top: 10px; font: 10pt arial; color: #000000;'>Sipo, Absolutely graceful movement in your design!  Beautiful work!  suvft!  Maureeb</p><div style='float: left; width: 100%; padding-top: 15px;'>
+<div style='float: left; width: 100%; padding-top: 10px; padding-bottom: 5px;'>
+<a name='comment2777676'></a>
+<a name='comment2775413'></a>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 8pt arial;'><a href='../profiles/sipo-liimatainen.html' style='font: 8pt arial; color: #000000; text-decoration: underline;'>Sipo Liimatainen</a> replied:</p>
+</div>
+<p style='float: left; width: 100%; padding-top: 5px; font: 10pt arial; color: #000000;'> Thanks for your supportive comment, Maureeb :)</p>
+</div>
+</div>
+</div>
+</div><div style='float: left; width: 544px; padding-top: 20px; padding-bottom: 20px; border-top: 1px solid #BBBBBB; border-bottom: none;'><a name='comment3363271'></a>
+<div style='float: left; width: 100px; height: 85px; overflow: hidden;'>
+<a href='../profiles/mistikkal.html' alt='Rosy Hall' title='Rosy Hall'><img src='../images/artistlogos/mistikkal-1378433989-square.jpg' style='float: left; width: 70px; height: 70px; border: 1px solid #666666; border-radius: 0px; box-shadow: 4px 4px 8px #CCCCCC;'>
+</a></div>
+<div id='individualcommentdiv[3363271]' style='float: left; width: 332px; overflow: hidden;'>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 9pt arial;'><a href='../profiles/mistikkal.html' style='font: 9pt arial; font-weight: bold; color: #335599;'>Rosy Hall</a> </p></div>
+<p style='float: left; width: 100%; padding-top: 2px; font: 8pt arial; color: #000000;'>Melbourne - Australia</p>
+<p style='float: left; width: 100%; padding-top: 10px; font: 10pt arial; color: #000000;'>Stunning colours, graceful design and light. Love you to add this is Absolutely Digital Sipo and thanks for joining.</p><div style='float: left; width: 100%; padding-top: 15px;'>
+<div style='float: left; width: 100%; padding-top: 10px; padding-bottom: 5px;'>
+<a name='comment3363674'></a>
+<a name='comment3363271'></a>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 8pt arial;'><a href='../profiles/sipo-liimatainen.html' style='font: 8pt arial; color: #000000; text-decoration: underline;'>Sipo Liimatainen</a> replied:</p>
+</div>
+<p style='float: left; width: 100%; padding-top: 5px; font: 10pt arial; color: #000000;'> Hi Rosy and thanks for your comment! Of course I will add this artwork to your new group. :)</p>
+</div>
+</div>
+</div>
+</div><div style='float: left; width: 544px; padding-top: 20px; padding-bottom: 20px; border-top: 1px solid #BBBBBB; border-bottom: none;'><a name='comment3370011'></a>
+<div style='float: left; width: 100px; height: 85px; overflow: hidden;'>
+<a href='../profiles/mistikkal.html' alt='Rosy Hall' title='Rosy Hall'><img src='../images/artistlogos/mistikkal-1378433989-square.jpg' style='float: left; width: 70px; height: 70px; border: 1px solid #666666; border-radius: 0px; box-shadow: 4px 4px 8px #CCCCCC;'>
+</a></div>
+<div id='individualcommentdiv[3370011]' style='float: left; width: 332px; overflow: hidden;'>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 9pt arial;'><a href='../profiles/mistikkal.html' style='font: 9pt arial; font-weight: bold; color: #335599;'>Rosy Hall</a> </p></div>
+<p style='float: left; width: 100%; padding-top: 2px; font: 8pt arial; color: #000000;'>Melbourne - Australia</p>
+<p style='float: left; width: 100%; padding-top: 10px; font: 10pt arial; color: #000000;'>CONGRATULATIONS featured on ABSOLUTELY DIGITAL :)</p><div style='float: left; width: 100%; padding-top: 15px;'>
+<div style='float: left; width: 100%; padding-top: 10px; padding-bottom: 5px;'>
+<a name='comment3371161'></a>
+<a name='comment3370011'></a>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 8pt arial;'><a href='../profiles/sipo-liimatainen.html' style='font: 8pt arial; color: #000000; text-decoration: underline;'>Sipo Liimatainen</a> replied:</p>
+</div>
+<p style='float: left; width: 100%; padding-top: 5px; font: 10pt arial; color: #000000;'> Thanks for featuring, Rosy!</p>
+</div>
+</div>
+</div>
+</div><div style='float: left; width: 544px; padding-top: 20px; padding-bottom: 20px; border-top: 1px solid #BBBBBB; border-bottom: 1px solid #BBBBBB;'><a name='comment3370015'></a>
+<div style='float: left; width: 100px; height: 85px; overflow: hidden;'>
+<a href='../profiles/mistikkal.html' alt='Rosy Hall' title='Rosy Hall'><img src='../images/artistlogos/mistikkal-1378433989-square.jpg' style='float: left; width: 70px; height: 70px; border: 1px solid #666666; border-radius: 0px; box-shadow: 4px 4px 8px #CCCCCC;'>
+</a></div>
+<div id='individualcommentdiv[3370015]' style='float: left; width: 332px; overflow: hidden;'>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 9pt arial;'><a href='../profiles/mistikkal.html' style='font: 9pt arial; font-weight: bold; color: #335599;'>Rosy Hall</a> </p></div>
+<p style='float: left; width: 100%; padding-top: 2px; font: 8pt arial; color: #000000;'>Melbourne - Australia</p>
+<p style='float: left; width: 100%; padding-top: 10px; font: 10pt arial; color: #000000;'>oh and voted and fav'd of course :)</p><div style='float: left; width: 100%; padding-top: 15px;'>
+<div style='float: left; width: 100%; padding-top: 10px; padding-bottom: 5px;'>
+<a name='comment3371171'></a>
+<a name='comment3370015'></a>
+<div style='float: left; width: 100%;'>
+<p style='float: left; font: 8pt arial;'><a href='../profiles/sipo-liimatainen.html' style='font: 8pt arial; color: #000000; text-decoration: underline;'>Sipo Liimatainen</a> replied:</p>
+</div>
+<p style='float: left; width: 100%; padding-top: 5px; font: 10pt arial; color: #000000;'> Thank you, you are very kind, Rosy :)</p>
+</div>
+</div>
+</div>
+</div><div style='float: left; width: 100%; padding-top: 15px;'>
+<p style='float: right; padding-top: 4px;font: 10pt arial;'><a href='javascript: showcomment2();' style='padding: 0px; margin: 0px; font: 10pt arial; font-weight: bold; color: #335599;'>Post a Comment</a></p></div>
+</div><div id='comment2div' activestatus = '0' style='float: left; width: 100%; height: 0px; overflow: hidden;'>
+<form id='comment2form' method='post' action='../validatepostcommentnew.php'>
+<textarea id='comment2' name='comment2' style='float: left; width: 590px; height: 75px; padding: 5px; margin-top: 25px; font: 10pt arial; border: 1px solid #999999;'></textarea>
+<div style='float: left; width: 100%; padding-top: 10px;'>
+<input type='checkbox' id='addtofavorites2' name='addtofavorites2' style='float: left;' value='yes' >
+<p style='float: left; padding-left: 5px; padding-top: 2px; font: 9pt arial; color: #000000;'>Add This Artwork to Your Favorites Collection</p>
+<p style='float: right; padding-right: 15px;'><a class='button' href='javascript: submitcomment2();' style='float: right; margin-right: 0px;'><span>Comment</span></a></p>
+</div>
+<input type='hidden' name='artworkid2' value='3309543'><input type='hidden' name='artworkpagename2' value='fascinatio-lucis-sipo-liimatainen.html'></form>
+</div>
+				
+			</div>
+
+						
+			
+			<div style='float: right; width: 280px; border: none;'>
+			
+			
+				<div style='float: left; width: 100%; background-color: #EEEEEE; border: 1px solid #CCCCCC; padding-top: 5px; padding-bottom: 5px; border-top-left-radius: 6px; border-top-right-radius: 6px;'>
+<p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Title:</p><p style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden; color: #000000;'>Fascinatio lucis</p></div>
+<div style='float: left; width: 100%; background-color: #FFFFFF; border: 1px solid #CCCCCC; border-top: none; padding-top: 5px; padding-bottom: 5px;'>
+<p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Artist:</p><p style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden; color: #000000;'>Sipo Liimatainen</p></div>
+<div style='float: left; width: 100%; background-color: #EEEEEE; border: 1px solid #CCCCCC; border-top: none; padding-top: 5px; padding-bottom: 5px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;'>
+<p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Medium:</p><p style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden; color: #000000;'>Digital Art - Surrealism - Surreal - Surrealistic - Abstract</p></div>
+<div style='float: left; width: 100%; background-color: #6e6341; border: 1px solid #333333; border-radius: 2px; box-shadow: 0px 5px 8px #CCCCCC; padding-top: 5px; padding-bottom: 5px; margin-top: 20px; margin-bottom: 20px;'><p style='float: left; padding-left: 10px; font: 9pt arial; font-weight: bold; color: #FFFFFF;'>Buy Prints | Greeting Cards | iPhone Cases</p></div><div style='float: left; width: 100%;'><div style='float: left; width: 33%; height: 208px; overflow: hidden; text-align: center;'><div style='float: left; width: 100%; height: 128px;'>
+<a href='../products/fascinatio-lucis-sipo-liimatainen-canvas-print.html'><img src='http://render.fineartamerica.com/images-stretched-canvas-small/black/break/images-small-5/fascinatio-lucis-sipo-liimatainen.jpg' alt='Stretched Canvas Print' title='Stretched Canvas Print' style='display: inline-block; padding-left: 5px; border: none;'></a></div>
+<div style='float: left; width: 100%; overflow: hidden; text-align: center;'>
+<p style='display: inline-block; width: 100%; text-align: center;'><a href='../products/fascinatio-lucis-sipo-liimatainen-canvas-print.html' style='font: 8pt arial; font-weight: bold; color: #333333;'>Canvas Print</a></p><p style='display: inline-block; padding-top: 4px;'><a class='button' href='../products/fascinatio-lucis-sipo-liimatainen-canvas-print.html' style='width: 55px; overflow: hidden; font: 10pt arial; color: #333333; font-weight: bold; margin-right: 0px;'><span>$85</span></a></p></div>
+</div><div style='float: left; width: 33%; height: 208px; overflow: hidden; padding-bottom: 10px; text-align: center;'><div style='float: left; width: 100%; height: 128px;'>
+<a href='../products/fascinatio-lucis-sipo-liimatainen-framed-print.html'><img src='http://render.fineartamerica.com/images-framed-small/images-small-5/fascinatio-lucis-sipo-liimatainen.jpg' alt='Framed Print' title='Framed Print' style='display: inline-block; border: none; box-shadow: 0px 5px 5px #CCCCCC;'></a></div>
+<div style='float: left; width: 100%; overflow: hidden; text-align: center;'>
+<p style='display: inline-block; width: 100%; text-align: center;'><a href='../products/fascinatio-lucis-sipo-liimatainen-framed-print.html' style='font: 8pt arial; font-weight: bold; color: #333333;'>Framed Print</a></p><p style='display: inline-block; padding-top: 4px;'><a class='button' href='../products/fascinatio-lucis-sipo-liimatainen-framed-print.html' style='width: 55px; overflow: hidden; font: 10pt arial; color: #333333; font-weight: bold; margin-right: 0px;'><span>$80</span></a></p></div>
+</div><div style='float: left; width: 33%; height: 208px; overflow: hidden; padding-bottom: 10px; text-align: center;'><div style='float: left; width: 100%; height: 128px;'>
+<a href='../products/fascinatio-lucis-sipo-liimatainen-art-print.html'><img src='http://images.fineartamerica.com/images-small-5/fascinatio-lucis-sipo-liimatainen.jpg' alt='Poster / Fine Art Print' title='Poster / Fine Art Print' style='display: inline-block; width: 70px; height: 97px; border: 1px solid #444444; box-shadow: -5px 5px 5px #CCCCCC;'></a></div>
+<div style='float: left; width: 100%; overflow: hidden; text-align: center;'>
+<p style='display: inline-block; width: 100%; text-align: center;'><a href='../products/fascinatio-lucis-sipo-liimatainen-art-print.html' style='font: 8pt arial; font-weight: bold; color: #333333;'>Art Print</a></p><p style='display: inline-block; padding-top: 4px;'><a class='button' href='../products/fascinatio-lucis-sipo-liimatainen-art-print.html' style='width: 55px; overflow: hidden; font: 10pt arial; color: #333333; font-weight: bold; margin-right: 0px;'><span>$37</span></a></p></div>
+</div><div style='float: left; width: 33%; height: 208px; overflow: hidden; text-align: center;'><div style='float: left; width: 100%; height: 128px;'>
+<a href='../products/fascinatio-lucis-sipo-liimatainen-acrylic-print.html'><img src='http://render.fineartamerica.com/images-acrylic-small/hangingwire/break/images-small-5/fascinatio-lucis-sipo-liimatainen.jpg' alt='Acrylic Print' title='Acrylic Print' style='display: inline-block; padding-left: 5px; border: none;'></a></div>
+<div style='float: left; width: 100%; overflow: hidden; text-align: center;'>
+<p style='display: inline-block; width: 100%; text-align: center;'><a href='../products/fascinatio-lucis-sipo-liimatainen-acrylic-print.html' style='font: 8pt arial; font-weight: bold; color: #333333;'>Acrylic Print</a></p><p style='display: inline-block; padding-top: 4px;'><a class='button' href='../products/fascinatio-lucis-sipo-liimatainen-acrylic-print.html' style='width: 55px; overflow: hidden; font: 10pt arial; color: #333333; font-weight: bold; margin-right: 0px;'><span>$94</span></a></p></div>
+</div><div style='float: left; width: 33%; height: 208px; text-align: center;'><div style='float: left; width: 100%; height: 128px;'>
+<a href='../products/fascinatio-lucis-sipo-liimatainen-metal-print.html'><img src='http://render.fineartamerica.com/images-metal-small/hangingwire/break/images-small-5/fascinatio-lucis-sipo-liimatainen.jpg' alt='Metal Print' title='Metal Print' style='display: inline-block; padding-left: 10px; border: none;'></a></div>
+<div style='float: left; width: 100%; overflow: hidden; text-align: center;'>
+<p style='display: inline-block; width: 100%; text-align: center;'><a href='../products/fascinatio-lucis-sipo-liimatainen-metal-print.html' style='font: 8pt arial; font-weight: bold; color: #333333;'>Metal Print</a></p><p style='display: inline-block; padding-top: 4px;'><a class='button' href='../products/fascinatio-lucis-sipo-liimatainen-metal-print.html' style='width: 55px; overflow: hidden; font: 10pt arial; color: #333333; font-weight: bold; margin-right: 0px;'><span>$81</span></a></p></div>
+</div><div style='float: left; width: 33%; height: 208px; text-align: center;'><div style='float: left; width: 100%; height: 128px;; overflow: hidden;'>
+<a href='../products/fascinatio-lucis-sipo-liimatainen-greeting-card.html'><img src='http://render.fineartamerica.com/images-greeting-cards-small/images-small-5/fascinatio-lucis-sipo-liimatainen.jpg' alt='Greeting Card' title='Greeting Card' style='display: inline-block; max-width: 70px; max-height: 128px; padding-left: 10px; border: none;'></a></div>
+<div style='float: left; width: 100%; overflow: hidden; text-align: center;'>
+<p style='display: inline-block; width: 100%; text-align: center;'><a href='../products/fascinatio-lucis-sipo-liimatainen-greeting-card.html' style='font: 8pt arial; font-weight: bold; color: #333333;'>Greeting Card</a></p><p style='display: inline-block; padding-top: 4px;'><a class='button' href='../products/fascinatio-lucis-sipo-liimatainen-greeting-card.html' style='width: 55px; overflow: hidden; font: 10pt arial; color: #333333; font-weight: bold; margin-right: 0px;'><span>$5.45</span></a></p></div>
+</div><div style='float: left; width: 33%; height: 208px; text-align: center;'><div style='float: left; width: 100%; height: 128px; overflow: hidden; text-align: center;'>
+<a href='../products/fascinatio-lucis-sipo-liimatainen-iphone5-case-cover.html'><img src='http://sipo-liimatainen.artistwebsites.com/images/images-iphone5-cases-covers-small/images-small-5/fascinatio-lucis-sipo-liimatainen.jpg' alt='Phone Case' title='Phone Case' style='display: inline-block; max-width: 60px; max-height: 128px; padding-left: 0px; border: none;'></a></div>
+<div style='float: left; width: 100%; overflow: hidden; text-align: center;'>
+<p style='display: inline-block; width: 100%; text-align: center;'><a href='../products/fascinatio-lucis-sipo-liimatainen-iphone5-case-cover.html' style='font: 8pt arial; font-weight: bold; color: #333333;'>Phone Case</a></p><p style='display: inline-block; padding-top: 4px;'><a class='button' href='../products/fascinatio-lucis-sipo-liimatainen-iphone5-case-cover.html' style='width: 55px; overflow: hidden; font: 10pt arial; color: #333333; font-weight: bold; margin-right: 0px;'><span>$36.63</span></a></p></div>
+</div><div style='float: left; width: 33%; height: 208px; text-align: center; display: none;'><div style='float: left; width: 100%; height: 128px; overflow: hidden; text-align: center;'>
+<a href='../products/fascinatio-lucis-sipo-liimatainen-galaxys4-case-cover.html'><img src='http://sipo-liimatainen.artistwebsites.com/images/images-galaxys4-cases-covers-small/images-small-5/fascinatio-lucis-sipo-liimatainen.jpg' alt='Galaxy Case' title='Galaxy Case' style='display: inline-block; max-width: 60px; max-height: 128px; padding-left: 0px; border: none;'></a></div>
+<div style='float: left; width: 100%; overflow: hidden; text-align: center;'>
+<p style='display: inline-block; width: 100%; text-align: center;'><a href='../products/fascinatio-lucis-sipo-liimatainen-galaxys4-case-cover.html' style='font: 8pt arial; font-weight: bold; color: #333333;'>Galaxy Case</a></p><p style='display: inline-block; padding-top: 4px;'><a class='button' href='../products/fascinatio-lucis-sipo-liimatainen-galaxys4-case-cover.html' style='width: 55px; overflow: hidden; font: 10pt arial; color: #333333; font-weight: bold; margin-right: 0px;'><span>$36.63</span></a></p></div>
+</div><div style='float: left; width: 280px; padding-left: 15px; padding-top: 0px; padding-bottom: 20px;'>
+<div style='float: left; width: 100%;'><div style='float: left; margin-top: 2px; margin-right: 8px; width: 8px; height: 8px; overflow: hidden; background-color: #6e6341; border: 1px solid #333333; box-shadow: 2px 2px 4px #CCCCCC;'>&nbsp;</div><p style='float: left; width: 262px; padding-left: 0px; color: #333333;'>Expert Printing and Assembly</p></div><div style='float: left; width: 100%; padding-top: 3px;'><div style='float: left; margin-top: 2px; margin-right: 8px; width: 8px; height: 8px; overflow: hidden; background-color: #6e6341; border: 1px solid #333333; box-shadow: 2px 2px 4px #CCCCCC;'>&nbsp;</div><p style='float: left; width: 262px; padding-left: 0px; color: #333333;'>Shipping Within 2 - 3 Business Days</p></div><div style='float: left; width: 100%; padding-top: 3px;'><div style='float: left; margin-top: 2px; margin-right: 8px; width: 8px; height: 8px; overflow: hidden; background-color: #6e6341; border: 1px solid #333333; box-shadow: 2px 2px 4px #CCCCCC;'>&nbsp;</div><p style='float: left; width: 262px; padding-left: 0px; color: #333333;'><a href='../moneybackguarantee.html' style='font-weight: bold; color: ;'>30-Day Money Back Guarantee</a></p></div></div>
+</div><div style='float: left; width: 100%; padding-top: 25px; padding-bottom: 35px;'><div style='float: left; width: 100%;'>
+<div style='float: left; width: 100%; background-color: #6e6341; border: 1px solid #444444; border-radius: 0px; box-shadow: 0px 5px 8px #CCCCCC; padding-top: 5px; padding-bottom: 5px;'><p style='float: left; padding-left: 10px; font: 10pt arial; font-weight: bold; color: #242115;'><a href='../sendemail.html?artistid=41475&artworkid=3309543&status=yes&type=original' style='font: 10pt arial; color: #FFFFFF; font-weight: bold; text-decoration: none;'>Buy the Original Digital Art</a></p></div></div>
+<div style='float: left; width: 100%; padding-top: 10px;'><div style='float: left; margin-top: 2px; margin-right: 5px; width: 8px; height: 8px; overflow: hidden; background-color: #6e6341; border: 1px solid #333333;'>&nbsp;</div><p style='float: left; width: 80px; padding-left: 5px; color: #000000;'>Price</p><p style='float: left; width: 150px; padding-left: 3px; color: #000000;'>$1,900.00</p></div><div style='float: left; width: 100%; padding-top: 5px;'><div style='float: left; margin-top: 2px; margin-right: 5px; width: 8px; height: 8px; overflow: hidden; background-color: #6e6341; border: 1px solid #333333;'>&nbsp;</div><p style='float: left; width: 80px; padding-left: 5px; color: #000000;'>Dimensions</p><p style='float: left; width: 150px; padding-left: 3px; color: #000000;'>42.000 x 60.000 inches</p></div><p style='float: left; width: 100%; padding-top: 20px; color: #000000;'>This original digital art is currently for sale.&nbsp;&nbsp;&nbsp;At the present time, originals are not offered for sale through the FineArtAmerica secure checkout system.&nbsp;&nbsp;&nbsp;Please contact the artist directly to inquire about purchasing this original.</p><p style='float: left; width: 100%; padding-top: 15px; color: #000000;'>Click <a href='../sendemail.html?artistid=41475&artworkid=3309543&status=yes&type=original' style='color: #335599; text-decoration: underline;'>here</a> to contact the artist.</p></div><div style='float: left; width: 100%; background-color: #EEEEEE; border: 1px solid #CCCCCC; ; border-top-left-radius: 6px; border-top-right-radius: 6px; padding-top: 5px; padding-bottom: 5px;'><p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Description:</p><p style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden; color: #000000;'>Modern 'Fascinatio lucis' <br>belongs to my 'Futura'-series, <br>representing abstract surrealism. <br>It also belongs to my wider <br>surreal art collection <br>"Listen with your eyes".<br><br>This beautiful work looks <br>brilliant as a acrylic, canvas or <br>a metal print. <br> <br>It is also a perfect gift <br>for art lovers who prefer <br>abstract art and surrealism. <br>Worth considering! <br><br>Copyright 2013 by Sipo Liimatainen <br>www.sipoliimatainen.com</p></div><div style='float: left; width: 100%; background-color: #FFFFFF; border: 1px solid #CCCCCC; border-top: none; padding-top: 5px; padding-bottom: 5px;'>
+<p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Posted:</p><div style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden; color: #000000;'><p>March 20th, 2012</p></div></div>
+<div style='float: left; width: 100%; background-color: #EEEEEE; border: 1px solid #CCCCCC; border-top: none; padding-top: 5px; padding-bottom: 5px;'>
+<p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Statistics:</p><p style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden; color: #000000;'>Viewed 8131 Times&nbsp;&nbsp;-&nbsp;&nbsp;Last Viewed by a Visitor from New York, NY on 10/01/2013 at 12:58 AM</p></div>
+<div style='float: left; width: 100%; background-color: #FFFFFF; border: 1px solid #CCCCCC; border-top: none; padding-top: 8px; padding-bottom: 8px;'>
+<p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Dominant Colors:</p><div style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden;'><a href='../artworkbycolorartistwebsites.html?red=87&green=73&blue=63' style='float: left; width: 35px; height: 9px; margin-top: 2px; margin-right: 7px; border: 1px solid #666666; background-color: #57493F;'>&nbsp;</a><a href='../artworkbycolorartistwebsites.html?red=221&green=199&blue=131' style='float: left; width: 35px; height: 9px; margin-top: 2px; margin-right: 7px; border: 1px solid #666666; background-color: #DDC783;'>&nbsp;</a><a href='../artworkbycolorartistwebsites.html?red=149&green=105&blue=98' style='float: left; width: 35px; height: 9px; margin-top: 2px; margin-right: 7px; border: 1px solid #666666; background-color: #956962;'>&nbsp;</a></div></div>
+<div style='float: left; width: 100%; background-color: #EEEEEE; border: 1px solid #CCCCCC;  border-top: none; padding-top: 8px; padding-bottom: 8px;'>
+<p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Image Link:</p><div style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden;'><input type='textbox' onClick='javascript: this.focus(); this.select();' style='width: 170px; height: 14px; border: 1px solid #AAAAAA; font: 8pt arial;' value="<a href='http://sipo-liimatainen.artistwebsites.com/featured/fascinatio-lucis-sipo-liimatainen.html' size='20'><img src='http://sipo-liimatainen.artistwebsites.com/displayartworkartistwebsites.html?id=3309543&width=250&height=349' alt='Photography Prints' title='Photography Prints' style='border: none;'></a>" size='20'><p style='float: left; width: 170px; padding-top: 3px; font: 8pt arial; color: #000000;'>copy and paste to your website / blog - <a href='http://sipo-liimatainen.artistwebsites.com/displayartworkartistwebsites.html?id=3309543&width=250&height=349' style='font: 8pt arial; color: ; text-decoration: underline;'>preview</a></p></div></div>
+<div style='float: left; width: 100%; background-color: #EEEEEE; border: 1px solid #CCCCCC; border-top: none; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; padding-top: 8px; padding-bottom: 8px;'>
+<p style='float: left; width: 75px; padding-left: 10px; padding-right: 10px; overflow: hidden; color: #000000;'>Sales Sheet:</p><div style='float: left; width: 175px; padding-left: 0px; -right: 10px; overflow: hidden;'><a href='../pdfartworkmenu.php?artworkid=3309543' target='_blank' style='float: left; font: 8pt arial; text-decoration: none; color: ; text-decoration: underline;'>PDF Sales Sheet</a>
+</div>
+</div>
+
+			</div>
+
+			<div style='float: none; width: 100%; height: 5px; clear: both;'>
+				&nbsp;
+			</div>
+		
+		</div>
+
+	</div>
+
+	<div class='titlebar' style='float: left; clear: both; width: 100%; text-align: center; height: 25px; border-left: none; border-right: none;'>
+	<p style='font: 8pt arial; padding-top: 5px; color: #FFFFFF;'>Website Designed by <a href='http://fineartamerica.com' style='font: 8pt arial; text-decoration: underline; color: #FFFFFF;'>Fine Art America</a> / <a href='http://artistwebsites.com' style='font: 8pt arial; text-decoration: underline; color: #FFFFFF;'>Artist Websites</a> - Copyright &copy; 2013 FineArtAmerica.com - All Rights Reserved</p>	
+</div>	
+	
+</div>
+
+<div id='selectionbox' style='visibility: hidden; cursor: hand; cursor: pointer; position: absolute; top: 0px; left: 0px; width: 100px; height: 100px; border: 1px solid #0000FF;' onClick='javascript: previewimage();'>&nbsp;</div>
+
+<div id='hiddendiv' name='hiddendiv' style='position: absolute; top: 0px; left: 0px; width: 10px; height: 10px; border: none; overflow: hidden; cursor: hand; cursor: pointer; visibility: hidden;'>
+	&nbsp;
+</div>
+
+<div id='targetdiv' name='targetdiv' style='position: absolute; top: 0px; left: 0px; width: 10px; height: 10px; border: none; overflow: hidden; cursor: hand; cursor: pointer; visibility: hidden;'>
+	&nbsp;
+</div>
+
+<div name='dimdiv' id='dimdiv' style='position: fixed; z-index: 1000; left: 0px; top: 0px; width: 10px; height: 10px; background-color: #000000; visibility: hidden; opacity: 0.50; filter: alpha(opacity=50);'>&nbsp;</div>
+<div name='logindiv' id='logindiv' style='position: absolute; z-index: 1001; left: 0px; top: 0px; width: 700px; min-height: 50px; padding: 20px; overflow: hidden; border: 15px solid #666666; background-color: #FFFFFF; visibility: hidden;'><p name='blank' id='blank'>Please Wait...</p></div> 
+
+</body>
+
+</html>

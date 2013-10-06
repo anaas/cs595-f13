@@ -1,0 +1,406 @@
+<html>
+<head>
+	<title>Dutch Auction Software , clock auction Script</title>
+	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+	<meta name="description" content="A Dutch auction is a type of auction where the auctioneer begins with a high asking price which is lowered until some participant is willing to accept the auctioneer`s price, or a predetermined reserve price" />
+    <meta name="robots" content="Index,ALL"/>
+	<meta name="rating" content="General" />
+	<meta name="distribution" content="Global" />
+    <meta name="googlebot" content="index, follow" /> 
+    <meta name="revisit-after" content="1 day" /> 
+    <meta name="language" content="ru" />
+	<link rel='index'  href='http://www.icloudcenter.com/ru_products.htm' /> 
+    <link rel='canonical' href='http://www.icloudcenter.com/ru_dutch-auction-script.htm' />
+    <link href="http://icloudcenter.com/feeds/rss_products.xml" rel="alternate" type="application/rss+xml" title="ICloudCenter Products News" />
+
+		
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script language="JavaScript" src="js/overout.js"></script>
+	<script language="JavaScript" src="js/hover.js"></script>
+
+	<link rel="stylesheet" href="lytebox/css/lytebox.css" type="text/css" media="screen" /> 
+	<script language="JavaScript" src="lytebox/js/lytebox.js"></script> 
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<!--twiiter javascript-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!--facebook javascript-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="fadeslideshow.js">
+</script>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ru'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script type="text/javascript">
+(function() {
+var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'http://widgets.digg.com/buttons.js';
+s1.parentNode.insertBefore(s, s1);
+})();
+</script>
+<script type="text/javascript">
+
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+	dimensions: [268, 67], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+	["images/image1.jpg"],
+	["images/image2.jpg"],
+	["images/image4.jpg"]
+	],
+	displaymode: {type:'auto', pause:2500, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 500, //transition duration (milliseconds)
+	descreveal: "ondemand",
+	togglerid: ""
+})
+
+</script>
+	<style>
+		a.pl{
+			color: #0F4060; text-decoration:none;
+		}
+		a.pl:link{
+			color: #0F4060; text-decoration:none;
+		}
+		a.pl:hover{
+			color: #2F6080; text-decoration:underline;
+		}
+		a.pl:visited:hover{
+			color: #2F6080; text-decoration:underline;
+		}
+		
+		ul{
+			margin-top:5px;
+		}
+		
+		.live_demo{
+			text-decoration: none;
+			color: #123366;
+			margin: 0 auto;
+			height: 46px;
+			}
+		
+		.btn_buy{
+			background: url(images/buttons/buynow_button_empty.png) center no-repeat;
+			height: 46px;
+			width: 126px;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			color: #123366;
+			text-decoration: none;
+			border: none;
+			cursor: pointer;
+			margin: 0 auto;
+			vertical-align: middle;
+			line-height:46px;
+		}
+		
+		.btn_tour{
+			background: url(images/buttons/tour_button_empty.png) center no-repeat;
+			height: 46px;
+			width: 168px;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			color: #123366;
+			text-decoration: none;
+			border: none;
+			cursor: pointer;
+			margin: 0 auto;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+	
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td height="100" background="images/top.jpg">
+		<img src="images/space.gif" alt="Auction software" width="300" height="100" border="0" />
+	</td>
+</tr>
+<tr>
+	<td>
+		<table align="left" width="100%" border="0" cellspacing="0" cellpadding="0" background="images/buttons_bg.gif" ID="Table2">
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td width="60%" align="left" nowrap valign="top" dir="ltr">
+                <A class="white" href="ru_index.htm">Основная</A>&nbsp;&nbsp;
+                <A class="white" href="ru_portfolio.htm">Портфолио</A>&nbsp;&nbsp;
+                <A class="white" href="ru_services.htm">Услуги</A>&nbsp;&nbsp;
+				<A class="white" href="ru_products.htm">Продукты</A>&nbsp;&nbsp;
+                <A class="white" href="ru_clients.htm">Клиенты</A>&nbsp;&nbsp;
+                <A class="white" href="ru_testimonials.htm">Отзывы</A>&nbsp;&nbsp;
+                <A class="white" href="ru_partners.htm">Партнеры</A>&nbsp;&nbsp;
+               
+			</td>
+			<td align="left" nowrap valign="top" dir="ltr"><img src="images/buttons_light.gif" width="120" height="25" border="0" alt="Contact Us and get Quote for web development"></td>
+			
+			<td align="right" nowrap valign="top" dir="ltr">
+                <A href="ru_whois.htm" class="white">О нас</A>&nbsp;&nbsp;
+                <a href="ru_contactus.aspx" class="white">Контактная информация</a>
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td width="100%">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="69" background="images/sidel_bg4.jpg">
+			<img src="images/space.gif" alt="Auction script" width="69" height="1" border="0" />
+		</td>
+		<td width="100%" class="text">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				<td width="100%">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr><td height="6px"><td></tr>
+                                        <tr>
+						<td align="right" nowrap>
+							<a href="dutch-auction-script.htm"><img src="images/flags/en.png" width="20px" height="13px" title="English" alt="English" border="0" /></a>&nbsp;
+							<a href="fr_dutch-auction-script.htm"><img src="images/flags/fr.png" width="20px" height="13px" title="French" alt="French" border="0" /></a>&nbsp;
+							<a href="nl_dutch-auction-script.htm"><img src="images/flags/nl.png" width="20px" height="13px" title="Dutch" alt="Dutch" border="0" /></a>&nbsp;
+							<a href="ru_dutch-auction-script.htm"><img src="images/flags/ru.png" width="20px" height="13px" title="Russian" alt="Russian" border="0" /></a>&nbsp;
+							<a href="it_dutch-auction-script.htm"><img src="images/flags/it.png" width="20px" height="13px" title="Italian" alt="Italian" border="0" /></a>&nbsp;
+							<a href="pt_dutch-auction-script.htm"><img src="images/flags/pt.png" width="20px" height="13px" title="Portuguese" alt="Portuguese" border="0" /></a>&nbsp;										
+							<a href="es_dutch-auction-script.htm"><img src="images/flags/es.png" width="20px" height="13px" title="Spanish" alt="Spanish" border="0" /></a>&nbsp;  
+							<a href="ge_dutch-auction-script.htm"><img src="images/flags/ge.png" width="20px" height="13px" title="German" alt="German" border="0" /></a>&nbsp;
+						</td>
+					</tr>
+                                        <tr><td height="6px"><td></tr>
+					<tr>
+						<td align="right">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" align="right">
+							<tr>
+								<td dir="ltr">
+									<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td ><img src="images/t_bg4.gif" alt="" border="0" /></td>
+										<td>&nbsp;</td>
+										<td valign="middle" ><a href='http://www.icloudcenter.com/ru_dutch-auction-script.htm' class=text><h1>Dutch Auction Script</h1></a></td>
+										<td >&nbsp;</td>
+										<td><img src="images/t_bg4.gif" alt="" border="0" /></td>
+									</tr>
+									</table>
+								</td>
+								<td width="100px">&nbsp;&nbsp;&nbsp;</td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="1" bgcolor="#104060"><img src="images/space.gif" alt="" width="1" height="1" border="0"></td>
+					</tr>
+					<tr>
+						<td><img src="images/space.gif" alt="" width="1" height="5" border="0" /></td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<table width="100%" border="0" cellspacing="5" cellpadding="0">
+							<tr>
+								<td class="text" colspan="3" dir="ltr" height="390px" style="word-wrap: break-word;" valign="top">
+									<table border="0" width="100%">
+									<tr>
+										<td width="250px" class="text" valign="top" align="left" style="padding-right:20px;">
+											<table style="font-size:13px;" cellpadding="0" cellspacing="0">
+											<tr><td><b>Технологии:</b> PHP 5.0 OOP</td></tr>
+											<tr><td><b>База данных:</b> MySQL</td></tr>
+											<tr><td><b>Версия:</b> 1.1</td></tr>
+											<tr><td><b>Лицензия:</b> GNU GPL</td></tr>
+											<tr><td><b>Цена:</b> &euro;78.11</td></tr>
+											<tr><td>&nbsp;</td></tr>
+											<tr><td>
+												<table cellpadding=0 cellspacing=0 border=0 align=left>
+												<tr>
+													
+													<td width=110>
+														<div style="width:110px;overflow:hidden;">
+														<a href="https://twitter.com/share" class="twitter-share-button"  data-count="horizontal" data-lang="ru">Tweet</a>
+														</div>
+													</td>
+													
+													<td width=70>
+														<div style="width:70px;overflow:hidden;">
+														<g:plusone size="medium"></g:plusone>
+														</div>
+													</td>
+													
+													<td> 
+														<div class="fb-like" data-send="false"  data-width="124" data-show-faces="false" data-layout="button_count"></div>
+													</td>
+												</tr>
+												</table>
+											</td></tr>
+											</table>
+										</td>
+										<td align="left" valign="top">
+											<!-- Нужны изменения в этом скрипте? Мы здесь, чтобы помочь Вам! -->
+											<table border=0 width="100%">
+											<tr>
+											<td align="center" valign="top" class="text" style="font-size:14px;font-weight:bold;">
+												Нужны изменения в этом скрипте? Мы здесь, чтобы помочь Вам!<br><br>
+												<!-- webim button --><a href="http://icloudcenter.com/webim/client.php?locale=en" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('http://icloudcenter.com/webim/client.php?locale=en&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"><img src="http://icloudcenter.com/webim/b.php?i=webim&amp;lang=en" border="0" width="163" height="61" alt=""/></a><!-- / webim button -->
+											</td>
+											</tr>
+											</table>										
+										</td>
+									</tr>
+									<tr><td nowrap="nowrap" height="5px"></td></tr>
+									<!--
+									<tr><td colspan="2" class="text"><b>{_full _description}:</b> <br /></td>
+									-->
+									</tr>
+									<tr>
+										<td colspan="2" class="text">
+											<DIV>ICDutchAuction is a form of classic so-called Dutch tulip auctions where the price of the product is reduced the whole time until someone buys it.&nbsp;</DIV>
+<DIV><BR></DIV>
+<DIV>On ICDutchAuction the current price is hidden from the participant until the participant scratch the auction. Then the participant will see the current price. Every time someone scratch the auction the price is lowered.</DIV>
+<DIV><BR></DIV>
+<DIV>So the more people that scratch the auction the faster the price will drop. You need to have the courage to wait for a really good and low price - but do not wait too long because then maybe someone else purchase the product before you!</DIV> <br><p><b></b></p><br />	
+										</td>										
+									</tr>
+									<tr>
+										<td class="text" colspan="2" align="left">
+											<b>Основные характеристики:</b> <ul>
+
+<li>Users register and pay for participation</li>
+
+<li>User control panel.</li>
+
+<li>Easy bidding process.</li>
+
+<li>Powerfull admin panel</li>
+
+</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="text" colspan="2" align="left">
+											
+										</td>
+									</tr>
+									
+									</table>									
+								</td>
+								<td>&nbsp;</td>
+								<td width="280px" align="center" valign="top">									
+									<table align="center" border="0">
+									<tr>
+										<td colspan="3" width="250px" class="text" align="center">
+										
+										</td>
+									</tr>
+									<tr><td nowrap="nowrap" height="3px"></td></tr>										
+									<tr>
+										<td colspan="3" width="250px" class="text" valign="middle" align="center">
+											<a href="images/products/img_259_big.JPG" rel="lytebox[vacation]" title="">
+												<H2><img style="border:1px solid #cccccc; margin:5px; filter:alpha(opacity=100);-moz-opacity:1.0; cursor:pointer;" onMouseOver="makevisible(this,1)" onMouseOut="makevisible(this,0)" src="images/products/img_259_thumb.JPG" alt="Dutch Auction Script" title="Dutch Auction Script" width="240px" /></H2>
+											</a>									
+										</td>
+									</tr>									
+									<tr><td nowrap="nowrap" height="3px"></td></tr>										
+									<tr height="60px">
+										<td valign='top'><div class='btn_buy'><A class='btn_buy' title='Dutch Auction Script - Демо' target='_blank' href='http://icloudcenter.net/demos/icdutchauction/index.php'>Демо</A></DIV></td>
+										<td valign='top' align='center'></td>
+										<td valign='top'>
+                        <FORM style='padding:0px; margin:0px;' action=http://www.ICloudCenter.net/adminpanel/prepayment.php method=post>
+                        <INPUT type=hidden  name='product_price' value='78.11'>
+			<INPUT type=hidden  name='product_currency' value='EUR'>
+                        <INPUT type=hidden name='product_name' value='ICDutchAuction - Dutch Auction Script' >
+                        <INPUT type=hidden value='263' name='product_id'>
+                        <INPUT type=submit alt='' class='btn_buy' border=0 name=submit title='Dutch Auction Script - Купить' value='Купить'>
+                        </FORM></td>
+									</tr>
+									
+									<tr>
+										<td  id="slideshow_3" colspan="3" width="250px" class="text" style="border:3px solid #0f4060; word-wrap:break-word;">
+											<div id="fadeshow1"></div>
+											
+										</td>
+									</tr>
+									<tr><td nowrap="nowrap" height="5px"></td></tr>	
+									<tr>
+										<td colspan="3" width="250px" class="text" style="border:3px dashed #ff0000; word-wrap:break-word;">
+											<img src="images/bestsellers.jpg" alt='' border='0' style='margin-left:30px;margin-top:7px;' />
+											<ul style='margin-left:10px;margin-right:15px;'><li><a class='pl' href='ru_penny-auction-script.htm'>ICPennyBid - Программа для Скандинавского аукциона</a></li><li><a class='pl' href='ru_unique-low-bid-auction-script.htm'>ICLowBidAuction - Аукцион уникально низкой ставки</a></li><li><a class='pl' href='ru_mlm-script.htm'>ICMLM - Cкрипт Программного обеспечения MLM</a></li><li><a class='pl' href='ru_hotel-reservation-site-script.htm'>ICHotelReservation - Сайт бронирования отелей</a></li><li><a class='pl' href='ru_ebay-like-auction-script.htm'>ICAuction - Сайт аукциона по подобию eBay</a></li><li><a class='pl' href='ru_doctor-appointment-script.htm'>ICDoctorAppointment - Скрипт сайта записи к врачу</a></li><li><a class='pl' href='ru_restaurant-site-script.htm'>ICRestaurant - Скрипт сайта ресторана</a></li><li><a class='pl' href='ru_traveling-website-script.htm'>ICTraveling - Сайт Путешествий</a></li><li><a class='pl' href='ru_holiday-lettings-script.htm'>ICHolidayLettings - Holiday Lettings Site Script</a></li><li><a class='pl' href='ru_mini_blog.htm'>Мини Блог</a></li><li><a class='pl' href='ru_dutch-auction-script.htm'>ICDutchAuction - Dutch Auction Script</a></li></ul>
+										</td>
+									</tr>
+									<tr><td nowrap="nowrap" height="5px"></td></tr>										
+									<tr>
+										<td colspan="3" class="text" style="word-wrap: break-word;">
+											<br />
+											<b>Наши другие программы</b>: <br />
+											<ul style='margin-left:13px;margin-right:15px;'><li><a class='pl' href='ru_project_bidding_script.htm'>ICProjectBidding - Project bidding script</a></li><li><a class='pl' href='ru_real-estate-site-script.htm'>ICRealestate - программа по продаже и аренде недвижимости - ASP.NET AJAX</a></li><li><a class='pl' href='ru_student-course-assessment-test-script.htm'>ICStudents - Обучение и аттестация онлайн</a></li><li><a class='pl' href='ru_company-network-script.htm'>ICMembers - Платформа для регистрации в клубах</a></li><li><a class='pl' href='ru_site-builder-script.htm'>ICSiteBuilder -  CMS со встроенной системой электронной коммерции</a></li><li><a class='pl' href='ru_mini_cms.htm'>Мини CMS</a></li><li><a class='pl' href='ru_jewelry-site-script.htm'>ICJewelry - Jewelry store site script</a></li><li><a class='pl' href='ru_bpProductConfigurator.htm'>ICProductConfigurator</a></li><li><a class='pl' href='ru_mobile-application-order-pizza.htm'>ICMobilePizza -аппликация  по заказу пиццы <br>для мобильных телефонов  - J2ME</a></li><li><a class='pl' href='ru_support-tickets-helpdesk-script.htm'>ICHelpDesk - Скрипт сайта удаленной технической<br/>поддержки</a></li><li><a class='pl' href='ru_limousine-car-hire-script.html'>ICCallLimousine - Limousine hire script</a></li><li><a class='pl' href='ru_grocery-store-supermarket-script.htm'>ICGrocery - Online Store PHP Script</a></li><li><a class='pl' href='ru_real-estate-marketplace-site.htm'>ICEstate - Скрипт сайта агенства недвижимости</a></li><li><a class='pl' href='ru_php_datagrid.htm'>Компонент AJAX DataGrid на PHP</a></li><li><a class='pl' href='ru_t-shirt.htm'>IC-T-Shirt - скрипт сайта по продаже креативных футболок</a></li><li><a class='pl' href='ru_music-site-script.htm'>ICMusic - Скрипт cайта музыки</a></li><li><a class='pl' href='ru_time_attendance_script.htm'>ICTimeAttendance</a></li><li><a class='pl' href='ru_affiliates-tracking-script.htm'>ICAffiliateTracking - программа для платного распространения рекламы</a></li><li><a class='pl' href='ru_php-datagrid.htm'>ICDataGrid - Компонент DataGrid на PHP</a></li><li><a class='pl' href='ru_survey-creating-script.htm'>ICSurvey- Скрипт сайта опросов</a></li><li><a class='pl' href='ru_google_map_control.htm'>Пользовательский картографический сервис<br/> на основе Google Map</a></li><li><a class='pl' href='ru_conference-web-reporting-site.htm'>ICConferenceReporting - Веб-приложение для отчётов</a></li><li><a class='pl' href='ru_auto-dealer-car-sales-script.htm'>ICAutosales - Сайт продажи автомобилей</a></li><li><a class='pl' href='ru_craigslist-like-classifieds-script.htm'>ICClassifieds - Classifieds software script like craigslist</a></li><li><a class='pl' href='ru_equipment_renting.htm'>База данных для управления арендой оборудования.</a></li><li><a class='pl' href='ru_Apparel-Store-Script.htm'>ICApparelStore - Скрипт Интернет Магазина Одежды</a></li><li><a class='pl' href='ru_art-gallery-site-script.htm'>ICArtGallery - Скрипт сайта художественной галереи</a></li><li><a class='pl' href='ru_business-directory-script.htm'>ICDirectory - Cкрипт сайта-каталога</a></li><li><a class='pl' href='ru_jobs-site-script.htm'>ICJobSite - сайт поиска работы на РНР</a></li><li><a class='pl' href='ru_daily_deals_site.htm'>ICGroupDeal - Daily deals site</a></li><li><a class='pl' href='ru_point-of-sale-script.htm'>ICPos - Скрипт автоматической системы продаж</a></li><li><a class='pl' href='ru_domains-marketplace-script.htm'>ICDomains - скрипт виртуального рынка доменов</a></li><li><a class='pl' href='ru_dental-clinic-script.htm'>ICDentalClinic - Dental Clinic Site Script</a></li><li><a class='pl' href='ru_remote_meetings_software.htm'>ICRemoteMeeting - remote meetings and  support software .</a></li><li><a class='pl' href='ru_lawyer-case-document-script.htm'>ICLawyerCaseDocuments - ведение юридического делопроизводства</a></li><li><a class='pl' href='ru_games-site-script.htm'>ICGames - Скрипт cайта игр</a></li><li><a class='pl' href='ru_tutoring-site-script.htm'>ICTutors - Tutoring site script</a></li></ul>
+										</td>
+									</tr>
+									
+									</table>									
+								</td>
+							</tr>
+							<tr><td colspan="5"><br /></td></tr>
+							<tr><td colspan="5" align="center" valign="top" dir="ltr"></td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					<tr><td><img src="images/space.gif" alt="" width="1" height="5" border="0"></td></tr></tr>
+					</table>
+				</td>
+				<td width="2%">&nbsp;</td>
+			</tr>
+
+			<tr><td colspan=3 nowrap height="12px"></td></tr>
+			
+			<tr>
+				<td width="4%">&nbsp;</td>
+				<td valign='top' align='center'><table width="100%" cellspacing="3" cellpadding="3" style="border: 1px solid #104060"><tr class="text"><td><font><b>Что такое Dutch Auction</b></font><br/><br/>
+Голландский аукцион (англ. Dutch auction) – аукцион, в ходе которого вначале объявляется самая высокая цена на продаваемый товар, а затем ставки снижаются до той, на которую согласится первый покупатель, которому и продается товар. Получил свое название в силу широкого распространения в этой стране. Характерная особенность в том, что это оптовый аукцион, на котором продавец может выставлять много единиц товара одновременно.</td></tr></table><br><br></td>
+					<!--<table width="100%" cellspacing="3" cellpadding="3" style="border: 1px solid #104060">
+					<tr class="text"><td>Что такое ICloudCenter? (<a href=''ru_whois.htm''>О нашей компании</A>)
+<br> <br>
+Аутсорсингом называется передача стороннему подрядчику выполнение  услуг  компании,  в частности,  в области информационных технологий. Попробуйте уже сегодня! Вы хотели бы разместить ваш новый заказ в Интернете? Нет ничего проще!
+ICloudCenter позволяет веб-мастерам, веб-дизайнерам, программистам, разработчикам программного обеспечения и владельцам бизнеса
+средства для разработки проектов.
+<br> <br>
+Закажите проект в аутсорсинге и начните экономить деньги. Мы в ICloudCenter считаем, что разработка веб-проектов не должна быть дорогой. Аутсорсинг позволяет сократить ваши расходы более чем на 50%. Если вы никогда не работали с субподрядчиками через Интернет, то у вас появился замечательный шанс убедиться, как это здорово и экономно.
+Здесь вы можете ознакомиться с <a href=''ru_clients.htm''>нашими клиентами </A> со всего мира.</td></tr>
+					</table>
+					-->	
+				
+				<td width="4%">&nbsp;</td>
+			</tr>	
+			<tr><td>&nbsp;</td></tr>			
+			</table>
+		</td>
+		<td width="69" background="images/sider_bg4.jpg">
+			<img src="images/space.gif" alt="" width="69" height="1" border="0" />
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<title>Sipo Liimatainen - Green Artwork</title>
+<meta name="description" content="Green artwork for sale.">
+<meta name="keywords" content="green art">
+<link rel='canonical' href='http://fineartamerica.com/art/all/green/all;'>
+   
+<link rel="stylesheet" type="text/css" href="http://fineartamerica.com/stylesheet.css">
+<script type='text/javascript' src='http://fineartamerica.com/navigationmenuhorizontal.js'>
+</script>
+<script type='text/javascript'>
+
+	function newHttpReq()
+	{
+		var newRequest = null;
+		
+		try
+		{
+			newRequest = new XMLHttpRequest();
+		}
+		catch(trymicrosoft)
+		{
+			try
+			{
+				newRequest = new ActiveXObject("Msxml2.XMLHTTP");
+			}
+			catch(othermicrosoft)
+			{
+				try
+				{
+					newRequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				catch(failed)
+				{
+					newRequest = null;
+				}			
+			}
+		}
+		
+		return newRequest;
+	
+	}	
+	
+	var request = newHttpReq();
+
+	function bringtotop(artworkid,tag,status)
+	{
+	
+		var url = 'http://fineartamerica.com/queries/updateartworktags.php?artworkid=' + artworkid + '&tag=' + tag + '&status='+status;		
+     	if((request.readyState != 4) && (request.readyState != 0))
+     	{
+			request.abort();
+			request = newHttpReq();
+     	}
+
+		request.open('GET',url,true);
+     	request.onreadystatechange = updatebringtotop;
+     	request.send(null);			
+	
+		return;	
+
+	}
+
+	function skip(artworkid)
+	{
+	
+		var sourcediv = document.getElementById('artworkdiv[' + artworkid + ']');
+		sourcediv.parentNode.removeChild(sourcediv);
+
+	}
+	
+	
+	function updatebringtotop()
+	{
+
+   		try 
+		{
+			if(request.readyState == 4)
+			{
+			}
+		
+			if(request.status == 200)
+			{
+			}
+		}
+		catch (e)
+		{
+			return;
+		}
+   
+   
+   		if (request.readyState == 4)
+   		{
+   			if(request.status == 200)
+   			{   
+				//alert(request.responseText);
+				var artworkid = request.responseText;
+				
+				var sourcediv = document.getElementById('artworkdiv[' + artworkid + ']');
+				//sourcediv.parentNode.removeChild(sourcediv);
+
+				sourcediv.innerHTML = '';
+				
+   			}
+   		}
+	}	
+	
+
+	function promotemember(artworkid,status)
+	{
+	
+		var url = 'http://fineartamerica.com/queries/promotemember.php?artworkid=' + artworkid + '&status='+status;		
+     	
+		if((request.readyState != 4) && (request.readyState != 0))
+     	{
+			request.abort();
+			request = newHttpReq();
+     	}
+
+		request.open('GET',url,true);
+     	request.onreadystatechange = updatepage;
+     	request.send(null);			
+	
+		return;	
+
+	}	
+
+	
+	function promoteartwork(artworkid,status)
+	{
+	
+		var url = 'http://fineartamerica.com/queries/promoteartwork.php?artworkid=' + artworkid + '&status='+status;		
+     	
+		if((request.readyState != 4) && (request.readyState != 0))
+     	{
+			request.abort();
+			request = newHttpReq();
+     	}
+
+		request.open('GET',url,true);
+     	request.onreadystatechange = updatepage;
+     	request.send(null);			
+	
+		return;	
+
+	}		
+	
+	
+	function updatepage()
+	{
+
+   		try 
+		{
+			if(request.readyState == 4)
+			{
+			}
+		
+			if(request.status == 200)
+			{
+			}
+		}
+		catch (e)
+		{
+			return;
+		}
+   
+   
+   		if (request.readyState == 4)
+   		{
+   			if(request.status == 200)
+   			{   
+
+				alert(request.responseText);
+				
+   			}
+   		}
+	}	
+	
+</script>
+<style type='text/css'>
+
+						
+</style>
+</head>
+
+<body>
+
+<div class='outerdiv' style='background-color: #FFFFFF; border: 1px solid #444444;'>
+	
+	<div id='headercontainer' style='float: left; width: 100%;'>
+<script type='text/javascript'>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-9959301-4']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<div id='headerdiv' style='float: left; width: 100%; height: 100px; overflow: hidden; background-color: #FFFFFF; background-image: url("https://fineartamerica.com/images/images-headers/artistid-41475-1372014013.jpg"); background-position: top left; background-repeat: no-repeat; border: none;'>
+<div style='float: left; width: 920px; padding-left: 25px; padding-right: 25px;'>
+<p id='headertext' style='float: left; width: 100%; padding-top: 33px; font: 22pt arial; font-weight: bold; color: #FFFEFE; text-align: center;'>Sipo Liimatainen, Master of Abstract Surrealism</p>
+</div>
+</div>
+<style>
+#sddm li a {color: #FFFFFF}
+#sddm li a {background-color: #007BAA}
+#sddm li a {background-image: url('https://fineartamerica.com/images-dynamic/divider-007BAA')}
+#sddm li div {background-color: #007BAA}
+</style>
+
+<div style="float: left; width: 100%; height: 31px; background-image: url('https://fineartamerica.com/images-dynamic/thin-007BAA'); background-repeat: repeat-x;">
+
+	<div style='float: left; width: 650px; padding-top: 1px;'>
+
+		<ul id="sddm">
+
+			<li>
+<a href="http://sipo-liimatainen.artistwebsites.com/index.html" style="width: 50px; background-image: none;" onmouseover="mclose()">Home</a>
+</li>
+<li>
+<a href='http://sipo-liimatainen.artistwebsites.com/controlpanel/index.html?tab=memberhomepage' style='width: 50px;' onmouseover='mclose()'>Login</a>
+</li>
+<li>
+<a href='http://sipo-liimatainen.artistwebsites.com/art/all/all/all' style='width: 60px;' onmouseover='mclose()'>Artwork</a>
+</li>
+<li>
+<a href='http://sipo-liimatainen.artistwebsites.com/galleries.html' style='width: 70px;' onmouseover='mclose();'>Galleries</a>
+</li>
+<li>
+<a href="http://sipo-liimatainen.artistwebsites.com/calendar.html" style="width: 60px;" onmouseover="mclose()">Events</a>
+</li>
+<li>
+<a href="http://sipo-liimatainen.artistwebsites.com/myblog.html" style="width: 50px;" onmouseover="mclose()">Blog</a>
+</li>
+
+			<li>
+				<a href="http://sipo-liimatainen.artistwebsites.com/news.html" style="width: 50px;" onmouseover="mclose()">News</a>   
+			</li>
+			<li>
+				<a href="http://sipo-liimatainen.artistwebsites.com/contact.html?newemail=true" style="width: 60px;" onmouseover="mclose()" onmouseout="mclosetime()">Contact</a>  
+			</li>
+
+			<li>
+				<a href="http://sipo-liimatainen.artistwebsites.com/subscribewebsiteemaillist.html" style="width: 75px;" onmouseover="mclose()" onmouseout="mclosetime()">Subscribe</a>  
+			</li>
+			
+						
+		</ul>
+
+	</div>
+
+	<div style='float: right; width: 280px; height: 31px; background-image: url("https://fineartamerica.com/images-dynamic/thick-004CAA"); background-repeat: repeat-x;'>
+<div style='float: left; width: 110px; overflow: hidden; padding-top: 5px; padding-left: 5px;'>
+<form id='searchformheader' name='searchformheader' method='POST' action='http://sipo-liimatainen.artistwebsites.com/art/all/all/all' style='float: left; width: 100%; overflow: hidden;'>
+<input type='hidden' id='product' name='product' value='all'><input style='float: left; border: 1px solid #444444; border-radius: 2px; font-size: 8pt; width: 80px; height: 16px; padding: 1px; padding-left: 5px; margin: 0px; color: #666666; box-shadow: none;' onClick='javascript: this.value = "";' type='text' name='searchtag' size='20' value='search'><a href='javascript: document.searchformheader.submit();' style='font: 10pt arial; font-weight: bold; color: #FFFFFF; text-decoration: none;'><img src='https://fineartamerica.com/images-dynamic/arrow-004CAA' style='float: left; width: 15px; height: 20px; border: none; padding-left: 5px; padding-top: 0px;'></a></form></div><div style='float: left; width: 60px; overflow: hidden; padding-top: 4px; padding-left: 7px;'>
+<select id='currencyid' name='currencyid' onChange='javascript: window.location = "http://sipo-liimatainen.artistwebsites.com/art/all/green/all?currencyid=" + document.getElementById("currencyid").value;' style='float: left; width: 50px; height: 18px; overflow: hidden; padding: 0px; margin: 0px; margin-top: 2px; font: 8pt arial; color: #666666; border: 1px solid #444444; border-radius: 0px;'>
+<option value='AUD' >AUD</option>
+<option value='CAD' >CAD</option>
+<option value='EUR' >EUR</option>
+<option value='GBP' >GBP</option>
+<option value='JPY' >JPY</option>
+<option value='USD' selected>USD</option>
+</select>
+</div>
+<p style='float: right; padding-right: 15px; padding-top: 8px; overflow: hidden; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/shoppingcart.html' style='font: 8pt arial; color: #FFFFFF; text-decoration: underline;'>Shopping Cart</a></p></div>
+<img style='float: right; width: 40px; height: 31px;' src='https://fineartamerica.com/images-dynamic/transition-007BAA004CAAFFFFFF'>
+	
+</div></div>
+	
+	<div id='maindiv' style="float: left; width: 930px; margin: 0px; padding-left: 25px; padding-top: 10px; padding-bottom: 25px;">
+
+		<div id='content' name='content' style='float: right; width: 720px; padding-right: 10px; overflow: hidden;'>
+	
+			<div style='float: left; width: 100%; padding-top: 20px; overflow: hidden;'>
+				
+				<div style='float: left; width: 520px;'><div style='float: left; width: 450px; padding-bottom: 10px;'>
+<h1 style='float: left; width: 100%; color: #444444; font: 20pt arial; font-weight: bold; text-shadow: 2px 2px 4px #CCCCCC;'>Green Art</h1></div>
+</div><div style='float: right; width: 170px; padding-bottom: 15px; border: none;'><p style='float: left; width: 100%; margin-bottom: 3px; color: #000000;'>Search All</p>
+<div style='float: left; width: 100%;'>
+<form name='searchformartwork' method='post' action='http://sipo-liimatainen.artistwebsites.com/art/all/green/all'>
+<div style='float: left; width: 100%;'>
+<input type='hidden' id='product' name='product' value='all'>
+<input type='text' id='searchtag' name='searchtag' style='float: left; width: 130px; margin-top: 1px; padding: 2px; border: 1px solid #444444;' value='green' size='20'>
+<a href='javascript: document.searchformartwork.submit();'><img src='http://sipo-liimatainen.artistwebsites.com/ArrowRightBlueSmall.jpg' style='float: left; padding-left: 10px; border: none;'></a>
+</div>
+</form>
+</div>
+<p style='float: left; width: 100%; padding-top: 2px;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/all/all' style='font: 8pt arial; color: #444444; text-decoration: underline;'>Clear Search</a></p></div>
+
+			</div>
+
+
+			<div style='float: left; width: 100%;'>
+
+				<div style='float: left; width: 100%; padding-top: 0px; padding-bottom: 5px; border-bottom: 2px solid #999999;'>
+				
+					<p style='float: left; font: 9pt arial; color: #444444;'>Displaying: 1 - 24 of 38 green artwork for sale</p><a style='float: right; margin-left: 10px; font: 9pt arial; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/all?page=2'>Next</a><a style='float: right; margin-left: 7px; font: 9pt arial; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/all?page=2'>2</a><p style='float: right; margin-left: 7px; font: 9pt arial; color: #444444;'>[1]</p><p style='float: right; padding-right: 3px; font: 9pt arial; color: #444444;'>Previous</p>					
+				</div>
+			
+				<p style='float: left; width: 712px; margin-top: 15px; max-height: 98px; overflow-y: auto; font: 10pt arial; color: #444444;'>GREEN IS IN! These green art creations belong to Sipo's wider 'Listen with your eyes' -collection. You can choose fine art paper, canvas, metal or acrylic, finished either framed, stretched or rolled in a tube. Fine art prints have 100% money-back guarantee of 30 days. These glamorous artworks make any wall live.</p>
+			
+			</div>
+		
+			<div style='float: left; width: 100%; padding-top: 20px; padding-bottom: 0px;'>
+
+				<div id = 'artworkdiv[3089223]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/sprouting-up-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/sprouting-up-sipo-liimatainen.jpg' alt='Green - Sprouting up by Sipo Liimatainen' title='Green - Sprouting up by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sprouting-up-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Sprouting up</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sprouting-up-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sprouting-up-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sprouting-up-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sprouting-up-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $2,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sprouting-up-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[6823602]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 150px; height: 197px; padding-left: 46px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/madam-entertainer-surrealism-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/madam-entertainer-surrealism-sipo-liimatainen.jpg' alt='Green - Madam entertainer - Surrealism by Sipo Liimatainen' title='Green - Madam entertainer - Surrealism by Sipo Liimatainen' style='float: left; width: 128px; height: 180px; border: 1px solid #666666; border-radius: 0px; box-shadow: 0px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/madam-entertainer-surrealism-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Madam entertainer -...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/madam-entertainer-surrealism-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/madam-entertainer-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $42</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/madam-entertainer-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/madam-entertainer-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $2,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/madam-entertainer-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[2686526]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 0px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/the-whole-world-in-a-small-flower-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/the-whole-world-in-a-small-flower-sipo-liimatainen.jpg' alt='Green - The whole world in a small flower by Sipo Liimatainen' title='Green - The whole world in a small flower by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: -8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-whole-world-in-a-small-flower-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>The whole world in...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-whole-world-in-a-small-flower-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-whole-world-in-a-small-flower-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $42</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-whole-world-in-a-small-flower-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-whole-world-in-a-small-flower-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $2,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-whole-world-in-a-small-flower-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[7088582]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/sister-squid-surrealism-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/sister-squid-surrealism-sipo-liimatainen.jpg' alt='Green - Sister squid - Surrealism by Sipo Liimatainen' title='Green - Sister squid - Surrealism by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sister-squid-surrealism-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Sister squid -...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sister-squid-surrealism-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sister-squid-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $42</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sister-squid-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sister-squid-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $2,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/sister-squid-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[4759314]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 150px; height: 197px; padding-left: 46px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/he-is-like-his-father-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/he-is-like-his-father-sipo-liimatainen.jpg' alt='Green - He is like his father by Sipo Liimatainen' title='Green - He is like his father by Sipo Liimatainen' style='float: left; width: 128px; height: 180px; border: 1px solid #666666; border-radius: 0px; box-shadow: 0px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/he-is-like-his-father-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>He is like his...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/he-is-like-his-father-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/he-is-like-his-father-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $52</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/he-is-like-his-father-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/he-is-like-his-father-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $1,700</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/he-is-like-his-father-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[3213990]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 0px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/limbo-of-oblivion--fractal-art-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/limbo-of-oblivion--fractal-art-sipo-liimatainen.jpg' alt='Green - Limbo of oblivion - Fractal art by Sipo Liimatainen' title='Green - Limbo of oblivion - Fractal art by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: -8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/limbo-of-oblivion--fractal-art-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Limbo of oblivion -...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/limbo-of-oblivion--fractal-art-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/limbo-of-oblivion--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/limbo-of-oblivion--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/limbo-of-oblivion--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $895</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/limbo-of-oblivion--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[2686503]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/gentle-trance-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/gentle-trance-sipo-liimatainen.jpg' alt='Green - Gentle trance by Sipo Liimatainen' title='Green - Gentle trance by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gentle-trance-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Gentle trance</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gentle-trance-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gentle-trance-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gentle-trance-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gentle-trance-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[4971100]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/the-enchanted-invitation-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/the-enchanted-invitation-sipo-liimatainen.jpg' alt='Green - The enchanted invitation by Sipo Liimatainen' title='Green - The enchanted invitation by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 0px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-enchanted-invitation-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>The enchanted...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-enchanted-invitation-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-enchanted-invitation-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $52</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-enchanted-invitation-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-enchanted-invitation-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $1,700</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-enchanted-invitation-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[6767042]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 0px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/circus-surrealism-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/circus-surrealism-sipo-liimatainen.jpg' alt='Green - Circus - Surrealism by Sipo Liimatainen' title='Green - Circus - Surrealism by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: -8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/circus-surrealism-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Circus - Surrealism</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/circus-surrealism-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/circus-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $42</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/circus-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/circus-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $2,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/circus-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[3112809]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/maturation-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/maturation-sipo-liimatainen.jpg' alt='Green - Maturation by Sipo Liimatainen' title='Green - Maturation by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/maturation-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Maturation</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/maturation-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/maturation-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/maturation-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/maturation-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $2,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/maturation-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[4682991]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 150px; height: 197px; padding-left: 46px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/kindred-spirits--abstract-digital-art-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/kindred-spirits--abstract-digital-art-sipo-liimatainen.jpg' alt='Green - Kindred spirits - Abstract digital art by Sipo Liimatainen' title='Green - Kindred spirits - Abstract digital art by Sipo Liimatainen' style='float: left; width: 128px; height: 180px; border: 1px solid #666666; border-radius: 0px; box-shadow: 0px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/kindred-spirits--abstract-digital-art-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Kindred spirits -...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/kindred-spirits--abstract-digital-art-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/kindred-spirits--abstract-digital-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $52</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/kindred-spirits--abstract-digital-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/kindred-spirits--abstract-digital-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $1,600</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/kindred-spirits--abstract-digital-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[4132767]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 0px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/in-a-fog--fractal-art-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/in-a-fog--fractal-art-sipo-liimatainen.jpg' alt='Green - In a fog - Fractal art by Sipo Liimatainen' title='Green - In a fog - Fractal art by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: -8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/in-a-fog--fractal-art-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>In a fog - Fractal...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/in-a-fog--fractal-art-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/in-a-fog--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $52</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/in-a-fog--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/in-a-fog--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $1,500</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/in-a-fog--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[3063813]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/fruitful-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/fruitful-sipo-liimatainen.jpg' alt='Green - Fruitful by Sipo Liimatainen' title='Green - Fruitful by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/fruitful-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Fruitful</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/fruitful-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/fruitful-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/fruitful-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/fruitful-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $2,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/fruitful-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[3030839]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/face-of-energy-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/face-of-energy-sipo-liimatainen.jpg' alt='Green - Face of energy by Sipo Liimatainen' title='Green - Face of energy by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 0px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/face-of-energy-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Face of energy</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/face-of-energy-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/face-of-energy-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/face-of-energy-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/face-of-energy-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[6993605]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 0px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 150px; height: 197px; padding-left: 46px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/gelsomina-surrealism-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/gelsomina-surrealism-sipo-liimatainen.jpg' alt='Green - Gelsomina - Surrealism by Sipo Liimatainen' title='Green - Gelsomina - Surrealism by Sipo Liimatainen' style='float: left; width: 128px; height: 180px; border: 1px solid #666666; border-radius: 0px; box-shadow: -8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gelsomina-surrealism-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Gelsomina -...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gelsomina-surrealism-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gelsomina-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $42</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gelsomina-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gelsomina-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $3,000</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/gelsomina-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[3160885]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 150px; height: 197px; padding-left: 46px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/do-not-touch--fractal-art-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/do-not-touch--fractal-art-sipo-liimatainen.jpg' alt='Green - Do not touch - Fractal art by Sipo Liimatainen' title='Green - Do not touch - Fractal art by Sipo Liimatainen' style='float: left; width: 128px; height: 180px; border: 1px solid #666666; border-radius: 0px; box-shadow: 8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/do-not-touch--fractal-art-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Do not touch -...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/do-not-touch--fractal-art-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/do-not-touch--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/do-not-touch--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/do-not-touch--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $931</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/do-not-touch--fractal-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[4694269]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 150px; height: 197px; padding-left: 46px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/the-hidden-ancestor--abstract-digital-art-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/the-hidden-ancestor--abstract-digital-art-sipo-liimatainen.jpg' alt='Green - The hidden ancestor - Abstract digital art by Sipo Liimatainen' title='Green - The hidden ancestor - Abstract digital art by Sipo Liimatainen' style='float: left; width: 128px; height: 180px; border: 1px solid #666666; border-radius: 0px; box-shadow: 0px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-hidden-ancestor--abstract-digital-art-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>The hidden ancestor...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-hidden-ancestor--abstract-digital-art-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-hidden-ancestor--abstract-digital-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $52</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-hidden-ancestor--abstract-digital-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-hidden-ancestor--abstract-digital-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $1,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-hidden-ancestor--abstract-digital-art-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[3058572]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 0px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/ive-made-up-my-mind-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/ive-made-up-my-mind-sipo-liimatainen.jpg' alt='Green - Ive made up my mind by Sipo Liimatainen' title='Green - Ive made up my mind by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: -8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/ive-made-up-my-mind-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>I've made up my mind</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/ive-made-up-my-mind-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/ive-made-up-my-mind-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/ive-made-up-my-mind-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/ive-made-up-my-mind-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[2989958]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/hippies-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/hippies-sipo-liimatainen.jpg' alt='Green - Hippies by Sipo Liimatainen' title='Green - Hippies by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/hippies-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Hippies</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/hippies-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/hippies-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/hippies-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/hippies-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[5803392]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 150px; height: 197px; padding-left: 46px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/miss-goblin-surrealism-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/miss-goblin-surrealism-sipo-liimatainen.jpg' alt='Green - Miss Goblin - Surrealism by Sipo Liimatainen' title='Green - Miss Goblin - Surrealism by Sipo Liimatainen' style='float: left; width: 128px; height: 180px; border: 1px solid #666666; border-radius: 0px; box-shadow: 0px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/miss-goblin-surrealism-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Miss Goblin -...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/miss-goblin-surrealism-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/miss-goblin-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $52</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/miss-goblin-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/miss-goblin-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $3,000</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/miss-goblin-surrealism-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[2640777]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 0px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/the-birth-of-green-eye-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/the-birth-of-green-eye-sipo-liimatainen.jpg' alt='Green - The birth of green-eye by Sipo Liimatainen' title='Green - The birth of green-eye by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: -8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-birth-of-green-eye-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>The birth of...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-birth-of-green-eye-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-birth-of-green-eye-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-birth-of-green-eye-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/the-birth-of-green-eye-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[3112770]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/budding-fruit-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small-5/budding-fruit-sipo-liimatainen.jpg' alt='Green - Budding fruit by Sipo Liimatainen' title='Green - Budding fruit by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/budding-fruit-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Budding fruit</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/budding-fruit-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/budding-fruit-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/budding-fruit-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/budding-fruit-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $2,800</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/budding-fruit-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[2928470]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 30px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 202px; height: 145px; padding-left: 20px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/they-celebrate-at-night-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/they-celebrate-at-night-sipo-liimatainen.jpg' alt='Green - They celebrate at night by Sipo Liimatainen' title='Green - They celebrate at night by Sipo Liimatainen' style='float: left; width: 180px; height: 128px; border: 1px solid #666666; border-radius: 0px; box-shadow: 0px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/they-celebrate-at-night-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>They celebrate at...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/they-celebrate-at-night-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/they-celebrate-at-night-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $37</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/they-celebrate-at-night-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/they-celebrate-at-night-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div><div id = 'artworkdiv[5006502]' style='float: left; width: 220px; height: 360px; text-align: center; margin-top: 15px; margin-bottom: 15px; margin-right: 0px;'>
+<div style='float: left; width: 100%; text-align: center;'>
+<div style='float: left; width: 150px; height: 197px; padding-left: 46px; padding-top: 0px;'>
+<a href='http://sipo-liimatainen.artistwebsites.com/featured/your-body-is-your-temple-sipo-liimatainen.html' ><img src='http://images.fineartamerica.com/images-small/your-body-is-your-temple-sipo-liimatainen.jpg' alt='Green - Your body is your temple by Sipo Liimatainen' title='Green - Your body is your temple by Sipo Liimatainen' style='float: left; width: 128px; height: 180px; border: 1px solid #666666; border-radius: 0px; box-shadow: -8px 8px 12px #CCCCCC;'></a>
+</div>
+</div>
+<p style='float: left; width: 100%; padding-top: 20px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/your-body-is-your-temple-sipo-liimatainen.html' style='font: 10pt arial; text-decoration: underline; color: #335599;'>Your body is your...</a></p>
+<p style='float: left; width: 100%; height: 30px; overflow: hidden; font: 8pt arial; padding-top: 3px;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/your-body-is-your-temple-sipo-liimatainen.html' style='font: 8pt arial; color: #444444;'>Sipo Liimatainen</a></p>
+<div style='float: left; width: 100%; padding-top: 0px; overflow: hidden;'>
+<div style='float: left; width: 100%;'><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/your-body-is-your-temple-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Prints: $52</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/your-body-is-your-temple-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Greeting Card: $5</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/your-body-is-your-temple-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Original: $1,700</a></p><p style='float: left; width: 100%; font: 8pt arial;'><a href='http://sipo-liimatainen.artistwebsites.com/featured/your-body-is-your-temple-sipo-liimatainen.html' style='font: 9pt arial; font-weight: normal; color: #444444;'>Phone Case: $36.63</a></p></div></div>
+</div>				
+				
+				
+				
+				
+				
+				</div>
+
+				<div style='float: left; width: 100%; padding-top: 5px; padding-bottom: 5px; border-top: 2px solid #999999;'>
+<p style='float: left; font: 9pt arial; color: #444444;'>Displaying: 1 - 24 of 38 green artwork for sale</p><a style='float: right; margin-left: 10px; font: 9pt arial; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/all?page=2'>Next</a><a style='float: right; margin-left: 7px; font: 9pt arial; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/all?page=2'>2</a><p style='float: right; margin-left: 7px; font: 9pt arial; color: #444444;'>[1]</p><p style='float: right; padding-right: 3px; font: 9pt arial; color: #444444;'>Previous</p></div>
+				
+			</div>	
+
+			
+			
+		<div id='navigationmenu' style='float: left; width: 160px; padding-left: 5px; padding-top: 20px; padding-bottom: 50px;'><div style='float: left; width: 100%; padding-bottom: 35px;'>
+<p style='float: left; width: 100%; font: 16pt arial; font-weight: bold; color: #444444; padding-bottom: 5px; border-bottom: 2px solid #999999;'>Galleries</p><div style='float: left; width: 100%; padding-top: 3px; padding-bottom: 3px; margin-top: 15px; background-color: #CCCCCC;'>
+<p style='float: left; padding-left: 7px; font: 10pt arial; font-weight: bold; color: #000000;'>Green</p>
+</div>
+<div style='float: left; width: 100%; padding-top: 2px;'>
+<p style='float: left; padding-left: 7px;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/all/all' style='font: 8pt arial; color: #335599; text-decoration: underline;'>Clear Selection</a></p>
+</div>
+<div style='float: left; width: 100%; height: 140px; margin-top: 15px; overflow: auto;'>
+<div style='float: left; width: 90%;'><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/black+and+dark/all'>Black And Dark</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/blue+/all'>Blue </a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/cats/all'>Cats</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/eden-series/all'>Eden-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/fertility-series/all'>Fertility-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/flowers+and+floral/all'>Flowers And Floral</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/futura-series/all'>Futura-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/all'>Green</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/greeting+cards/all'>Greeting Cards</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/iphone+5+cases/all'>IPhone 5 Cases</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/medulla+mellis-series/all'>Medulla Mellis-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/mystica-series/all'>Mystica-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/phoenix-series/all'>Phoenix-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/pink/all'>Pink</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/purple/all'>Purple</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/recently+sold/all'>Recently Sold</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/red+and+orange/all'>Red And Orange</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/scents+of+summer-series/all'>Scents Of Summer-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/silence-series/all'>Silence-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/sine+tempore-series/all'>Sine Tempore-series</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/surrealism/all'>Surrealism</a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/white+/all'>White </a></p><p style='float: left; width: 100%; height: 14px; overflow: hidden;'><a style='float: left; width: 100%; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/yellow/all'>Yellow</a></p></div></div>
+</div>
+<div style='float: left; width: 100%; padding-bottom: 35px;'>
+<p style='float: left; width: 100%; padding-bottom: 5px; font: 16pt arial; font-weight: bold; color: #444444; border-bottom: 2px solid #999999;'>Products</p><div style='float: left; width: 100%; padding-top: 15px;'>
+<div style='float: left; width: 100%;'>
+<p style='float: left;	'><a style='font: 8pt arial; font-weight: normal; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/canvas+prints'>Canvas Prints</a></p>
+</div>
+<div style='float: left; width: 100%;'>
+<p style='float: left;	'><a style='font: 8pt arial; font-weight: normal; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/framed+prints'>Framed Prints</a></p>
+</div>
+<div style='float: left; width: 100%;'>
+<p style='float: left;	'><a style='font: 8pt arial; font-weight: normal; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/acrylic+prints'>Acrylic Prints</a></p>
+</div>
+<div style='float: left; width: 100%;'>
+<p style='float: left;	'><a style='font: 8pt arial; font-weight: normal; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/prints'>Standard Prints</a></p>
+</div>
+<div style='float: left; width: 100%;'>
+<p style='float: left;	'><a style='font: 8pt arial; font-weight: normal; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/greeting+cards'>Greeting Cards</a></p>
+</div>
+<div style='float: left; width: 100%;'>
+<p style='float: left;	'><a style='font: 8pt arial; font-weight: normal; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/iphone+cases'>Phone Cases</a></p>
+</div>
+<div style='float: left; width: 100%;'>
+<p style='float: left;	'><a style='font: 8pt arial; font-weight: normal; color: #444444;' href='http://sipo-liimatainen.artistwebsites.com/art/all/green/originals'>Originals</a></p>
+</div>
+</div>
+</div>
+<div style='float: left; width: 100%;'>
+<p style='float: left; width: 100%; padding-bottom: 5px; font: 16pt arial; font-weight: bold; color: #444444; border-bottom: 2px solid #999999;'>Related Tags</p><div style='float: left; width: 100%; padding-top: 15px;'>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/abstract/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>abstract</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/decorative/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>decorative</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/modern/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>modern</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/contemporary/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>contemporary</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/fractal/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>fractal</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/geometric/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>geometric</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/inspirational/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>inspirational</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/translucent/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>translucent</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/3-d/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>3-d</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/fantasy/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>fantasy</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/digital+art/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>digital art</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/mystical/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>mystical</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/colorful/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>colorful</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/generative/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>generative</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/green/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>green</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/painterly/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>painterly</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/decor/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>decor</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/expression/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>expression</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/canvas/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>canvas</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/prints/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>prints</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/abstraction/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>abstraction</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/fractals/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>fractals</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/light/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>light</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/reflection/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>reflection</a></p>
+<p style='float: left; width: 100%;'><a href='http://sipo-liimatainen.artistwebsites.com/art/all/beauty/all' style='font: 9pt arial; text-decoration: underline; color: #444444;' rel='tag'>beauty</a></p>
+</div>
+</div>
+</div>				
+			
+			
+			<p style='float: left; width: 100%; padding-top: 10px; color: #444444; font: 10pt arial;'><a href='http://fineartamerica.com/art/all/green/all' style='color: #444444; text-decoration: none;'>Green Art</a></p><p>&nbsp;</p>			
+					
+		</div>
+
+		<div class='titlebar' style='float: left; clear: both; width: 100%; text-align: center; height: 25px; border-left: none; border-right: none;'>
+	<p style='font: 8pt arial; padding-top: 5px; color: #FFFFFF;'>Website Designed by <a href='http://fineartamerica.com' style='font: 8pt arial; text-decoration: underline; color: #FFFFFF;'>Fine Art America</a> / <a href='http://artistwebsites.com' style='font: 8pt arial; text-decoration: underline; color: #FFFFFF;'>Artist Websites</a> - Copyright &copy; 2013 FineArtAmerica.com - All Rights Reserved</p>	
+</div>
+	</div>
+
+</body>
+
+</html>

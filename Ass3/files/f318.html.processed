@@ -1,0 +1,206 @@
+   #[1]index [2]ICloudCenter Products News
+
+   Auction software
+
+        [3]Основная   [4]Портфолио   [5]Услуги   [6]Продукты
+   [7]Клиенты   [8]Отзывы   [9]Партнеры   Contact Us and get Quote for web
+   development [10]О нас   [11]Контактная информация
+   Auction script
+
+   [12]English   [13]French   [14]Dutch   [15]Russian   [16]Italian
+   [17]Portuguese   [18]Spanish   [19]German
+
+
+
+                                                         [20]
+
+                                                      Dutch Auction Script
+
+
+
+
+
+
+   Технологии: PHP 5.0 OOP
+   База данных: MySQL
+   Версия: 1.1
+   Лицензия: GNU GPL
+   Цена: €78.11
+
+
+   [21]Tweet
+
+   Нужны изменения в этом скрипте? Мы здесь, чтобы помочь Вам!
+   ICDutchAuction is a form of classic so-called Dutch tulip auctions
+   where the price of the product is reduced the whole time until someone
+   buys it.
+   On ICDutchAuction the current price is hidden from the participant
+   until the participant scratch the auction. Then the participant will
+   see the current price. Every time someone scratch the auction the price
+   is lowered.
+   So the more people that scratch the auction the faster the price will
+   drop. You need to have the courage to wait for a really good and low
+   price - but do not wait too long because then maybe someone else
+   purchase the product before you!
+
+   Основные характеристики:
+     * Users register and pay for participation
+     * User control panel.
+     * Easy bidding process.
+     * Powerfull admin panel
+
+
+
+                                    [22]
+
+                            Dutch Auction Script
+
+   [23]Демо
+
+                                Купить
+
+     * [24]ICPennyBid - Программа для Скандинавского аукциона
+     * [25]ICLowBidAuction - Аукцион уникально низкой ставки
+     * [26]ICMLM - Cкрипт Программного обеспечения MLM
+     * [27]ICHotelReservation - Сайт бронирования отелей
+     * [28]ICAuction - Сайт аукциона по подобию eBay
+     * [29]ICDoctorAppointment - Скрипт сайта записи к врачу
+     * [30]ICRestaurant - Скрипт сайта ресторана
+     * [31]ICTraveling - Сайт Путешествий
+     * [32]ICHolidayLettings - Holiday Lettings Site Script
+     * [33]Мини Блог
+     * [34]ICDutchAuction - Dutch Auction Script
+
+                  Наши другие программы:
+     * [35]ICProjectBidding - Project bidding script
+     * [36]ICRealestate - программа по продаже и аренде недвижимости -
+       ASP.NET AJAX
+     * [37]ICStudents - Обучение и аттестация онлайн
+     * [38]ICMembers - Платформа для регистрации в клубах
+     * [39]ICSiteBuilder - CMS со встроенной системой электронной
+       коммерции
+     * [40]Мини CMS
+     * [41]ICJewelry - Jewelry store site script
+     * [42]ICProductConfigurator
+     * [43]ICMobilePizza -аппликация по заказу пиццы
+       для мобильных телефонов - J2ME
+     * [44]ICHelpDesk - Скрипт сайта удаленной технической
+       поддержки
+     * [45]ICCallLimousine - Limousine hire script
+     * [46]ICGrocery - Online Store PHP Script
+     * [47]ICEstate - Скрипт сайта агенства недвижимости
+     * [48]Компонент AJAX DataGrid на PHP
+     * [49]IC-T-Shirt - скрипт сайта по продаже креативных футболок
+     * [50]ICMusic - Скрипт cайта музыки
+     * [51]ICTimeAttendance
+     * [52]ICAffiliateTracking - программа для платного распространения
+       рекламы
+     * [53]ICDataGrid - Компонент DataGrid на PHP
+     * [54]ICSurvey- Скрипт сайта опросов
+     * [55]Пользовательский картографический сервис
+       на основе Google Map
+     * [56]ICConferenceReporting - Веб-приложение для отчётов
+     * [57]ICAutosales - Сайт продажи автомобилей
+     * [58]ICClassifieds - Classifieds software script like craigslist
+     * [59]База данных для управления арендой оборудования.
+     * [60]ICApparelStore - Скрипт Интернет Магазина Одежды
+     * [61]ICArtGallery - Скрипт сайта художественной галереи
+     * [62]ICDirectory - Cкрипт сайта-каталога
+     * [63]ICJobSite - сайт поиска работы на РНР
+     * [64]ICGroupDeal - Daily deals site
+     * [65]ICPos - Скрипт автоматической системы продаж
+     * [66]ICDomains - скрипт виртуального рынка доменов
+     * [67]ICDentalClinic - Dental Clinic Site Script
+     * [68]ICRemoteMeeting - remote meetings and support software .
+     * [69]ICLawyerCaseDocuments - ведение юридического делопроизводства
+     * [70]ICGames - Скрипт cайта игр
+     * [71]ICTutors - Tutoring site script
+
+
+
+   Что такое Dutch Auction
+   Голландский аукцион (англ. Dutch auction) – аукцион, в ходе которого
+   вначале объявляется самая высокая цена на продаваемый товар, а затем
+   ставки снижаются до той, на которую согласится первый покупатель,
+   которому и продается товар. Получил свое название в силу широкого
+   распространения в этой стране. Характерная особенность в том, что это
+   оптовый аукцион, на котором продавец может выставлять много единиц
+   товара одновременно.
+
+References
+
+   Visible links
+   1. http://www.icloudcenter.com/ru_products.htm
+   2. http://icloudcenter.com/feeds/rss_products.xml
+   3. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_index.htm
+   4. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_portfolio.htm
+   5. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_services.htm
+   6. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_products.htm
+   7. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_clients.htm
+   8. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_testimonials.htm
+   9. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_partners.htm
+  10. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_whois.htm
+  11. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_contactus.aspx
+  12. file://localhost/home/anaas/WebScienceCS595/assignment3/files/dutch-auction-script.htm
+  13. file://localhost/home/anaas/WebScienceCS595/assignment3/files/fr_dutch-auction-script.htm
+  14. file://localhost/home/anaas/WebScienceCS595/assignment3/files/nl_dutch-auction-script.htm
+  15. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_dutch-auction-script.htm
+  16. file://localhost/home/anaas/WebScienceCS595/assignment3/files/it_dutch-auction-script.htm
+  17. file://localhost/home/anaas/WebScienceCS595/assignment3/files/pt_dutch-auction-script.htm
+  18. file://localhost/home/anaas/WebScienceCS595/assignment3/files/es_dutch-auction-script.htm
+  19. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ge_dutch-auction-script.htm
+  20. http://www.icloudcenter.com/ru_dutch-auction-script.htm
+  21. https://twitter.com/share
+  22. file://localhost/home/anaas/WebScienceCS595/assignment3/files/images/products/img_259_big.JPG
+  23. http://icloudcenter.net/demos/icdutchauction/index.php
+  24. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_penny-auction-script.htm
+  25. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_unique-low-bid-auction-script.htm
+  26. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_mlm-script.htm
+  27. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_hotel-reservation-site-script.htm
+  28. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_ebay-like-auction-script.htm
+  29. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_doctor-appointment-script.htm
+  30. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_restaurant-site-script.htm
+  31. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_traveling-website-script.htm
+  32. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_holiday-lettings-script.htm
+  33. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_mini_blog.htm
+  34. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_dutch-auction-script.htm
+  35. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_project_bidding_script.htm
+  36. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_real-estate-site-script.htm
+  37. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_student-course-assessment-test-script.htm
+  38. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_company-network-script.htm
+  39. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_site-builder-script.htm
+  40. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_mini_cms.htm
+  41. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_jewelry-site-script.htm
+  42. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_bpProductConfigurator.htm
+  43. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_mobile-application-order-pizza.htm
+  44. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_support-tickets-helpdesk-script.htm
+  45. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_limousine-car-hire-script.html
+  46. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_grocery-store-supermarket-script.htm
+  47. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_real-estate-marketplace-site.htm
+  48. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_php_datagrid.htm
+  49. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_t-shirt.htm
+  50. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_music-site-script.htm
+  51. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_time_attendance_script.htm
+  52. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_affiliates-tracking-script.htm
+  53. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_php-datagrid.htm
+  54. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_survey-creating-script.htm
+  55. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_google_map_control.htm
+  56. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_conference-web-reporting-site.htm
+  57. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_auto-dealer-car-sales-script.htm
+  58. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_craigslist-like-classifieds-script.htm
+  59. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_equipment_renting.htm
+  60. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_Apparel-Store-Script.htm
+  61. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_art-gallery-site-script.htm
+  62. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_business-directory-script.htm
+  63. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_jobs-site-script.htm
+  64. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_daily_deals_site.htm
+  65. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_point-of-sale-script.htm
+  66. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_domains-marketplace-script.htm
+  67. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_dental-clinic-script.htm
+  68. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_remote_meetings_software.htm
+  69. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_lawyer-case-document-script.htm
+  70. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_games-site-script.htm
+  71. file://localhost/home/anaas/WebScienceCS595/assignment3/files/ru_tutoring-site-script.htm
+
+   Hidden links:
+  73. http://icloudcenter.com/webim/client.php?locale=en
