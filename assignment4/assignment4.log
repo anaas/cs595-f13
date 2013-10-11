@@ -1,0 +1,231 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2013.9.19)  11 OCT 2013 01:13
+entering extended mode
+**assignment4.tex
+(Z:\WebScienceCS595\assignment4\assignment4.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\caption\caption.sty"
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\caption\caption3.sty"
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\captionmargin=\dimen103
+\captionmargin@=\dimen104
+\captionwidth=\dimen105
+\caption@indent=\dimen106
+\caption@parindent=\dimen107
+\caption@hangindent=\dimen108
+)
+\c@ContinuedFloat=\count87
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\caption\subcaption.sty"
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count88
+\c@subtable=\count89
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen111
+\WF@size=\dimen112
+\c@WF@wrappedlines=\count91
+\WF@box=\box26
+\WF@everypar=\toks15
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(Z:\WebScienceCS595\assignment4\assignment4.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen113
+\scratchbox=\box27
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen114
+\MPnumerator=\count96
+\everyMPtoPDFconversion=\toks17
+) [1
+
+{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 24.
+ [2]
+<MainGraph.png, id=14, 1027.84pt x 770.88pt>
+File: MainGraph.png Graphic file (type png)
+ <use MainGraph.png>
+<indegree.png, id=15, 555.57562pt x 505.89pt>
+File: indegree.png Graphic file (type png)
+ <use indegree.png>
+<Outdegree1.png, id=17, 514.17094pt x 501.37312pt>
+File: Outdegree1.png Graphic file (type png)
+ <use Outdegree1.png>
+<Outdegree2.png, id=18, 555.57562pt x 493.845pt>
+File: Outdegree2.png Graphic file (type png)
+ <use Outdegree2.png>
+
+LaTeX Warning: Float too large for page by 54.2732pt on input line 80.
+
+<authorities.png, id=19, 602.25pt x 401.5pt>
+File: authorities.png Graphic file (type png)
+ <use authorities.png>
+<hubs.png, id=20, 602.25pt x 401.5pt>
+File: hubs.png Graphic file (type png)
+ <use hubs.png>
+<pageranks.png, id=21, 602.25pt x 401.5pt>
+File: pageranks.png Graphic file (type png)
+ <use pageranks.png>
+<degree-distribution.png, id=22, 602.25pt x 401.5pt>
+File: degree-distribution.png Graphic file (type png)
+
+<use degree-distribution.png>
+<indegree-distribution.png, id=23, 602.25pt x 401.5pt>
+File: indegree-distribution.png Graphic file (type png)
+
+<use indegree-distribution.png>
+<outdegree-distribution.png, id=24, 602.25pt x 401.5pt>
+File: outdegree-distribution.png Graphic file (type png)
+
+<use outdegree-distribution.png>
+
+LaTeX Warning: Float too large for page by 19.82628pt on input line 128.
+
+<BetweennessCentralityDistribution.png, id=25, 602.25pt x 401.5pt>
+File: BetweennessCentralityDistribution.png Graphic file (type png)
+
+<use BetweennessCentralityDistribution.png>
+<ClosenessCentralityDistribution.png, id=26, 602.25pt x 401.5pt>
+File: ClosenessCentralityDistribution.png Graphic file (type png)
+
+<use ClosenessCentralityDistribution.png>
+<EccentricityDistribution.png, id=27, 602.25pt x 401.5pt>
+File: EccentricityDistribution.png Graphic file (type png)
+
+<use EccentricityDistribution.png>
+
+LaTeX Warning: Float too large for page by 19.82628pt on input line 152.
+
+<cc-size-distribution.png, id=28, 602.25pt x 401.5pt>
+File: cc-size-distribution.png Graphic file (type png)
+
+<use cc-size-distribution.png> [3 <Z:/WebScienceCS595/assignment4/MainGraph.png
+ (PNG copy)>] [4 <Z:/WebScienceCS595/assignment4/indegree.png>] [5 <Z:/WebScien
+ceCS595/assignment4/Outdegree1.png (PNG copy)> <Z:/WebScienceCS595/assignment4/
+Outdegree2.png (PNG copy)>] [6 <Z:/WebScienceCS595/assignment4/authorities.png>
+ <Z:/WebScienceCS595/assignment4/hubs.png>] [7 <Z:/WebScienceCS595/assignment4/
+pageranks.png>] [8 <Z:/WebScienceCS595/assignment4/degree-distribution.png> <Z:
+/WebScienceCS595/assignment4/indegree-distribution.png> <Z:/WebScienceCS595/ass
+ignment4/outdegree-distribution.png>] [9 <Z:/WebScienceCS595/assignment4/Betwee
+nnessCentralityDistribution.png> <Z:/WebScienceCS595/assignment4/ClosenessCentr
+alityDistribution.png> <Z:/WebScienceCS595/assignment4/EccentricityDistribution
+.png>] [10 <Z:/WebScienceCS595/assignment4/cc-size-distribution.png>]
+(Z:\WebScienceCS595\assignment4\assignment4.aux) ) 
+Here is how much of TeX's memory you used:
+ 2578 strings out of 495285
+ 38132 string characters out of 3179878
+ 95998 words of memory out of 3000000
+ 5791 multiletter control sequences out of 15000+200000
+ 7589 words of font info for 27 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,8n,38p,376b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTe
+X 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
+2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts
+/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb>
+Output written on assignment4.pdf (10 pages, 1447181 bytes).
+PDF statistics:
+ 85 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
