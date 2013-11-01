@@ -1,0 +1,27 @@
+library(igraph)
+g <- read.graph("http://igraph.sourceforge.net/karate.net", format="pajek")
+
+while((clusters(g)['no'])== 1) {
+	len <- length(edge.betweenness(g))
+	Edges <- edge.betweenness(g)
+	max <- max(edge.betweenness(g))
+	i <- 0
+	while (i < len) {
+		if (max==Edges[i+1]){
+			g <- delete.edges(g, E(g,get.edge(g,i)))
+			break()
+		}
+		i <- i+1
+	}
+}
+
+cs <- leading.eigenvector.community(g, steps=1)
+V(g)$color <- ifelse(cs$membership==1, "lightblue", "green")
+ 
+scale <- function(v, a, b) {
+	v <- v-min(v) ; v <- v/max(v) ; v <- v * (b-a) ; v+a
+}
+V(g)$size <- scale(abs(cs$eigenvectors[[1]]), 10, 20)
+E(g)$color <- "grey"
+E(g)[ V(g)[ color=="lightblue" ] %--% V(g)[ color=="green" ] ]$color <- "red"
+tkplot(g, layout=layout.kamada.kawai, vertex.label.font=2)
