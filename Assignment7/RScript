@@ -57,14 +57,14 @@ file.show("databefore.json")
 
 ################# to split the Karate club ########################
 
-while((clusters(g)['no'])== 1) {
-	len <- length(edge.betweenness(g))
-	Edges <- edge.betweenness(g)
-	max <- max(edge.betweenness(g))
+while((clusters(graph)['no'])== 1) {
+	len <- length(edge.betweenness(graph))
+	Edges <- edge.betweenness(graph)
+	max <- max(edge.betweenness(graph))
 	i <- 0
 	while (i < len) {
 		if (max==Edges[i+1]){
-			g <- delete.edges(g, E(g,get.edge(g,i)))
+			graph <- delete.edges(graph, E(graph,get.edge(graph,i)))
 			break()
 		}
 		i <- i+1
