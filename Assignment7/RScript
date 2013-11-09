@@ -23,7 +23,7 @@ names(tab)[1]<- "source"
 names(tab)[2]<- "target"
 names(tab)[3]<- "value"
 
-############### to write the databefore.json ################
+############### For writing the databefore.json ################
 
 sink("databefore.json")
 
@@ -55,7 +55,7 @@ cat('\n\t]\n}')
 sink()
 file.show("databefore.json")
 
-################# to split the Karate club ########################
+################# For splitting the Karate club ########################
 
 while((clusters(graph)['no'])== 1) {
 	len <- length(edge.betweenness(graph))
@@ -78,7 +78,7 @@ names(tab)[2]<- "target"
 names(tab)[3]<- "value"
 memper <- as.numeric( unlist(clusters(graph)['membership']))
 
-############### to write the dataAfter.json ################
+############### For writing the dataAfter.json ################
 
 sink("dataAfter.json")
 cat('{\n\t"links": [\n')
