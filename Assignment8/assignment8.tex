@@ -1,0 +1,567 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{listings}
+\usepackage{color}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{%frame=tb,
+  language=Bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage[english]{babel}
+\usepackage{mathtools}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage[margin=3cm]{geometry}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+\newcommand\course{CS595}
+\newcommand\semester{Fall 2013}     
+\newcommand\hwnum{7}
+\newcommand\yourname{Amara Naas}
+\newcommand\login{anaas}
+\newcommand\DATE{11/14/2013}
+
+\newenvironment{answer}[1]{
+  \subsubsection*{Problem #1}
+}
+
+\pagestyle{fancyplain}
+\headheight 40pt
+\lhead{\yourname\ (\login)\\\course\ --- \semester}
+\chead{\textbf{\Large Assignment \hwnum}}
+\rhead{\DATE}
+\headsep 40pt
+
+\begin{document}
+
+\begin{answer}{1}
+In my approach to solve this problem I used the data which available at [1] and used the {\it MovieLens 100k} as specified in assignment 7. The data include three data files which are {\it u.data}\footnote{File uploaded to github}, {\it u.item}\footnotemark[1], and {\it u.user}\footnotemark[1]. These three files have an information about 100,000 ratings by 943 users on 1,682 movies, the 1,682 movies, and the users respectively. Also the data include the code which I modified to solve this question and other questions and {\it assignment8.py}\footnotemark[1]. ``The MovieLense data sets were collected by the GroupLens Research Project at the University of Minnesota during the seven-month period from September 19th, 1997 through April 22nd, 1998''[2]. 
+
+In order to find the five movies which have the highest average ratings I did the following:
+
+\begin{itemize}
+\item The code {\it recommendations.py} already imported the data from {\it u.item} and saved the movies' {\it title and Ids} in a dictionary called {\it movies}.
+
+\lstinputlisting[language=Python, firstline=184, lastline=187]{code/assignment8.py}
+
+\item And also created another dictionary which contains {\it user id, movie ids, and the user ratings for each of them} from {\it u.data} and called {\it prefs}.
+
+\lstinputlisting[language=Python, firstline=189, lastline=193]{code/assignment8.py}
+
+\item I created another dictionary for all movies and their user rating and called it {\it rating\_hi\_avg}.
+
+\lstinputlisting[language=Python, firstline=203, lastline=207]{code/assignment8.py}
+
+\item I created another dictionary for all movies and their user average rating and called it {\it average}.
+
+\lstinputlisting[language=Python, firstline=208, lastline=210]{code/assignment8.py} 
+
+\item I sorted all movies based on their average and reverse to get the highest average rating and print the highest ten movies.
+
+\lstinputlisting[language=Python, firstline=212, lastline=216]{code/assignment8.py}
+
+\end{itemize}
+Table 1 show that there are ten ties movies that have the highest average ratings.
+\begin{table}[h!]
+
+\begin{center}
+    \begin{tabular}{ c c }
+    \hline
+    Movies & Ratings \\ \hline\hline
+    
+A Great Day in Harlem (1994)   &   5.0  \\
+Prefontaine (1997)   &   5.0  \\
+Aiqing wansui (1994)   &   5.0  \\
+Star Kid (1997)   &   5.0  \\
+Marlene Dietrich: Shadow and Light (1996)    &   5.0  \\
+Entertaining Angels: The Dorothy Day Story (1996)   &   5.0  \\
+The Saint of Fort Washington (1993)   &   5.0  \\
+Someone Else's America (1995)   &   5.0  \\
+Santa with Muscles (1996)   &   5.0  \\
+They Made Me a Criminal (1939)   &   5.0  \\
+    \hline
+    \end{tabular}
+\end{center}
+\caption{The 10 movies which have the highest average ratings}
+
+\end{table}
+\end{answer}
+\begin{answer}{2}
+
+For answering question two I just did the following:
+\begin{itemize}
+\item Created new dictionary called {\it lengthList} and find the length of {\it rating\_hi\_avg} from question one for all rating of each movies.
+
+\lstinputlisting[language=Python, firstline=221, lastline=223]{code/assignment8.py}
+
+\item I sorted all movies based on the length of their ratings and reverse to get the movies that received the most ratings.
+
+\lstinputlisting[language=Python, firstline=225, lastline=229]{code/assignment8.py}
+
+\end{itemize}
+
+Table 2 show the movies that received the most ratings.
+\begin{table}[h!]
+
+\begin{center}
+    \begin{tabular}{ c c }
+    \hline
+    Movies &  Number of Ratings \\ \hline\hline
+    
+Star Wars (1977)   &   583  \\
+Contact (1997)   &   509  \\
+Fargo (1996)   &   508  \\
+Return of the Jedi (1983)   &   507  \\
+Liar Liar (1997)   &   485  \\
+    \hline
+    \end{tabular}
+\end{center}
+\caption{The movies that received the most ratings}
+
+\end{table}
+\end{answer}
+\begin{answer}{3}
+
+For answering question three I just did the following:
+
+\begin{itemize}
+
+\item Created new dictionary called {\it rating\_women} and extract all female from {\it prefs} dictionary and save all movies that are rated by women.
+
+\lstinputlisting[language=Python, firstline=233, lastline=239]{code/assignment8.py}
+
+\item I created another dictionary for all movies and their user average rating by women and called it {\it average}.
+
+\lstinputlisting[language=Python, firstline=240, lastline=242]{code/assignment8.py} 
+
+\item I sorted all movies based on their average and reverse to get the highest average rating and print the highest movies.
+
+\lstinputlisting[language=Python, firstline=244, lastline=248]{code/assignment8.py}
+
+\end{itemize}
+
+Table 3 show the movies ties that were rated the highest on average by women.
+\begin{table}[h!]
+
+\begin{center}
+    \begin{tabular}{ c c }
+    \hline
+    Movies &  Women's Ratings \\ \hline\hline
+    
+The Visitors (Visiteurs, Les) (1993)   &   5.0  \\
+Prefontaine (1997)   &   5.0  \\
+Telling Lies in America (1997)   &   5.0  \\
+Foreign Correspondent (1940)   &   5.0  \\
+Faster Pussycat! Kill! Kill! (1965)   &   5.0  \\
+Year of the Horse (1997)   &   5.0  \\
+Mina Tannenbaum (1994)   &   5.0  \\
+Maya Lin: A Strong Clear Vision (1994)   &   5.0  \\
+Everest (1998)   &   5.0  \\
+Someone Else's America (1995)   &   5.0  \\
+Stripes (1981)   &   5.0  \\
+    \hline
+    \end{tabular}
+\end{center}
+\caption{The movies that were rated the highest on average by women}
+
+\end{table}
+\end{answer}
+\begin{answer}{4}
+
+For answering question fore I just change the condition in question three as in the following line:
+\begin{itemize}
+
+\lstinputlisting[language=Python, firstline=256, lastline=256]{code/assignment8.py}
+
+\end{itemize}
+
+Table 4 show the movies ties that were rated the highest on average by men.
+\begin{table}[h!]
+
+ 
+    \begin{tabular}{ c c }
+    \hline
+    Movies &  Men's Ratings \\ \hline\hline
+Delta of Venus (1994)   &   5.0  \\
+A Great Day in Harlem (1994)   &   5.0  \\
+The Leading Man (1996)   &   5.0  \\
+Love Serenade (1996)   &   5.0  \\
+Prefontaine (1997)   &   5.0  \\
+Aiqing wansui (1994)   &   5.0  \\
+Little City (1998)   &   5.0  \\
+Star Kid (1997)   &   5.0  \\
+Marlene Dietrich: Shadow and Light (1996)    &   5.0  \\
+Entertaining Angels: The Dorothy Day Story (1996)   &   5.0  \\
+The Quiet Room (1996)   &   5.0  \\
+The Saint of Fort Washington (1993)   &   5.0  \\
+A Letter From Death Row (1998)   &   5.0  \\
+Santa with Muscles (1996)   &   5.0  \\
+They Made Me a Criminal (1939)   &   5.0  \\
+    \hline
+    \end{tabular}
+  
+
+ \caption{The movies that were rated the highest on average by men}
+
+\end{table}
+\end{answer}
+
+\begin{answer}{5}
+
+For answering question five I just invert the preference matrix to be user-centric in {\it prefs} dictionary instead of movie-centric by using {\it topMatches} function which give the most and least like match to {\it Top Gun}.
+
+
+
+\lstinputlisting[language=Python, firstline=275, lastline=278]{code/assignment8.py}
+
+
+
+Table 5 show the movies that most and least like match to {\it Top Gun} based on the following Pearson's correlation:
+
+\begin{equation}\label{1}
+r_{xy}= \frac {n \sum x_i y_i - \sum x_i \sum y_i}{\sqrt{n\sum x_i^2 - (\sum x_i)^2}\sqrt{n\sum y_i^2 - (\sum y_i)^2}}
+\end{equation}
+
+\begin{table}[h!]
+
+\begin{center}
+    \begin{tabular}{ c c }
+    \hline
+    Movies &  Pearson's r \\ \hline\hline
+    
+Top match: Wild America (1997) & 1.0  \\
+Least match: The Babysitter (1995) & -1.0\\
+    \hline
+    \end{tabular}
+\end{center}
+\caption{The movies that most and least like match to {\it Top Gun}}
+
+\end{table}
+\end{answer}
+\begin{answer}{6}
+
+In this question I created a dictionary called {\it userMostRating} and save all users and their ratings length than sorted them.
+
+\begin{itemize}
+\lstinputlisting[language=Python, firstline=283, lastline=291]{code/assignment8.py}
+\end{itemize}
+
+Table 6 show the five raters rated the most films.
+
+\begin{table}[h!]
+
+
+
+\begin{tabular}{ c c }
+    \hline
+    Raters' Id &  Number Of Films \\ \hline\hline
+    
+405   &   736  \\
+655   &   678  \\
+13   &   632  \\
+450   &   538  \\
+276   &   516  \\
+    \hline
+\end{tabular}
+
+\caption{The five raters rated the most films}
+
+
+\end{table}
+
+\end{answer}
+
+\begin{answer}{7}
+In this question I found that there is 806 ties agreed and I did the following to get the results:\par
+
+Compute scores for everyone to everyone by calling {\it calculateSimilarUser} which call the {\it topMatches} function in turn and return the top fore similarity scores for everyone. 
+
+ \lstinputlisting[language=Python, firstline=297, lastline=297]{code/assignment8.py}
+
+ \lstinputlisting[language=Python, firstline=163, lastline=175]{code/assignment8.py}
+\begin{itemize}
+\item Define a cumulative difference score after sorting, and report the group of five that have the smallest score.
+\end{itemize}
+ \lstinputlisting[language=Python, firstline=299, lastline=301]{code/assignment8.py} 
+
+ \lstinputlisting[language=Python, firstline=308, lastline=310]{code/assignment8.py} 
+
+ \lstinputlisting[language=Python, firstline=314, lastline=315]{code/assignment8.py} 
+
+ \lstinputlisting[language=Python, firstline=318, lastline=322]{code/assignment8.py} 
+
+
+
+Table 7 show the five raters most agreed with each other.
+\begin{table}[h!]
+
+\begin{center}
+    \begin{tabular}{ c c c }
+    \hline
+ 1st User ID & other users ID & cumulative difference score \\ \hline\hline
+
+675 & 99, 908, 906, 886 & 0  \\
+628   & 98, 97, 932, 912 & 0  \\
+440   & 98, 939, 911, 908 & 0  \\
+170   &  98, 939, 861, 777 & 0  \\
+600   &  98, 936, 879, 874 & 0  \\
+ 
+    \hline
+    \end{tabular}
+\end{center}
+\caption{The five raters most agreed with each other}
+
+\end{table}
+\end{answer}
+\begin{answer}{8}
+In this question I did the same thing as question seven, the only change was:
+\begin{itemize}
+
+\item Reporting the group of five that have the \textcolor {red}{highest} score.
+
+\lstinputlisting[language=Python, firstline=328, lastline=331]{code/assignment8.py} 
+
+\end{itemize}
+
+Table 8 show the five raters most disagreed with each other.
+\begin{table}[h!]
+
+\begin{center}
+    \begin{tabular}{ c c c }
+    \hline
+    1st User ID & other users ID & cumulative difference score \\ \hline\hline
+
+13   & 46, 876, 701, 397 & 2.641  \\
+655   &  384, 895, 816, 762 & 2.675  \\
+796   & 205, 333, 143, 812 & 2.823 \\
+130   &  511, 369, 172, 415 & 2.828  \\
+551   & 691, 132, 641, 675 &  2.854  \\  
+ 
+    \hline
+    \end{tabular}
+\end{center}
+\caption{The five raters most disagreed with each other}
+
+\end{table}
+\end{answer}
+\begin{answer}{9}
+In this question I did the following steps:
+
+\begin{itemize}
+\item I created two dictionaries one for men over forty and the other for men under forty {\it rating\_m\_up} and {\it rating\_m\_down}.
+\item I than iterate over {\it prefs} dictionary by key {\it user} and use the condition statement to find female user over forty and under forty, add all of their rating, and save them in the dictionaries.
+\lstinputlisting[language=Python, firstline=337, lastline=349]{code/assignment8.py} 
+
+\item I created another two dictionaries for all movies and their user average rating by men over and under forty and called it {\it average\_m\_down} and {\it average\_m\_up}.
+
+\lstinputlisting[language=Python, firstline=350, lastline=352]{code/assignment8.py}
+\lstinputlisting[language=Python, firstline=359, lastline=361]{code/assignment8.py} 
+
+\item I sorted all movies based on their average and reverse to get the highest average rating and print the highest movies.
+
+\lstinputlisting[language=Python, firstline=354, lastline=355]{code/assignment8.py}
+\lstinputlisting[language=Python, firstline=363, lastline=367]{code/assignment8.py}
+
+\end{itemize}
+
+Table 9 show the movies that were rated highest on average by men under 40.
+\begin{table}[h!]
+
+\begin{center}
+    \begin{tabular}{ c c }
+    \hline
+    Movies by men under 40 &  ratings \\ \hline\hline
+
+Delta of Venus (1994)   &   5.0  \\
+Santa with Muscles (1996)   &   5.0  \\
+Crossfire (1947)   &   5.0  \\
+Leading Man, The (1996)   &   5.0  \\
+Love Serenade (1996)   &   5.0  \\
+Prefontaine (1997)   &   5.0  \\
+Aiqing wansui (1994)   &   5.0  \\
+Love in the Afternoon (1957)   &   5.0  \\
+Star Kid (1997)   &   5.0  \\
+Angel Baby (1995)   &   5.0  \\
+Maya Lin: A Strong Clear Vision (1994)   &   5.0  \\
+Entertaining Angels: The Dorothy Day Story (1996)   &   5.0  \\
+Magic Hour, The (1998)   &   5.0  \\
+Quiet Room, The (1996)   &   5.0  \\
+Saint of Fort Washington, The (1993)   &   5.0  \\
+Perfect Candidate, A (1996)   &   5.0  \\
+Letter From Death Row, A (1998)   &   5.0  \\    
+ 
+    \hline
+    \end{tabular}
+\end{center}
+\caption{The movie that was rated highest on average by men under 40}
+
+\end{table}
+
+Table 10 show the movies that were rated highest on average by men over 40.
+\begin{table}[h!]
+
+\begin{center}
+    \begin{tabular}{ c c }
+    \hline
+    Movies by men over 40 &  ratings \\ \hline\hline
+
+Hearts and Minds (1996)   &   5.0  \\
+Faithful (1996)   &   5.0  \\
+Marlene Dietrich: Shadow and Light (1996)    &   5.0  \\
+Strawberry and Chocolate (Fresa y chocolate) (1993)   &   5.0  \\
+Late Bloomers (1996)   &   5.0  \\
+Solo (1996)   &   5.0  \\
+Grateful Dead (1995)   &   5.0  \\
+Prefontaine (1997)   &   5.0  \\
+Rendezvous in Paris (Rendez-vous de Paris, Les) (1995)   &   5.0  \\
+World of Apu, The (Apur Sansar) (1959)   &   5.0  \\
+Aparajito (1956)   &   5.0  \\
+Ace Ventura: When Nature Calls (1995)   &   5.0  \\
+Star Kid (1997)   &   5.0  \\
+Two or Three Things I Know About Her (1966)   &   5.0  \\
+Poison Ivy II (1995)   &   5.0  \\
+Double Happiness (1994)   &   5.0  \\
+Little City (1998)   &   5.0  \\
+Boxing Helena (1993)   &   5.0  \\
+Spice World (1997)   &   5.0  \\
+They Made Me a Criminal (1939)   &   5.0  \\
+Great Day in Harlem, A (1994)   &   5.0  \\
+Little Princess, The (1939)   &   5.0  \\
+Unstrung Heroes (1995)   &   5.0  \\
+Leading Man, The (1996)   &   5.0  \\
+Indian Summer (1996)   &   5.0  \\    
+ 
+    \hline
+    \end{tabular}
+\end{center}
+\caption{The movie that was rated highest on average by men over 40}
+
+\end{table}
+
+\end{answer}
+\begin{answer}{10}
+In this question I did the same thing as in question nine with only change to the condition statement as following:
+\begin{itemize}
+
+\lstinputlisting[language=Python, firstline=374, lastline=378]{code/assignment8.py}
+
+\end{itemize}
+Table 11 show the movies that were rated highest on average by women under 40.
+\begin{table}[h!]
+
+
+    \begin{tabular}{ c c }
+    \hline
+    Movies by women under 40 &  ratings \\ \hline\hline
+
+Backbeat (1993)   &   5.0  \\
+Prefontaine (1997)   &   5.0  \\
+Telling Lies in America (1997)   &   5.0  \\
+Faster Pussycat! Kill! Kill! (1965)   &   5.0  \\
+Year of the Horse (1997)   &   5.0  \\
+Mina Tannenbaum (1994)   &   5.0  \\
+Maya Lin: A Strong Clear Vision (1994)   &   5.0  \\
+Nico Icon (1995)   &   5.0  \\
+The Umbrellas of Cherbourg, (Parapluies de Cherbourg, Les) (1964)   &   5.0  \\
+Everest (1998)   &   5.0  \\
+Heaven's Prisoners (1996)   &   5.0  \\
+The Wedding Gift, (1994)   &   5.0  \\
+The Horseman on the Roof, (Hussard sur le toit, Le) (1995)   &   5.0  \\
+Grace of My Heart (1996)   &   5.0  \\
+Someone Else's America (1995)   &   5.0  \\
+Don't Be a Menace to South Central While Drinking Your Juice in the Hood (1996)   &   5.0  \\
+Stripes (1981)   &   5.0  \\    
+ 
+    \hline
+    \end{tabular}
+
+\caption{The movie that was rated highest on average by women under 40}
+
+\end{table}
+
+Table 12 show the movies that were rated highest on average by women over 40.
+\begin{table}[h!]
+
+
+    \begin{tabular}{ c c }
+    \hline
+    Movies by women over 40 &  ratings \\ \hline\hline
+
+Shallow Grave (1994)   &   5.0  \\
+Great Dictator, The (1940)   &   5.0  \\
+Visitors, The (Visiteurs, Les) (1993)   &   5.0  \\
+Shall We Dance? (1937)   &   5.0  \\
+In the Bleak Midwinter (1995)   &   5.0  \\
+Funny Face (1957)   &   5.0  \\
+Ma vie en rose (My Life in Pink) (1997)   &   5.0  \\
+Swept from the Sea (1997)   &   5.0  \\
+Best Men (1997)   &   5.0  \\
+Foreign Correspondent (1940)   &   5.0  \\
+Tombstone (1993)   &   5.0  \\
+Wrong Trousers, The (1993)   &   5.0  \\
+Top Hat (1935)   &   5.0  \\
+Quest, The (1996)   &   5.0  \\
+Balto (1995)   &   5.0  \\
+Angel Baby (1995)   &   5.0  \\
+Band Wagon, The (1953)   &   5.0  \\
+Letter From Death Row, A (1998)   &   5.0  \\
+Mina Tannenbaum (1994)   &   5.0  \\
+Mary Shelley's Frankenstein (1994)   &   5.0  \\
+Gold Diggers: The Secret of Bear Mountain (1995)   &   5.0  \\
+Nightmare Before Christmas, The (1993)   &   5.0  \\
+Grand Day Out, A (1992)   &   5.0  \\
+Bride of Frankenstein (1935)   &   5.0  \\
+Pocahontas (1995)   &   5.0  \\
+Safe (1995)   &   5.0  \\    
+ 
+    \hline
+    \end{tabular}
+
+\caption{The movie that was rated highest on average by women over 40}
+
+\end{table}
+
+\end{answer}
+
+\pagebreak
+
+
+\large{Refrences}
+
+\bibliography{data}
+[1] \url {http://www.grouplens.org/node/73}.
+
+\bibliography{source}
+[2] \url {http://www.cs.odu.edu/~mln/teaching/cs595-f13/?method=
+getElement&element=~assignments~a8~a8.txt}.
+
+\end{document}
