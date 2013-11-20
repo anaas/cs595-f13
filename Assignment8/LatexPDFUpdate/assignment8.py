@@ -309,8 +309,13 @@ def loadMovieLens():
   sorted_x = sorted(cumulative_simi.iteritems(), key=operator.itemgetter(1))
   sorted_x.reverse()
   print (" ##### number [7] solution ##### ")
-  for (key,value) in sorted_x[0:350]:
-   print key,'  &  ',value,' \\\\'
+  List=[]
+  for (key,value) in sorted_x[0:900]:
+   List.append(value[1])
+   if any(key in s for s in List):
+    continue
+   else:
+    print key,'  &  ',value,' \\\\'
   ### Q7 End ####  
 
   ### Q8 Start ####
@@ -327,8 +332,14 @@ def loadMovieLens():
     raters.append(value)
    cumulative[user]=(num,raters)
   sorted_x = sorted(cumulative.iteritems(), key=operator.itemgetter(1))
-  for (key,value) in sorted_x[0:350]:
-   print key,'  &  ',value,' \\\\'
+  List=[]
+  print (" ##### number [8] solution ##### ")
+  for (key,value) in sorted_x[0:900]:
+   List.append(value[1])
+   if any(key in s for s in List):
+    continue
+   else:
+    print key,'  &  ',value,' \\\\'
   
   ### Q8 End ####
   
@@ -353,18 +364,18 @@ def loadMovieLens():
 
   sorted_md = sorted(average_m_down.iteritems(), key=operator.itemgetter(1))
   sorted_md.reverse()
-  #print (" ##### number [9 A under ] solution ##### ")
-  #for (key,value) in sorted_md[0:17]:
-   #print key,'  &  ',value,' \\\\'
+  print (" ##### number [9 A under ] solution ##### ")
+  for (key,value) in sorted_md[0:17]:
+   print key,'  &  ',value,' \\\\'
   average_m_up = {}  
   for movie in rating_m_up.keys(): 	
     average_m_up[movie] = mean(rating_m_up[movie])
 
   sorted_mu = sorted(average_m_up.iteritems(), key=operator.itemgetter(1))
   sorted_mu.reverse()
-  #print (" ##### number [9 B over ] solution ##### ")
-  #for (key,value) in sorted_mu[0:25]:
-   #print key,'  &  ',value,' \\\\'
+  print (" ##### number [9 B over ] solution ##### ")
+  for (key,value) in sorted_mu[0:25]:
+   print key,'  &  ',value,' \\\\'
   ### Q9 End ####
   
   ### Q10 Start ####
@@ -387,18 +398,18 @@ def loadMovieLens():
 
   sorted_wd = sorted(average_w_down.iteritems(), key=operator.itemgetter(1))
   sorted_wd.reverse()
-  #print (" ##### number [10 A under] solution ##### ")
-  #for (key,value) in sorted_wd[0:17]:
-   #print key,'  &  ',value,' \\\\'
+  print (" ##### number [10 A under] solution ##### ")
+  for (key,value) in sorted_wd[0:17]:
+   print key,'  &  ',value,' \\\\'
   average_w_up = {}  
   for movie in rating_w_up.keys(): 	
     average_w_up[movie] = mean(rating_w_up[movie])
 
   sorted_wu = sorted(average_w_up.iteritems(), key=operator.itemgetter(1))
   sorted_wu.reverse()
-  #print (" ##### number [10 B over] solution ##### ")
-  #for (key,value) in sorted_wu[0:26]:
-   #print key,'  &  ',value,' \\\\'
+  print (" ##### number [10 B over] solution ##### ")
+  for (key,value) in sorted_wu[0:26]:
+   print key,'  &  ',value,' \\\\'
   ### Q10 End ####
   return prefs
   
