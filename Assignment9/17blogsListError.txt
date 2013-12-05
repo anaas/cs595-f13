@@ -1,0 +1,85 @@
+% python A-Assignment9.py
+
+Problem parsing:
+- http://f-measure.blogspot.com/
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x28ffe18>)
+
+Problem parsing:
+- http://ws-dl.blogspot.com/
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x2901908>)
+
+Problem parsing:
+- http://blogs.abcnews.com/theblotter/index.rdf
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x2cddf38>)
+
+Problem parsing:
+- http://featured.gigaom.com/feed/
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x297c098>)
+
+Problem parsing:
+- http://journals.aol.com/thecoolerblog/AOLNewsCooler/rss.xml
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x297cdd0>)
+
+Problem parsing:
+- http://powerlineblog.com/index.rdf
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x2ccbfc8>)
+
+Problem parsing:
+- http://www.bloglines.com/rss/about/news
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x361ae60>)
+
+Problem parsing:
+- http://www.coolhunting.com/index.rdf
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x33e4cf8>)
+
+Problem parsing:
+- http://www.makezine.com/blog/index.xml
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x30cc9e0>)
+
+Problem parsing:
+- http://www.micropersuasion.com/index.rdf
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x33d9f80>)
+
+Problem parsing:
+- http://scienceblogs.com/sample/combined.xml
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x33e6998>)
+
+Problem parsing:
+- http://www.sifry.com/alerts/index.rdf
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x33e40e0>)
+
+Problem parsing:
+- http://www.talkingpointsmemo.com/index.xml
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x2979320>)
+
+Problem parsing:
+- http://www.techeblog.com/index.php/feed/
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x3854c68>)
+
+Problem parsing:
+- http://www.treehugger.com/index.rdf
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x2995170>)
+
+Problem parsing:
+- http://www.valleywag.com/index.xml
+
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x30cc440>)
+
+Problem parsing:
+- http://www.wonkette.com/index.xml
+(<type 'exceptions.AttributeError'>, AttributeError("object has no attribute 'title'",), <traceback object at 0x2d9e368>)
