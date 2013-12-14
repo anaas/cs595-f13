@@ -1,0 +1,200 @@
+cprob for this cat is: 0.987331178935
+The Job Hunter's Guide to Social Media  Predictcat:     job
+Title 51:     The Job Hunter's Guide to Social Media actual:job
+
+cprob for this cat is: 0.99520369339
+7 Salary Negotiation Tips for Women - How to Get Ahead Without Negative Feedback        Predictcat:     salary
+Title 52:     7 Salary Negotiation Tips for Women - How to Get Ahead Without Negative Feedback actual:salary
+
+cprob for this cat is: 0.937278910276
+Gaming Your Workday - How Video Games Can Help Your Career      Predictcat:     job
+Title 53:     Gaming Your Workday - How Video Games Can Help Your Career actual:job
+
+cprob for this cat is: 0.986105621645
+Horrible Bosses - Real-Life Tales of Workplace Terror   Predictcat:     job
+Title 54:     Horrible Bosses - Real-Life Tales of Workplace Terror actual:job
+
+cprob for this cat is: 0.313821601414
+Going Paperless: Is it time to buy a tablet?    Predictcat:     salary
+Title 55:     Going Paperless: Is it time to buy a tablet? actual:job
+
+cprob for this cat is: 0.987820265833
+15 More Must-Read Business Books That Could Change Your Life    Predictcat:     salary
+Title 56:     15 More Must-Read Business Books That Could Change Your Life actual:salary
+
+cprob for this cat is: 0.836195421247
+Job Interview For Dads  Predictcat:     job
+Title 57:     Job Interview For Dads actual:job
+
+cprob for this cat is: 0.992251266601
+Salary.com's 2011 Dad Salary Survey - How Much Is Your Dad Worth?       Predictcat:     job
+Title 58:     Salary.com's 2011 Dad Salary Survey - How Much Is Your Dad Worth? actual:job
+
+cprob for this cat is: 0.947400634104
+2011 Best Places to Work for Recent Grads       Predictcat:     job
+Title 59:     2011 Best Places to Work for Recent Grads actual:job
+
+cprob for this cat is: 0.99380784334
+Spring Clean Your Way to Career Success: 12 Orderly Office Tips         Predictcat:     job
+Title 60:     Spring Clean Your Way to Career Success: 12 Orderly Office Tips actual:job
+
+cprob for this cat is: 0.736199775874
+Going Green: 12 Awesome Earth-Friendly Jobs     Predictcat:     job
+Title 61:     Going Green: 12 Awesome Earth-Friendly Jobs actual:career
+
+cprob for this cat is: 0.913941558936
+10 Ways to Use Twitter to Get Recruiters' Attention     Predictcat:     job
+Title 62:     10 Ways to Use Twitter to Get Recruiters' Attention actual:job
+
+cprob for this cat is: 0.99625513994
+What's Mom Worth? It's More Than You Think!     Predictcat:     salary
+Title 63:     What's Mom Worth? It's More Than You Think! actual:salary
+
+cprob for this cat is: 0.14146537296
+13 Must-Read Business Books That Could Change Your Life         Predictcat:     salary
+Title 64:     13 Must-Read Business Books That Could Change Your Life actual:job
+
+cprob for this cat is: 0.94224521327
+Make Unemployment Work for You: 14 Dos and Don'ts       Predictcat:     job
+Title 65:     Make Unemployment Work for You: 14 Dos and Don'ts actual:job
+
+cprob for this cat is: 0.929760538285
+Dos and Don'ts for Creating Your Online Presence        Predictcat:     job
+Title 66:     Dos and Don'ts for Creating Your Online Presence actual:job
+
+
+cprob for this cat is: 0.946643113255
+14 Common Job Hunting Blunders  Predictcat:     job
+Title 67:     14 Common Job Hunting Blunders actual:job
+
+cprob for this cat is: 0.95719343231
+Right and Wrong Answers to 8 Classic Interview Questions        Predictcat:     job
+Title 68:     Right and Wrong Answers to 8 Classic Interview Questions actual:job
+
+cprob for this cat is: 0.998961285988
+From Forbes: Big Achievers Share The Greatest Risks They Ever Took      Predictcat:     salary
+Title 69:     From Forbes: Big Achievers Share The Greatest Risks They Ever Took actual:salary
+
+cprob for this cat is: 0.973694190028
+It's a Dog's Life: Six Animal Careers We'd Love to Have         Predictcat:     job
+Title 70:     It's a Dog's Life: Six Animal Careers We'd Love to Have actual:job
+
+cprob for this cat is: 0.939507356197
+First Days on the Job: 15 Ways to Make a Great Impression       Predictcat:     job
+Title 71:     First Days on the Job: 15 Ways to Make a Great Impression actual:job
+
+cprob for this cat is: 0.998880249081
+Everything I Know about Business I Learned from My Pet  Predictcat:     salary
+Title 72:     Everything I Know about Business I Learned from My Pet actual:salary
+
+cprob for this cat is: 0.989948376958
+Avoid Foreign Faux Pas: 14 Office Customs around the World      Predictcat:     salary
+Title 73:     Avoid Foreign Faux Pas: 14 Office Customs around the World actual:salary
+
+cprob for this cat is: 0.990262849813
+It's Inappropriate, but Is It Illegal? 7 Iffy Office Scenarios  Predictcat:     salary
+Title 74:     It's Inappropriate, but Is It Illegal? 7 Iffy Office Scenarios actual:salary
+
+cprob for this cat is: 0.865076692852
+12 Tips for Generating Strong Job Leads         Predictcat:     job
+Title 75:     12 Tips for Generating Strong Job Leads actual:job
+
+cprob for this cat is: 0.154038611261
+14 Companies with Incredible Employee Perks     Predictcat:     salary
+Title 76:     14 Companies with Incredible Employee Perks actual:job
+
+cprob for this cat is: 0.985797045381
+12 Jobs on the Brink: Will They Evolve or Go Extinct?   Predictcat:     job
+Title 77:     12 Jobs on the Brink: Will They Evolve or Go Extinct? actual:job
+
+cprob for this cat is: 0.992252074257
+Be a Joker, Not a Jerk: 7 Dos and Don'ts of Workplace Humor     Predictcat:     job
+Title 78:     Be a Joker, Not a Jerk: 7 Dos and Don'ts of Workplace Humor actual:job
+
+cprob for this cat is: 0.91611306643
+15 Resolutions You Should Make this Year to Get Ahead   Predictcat:     job
+Title 79:     15 Resolutions You Should Make this Year to Get Ahead actual:job
+
+cprob for this cat is: 0.701050518503
+How to Write a Resume   Predictcat:     job
+Title 80:     How to Write a Resume actual:job
+
+cprob for this cat is: 0.118529000779
+Resume Formats  Predictcat:     salary
+Title 81:     Resume Formats actual:resume
+
+cprob for this cat is: 0.0449907338986
+Resume Mistakes         Predictcat:     job
+Title 82:     Resume Mistakes actual:resume
+
+cprob for this cat is: 0.196103423105
+Resume Cover Letter     Predictcat:     job
+Title 83:     Resume Cover Letter actual:resume
+
+cprob for this cat is: 0.944631215666
+Vacation Time? 12 Ways to Leave the Office Behind       Predictcat:     job
+Title 84:     Vacation Time? 12 Ways to Leave the Office Behind actual:job
+
+cprob for this cat is: 0.974651481146
+Know the Code: Work Wardrobe Dos and Don'ts     Predictcat:     job
+Title 85:     Know the Code: Work Wardrobe Dos and Don'ts actual:job
+
+cprob for this cat is: 0.970744074343
+Know the Code: Work Wardrobe Dos and Don'ts     Predictcat:     job
+Title 86:     Know the Code: Work Wardrobe Dos and Don'ts actual:job
+
+cprob for this cat is: 0.941596012692
+Sell Yourself: 14 Steps to Creating a Powerful Personal Brand   Predictcat:     job
+Title 87:     Sell Yourself: 14 Steps to Creating a Powerful Personal Brand actual:job
+
+cprob for this cat is: 0.964028511797
+Over 45? Rejuvenate Your Job Search and Get Hired       Predictcat:     job
+Title 88:     Over 45? Rejuvenate Your Job Search and Get Hired actual:job
+
+cprob for this cat is: 0.632120032205
+Find the Right Job for Your Personality: 7 Types, 7 Tips        Predictcat:     job
+Title 89:     Find the Right Job for Your Personality: 7 Types, 7 Tips actual:career
+
+cprob for this cat is: 0.943627959698
+Crimes of the Cubicle: 15 Desk Don'ts   Predictcat:     job
+Title 90:     Crimes of the Cubicle: 15 Desk Don'ts actual:job
+
+cprob for this cat is: 0.928001491035
+14 Reasons to Make a Sideways Career Move       Predictcat:     salary
+Title 91:     14 Reasons to Make a Sideways Career Move actual:salary
+
+cprob for this cat is: 0.0572357354877
+14 Fatal Resume Mistakes        Predictcat:     job
+Title 92:     14 Fatal Resume Mistakes actual:resume
+
+cprob for this cat is: 0.923062354298
+7 Careers for the Future        Predictcat:     job
+Title 93:     7 Careers for the Future actual:job
+
+cprob for this cat is: 0.948612135142
+14 Creative Strategies that Get You Hired       Predictcat:     job
+Title 94:     14 Creative Strategies that Get You Hired actual:job
+
+cprob for this cat is: 0.986198767293
+Water Cooler Chat: 7 Dos and Don'ts     Predictcat:     job
+Title 95:     Water Cooler Chat: 7 Dos and Don'ts actual:job
+
+cprob for this cat is: 0.601841734309
+Office Politics: 10 Ways to Play and Win        Predictcat:     job
+Title 96:     Office Politics: 10 Ways to Play and Win actual:career
+
+cprob for this cat is: 0.0398761643283
+What Employers Want: 12 HR Hot Buttons  Predictcat:     salary
+Title 97:     What Employers Want: 12 HR Hot Buttons actual:job
+
+cprob for this cat is: 0.677095085281
+7 Career Obstacles and How to Overcome Them     Predictcat:     salary
+Title 98:     7 Career Obstacles and How to Overcome Them actual:career
+
+cprob for this cat is: 0.98026378807
+Calling in Sick: 7 Good Reasons, 7 Lame Reasons         Predictcat:     salary
+Title 99:     Calling in Sick: 7 Good Reasons, 7 Lame Reasons actual:salary
+
+cprob for this cat is: 0.969915702585
+12 Warning Signs Your Job Is Becoming Obsolete  Predictcat:     salary
+Title 100:     12 Warning Signs Your Job Is Becoming Obsolete actual:salary

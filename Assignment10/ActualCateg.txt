@@ -1,0 +1,102 @@
+% python Q2.py
+['salary', 'career', 'job', 'resume']
+1: Ask the Salary Expert: When and How to Negotiate a Signing Bonus             salary
+2: HARD Goals: Secrets to Getting From Where You Are to Where You Want to Be            salary
+3: Dream Jobs: TV Sports Anchor         career
+4: News: Take MIT Classes for Free              salary
+5: Survey Results: Even Happy Employees Go Job Hunting in January               job
+6: Salary Talk Episode 18: An Inside Look at Salary.com         salary
+7: Dream Job: Horse Trainer             job
+8: How to Work for an Idiot             job
+9: 15 Stellar Gift Ideas for Last-Minute Shoppers               job
+10: Dream Jobs: NHL Hockey Writer               job
+11: 25 Holiday Gift Ideas to Make Coworkers Merry               job
+12: How to Deal with Bad Bosses, Crazy Coworkers and Office Idiots              job
+13: Dream Jobs: Mommy Blogger           career
+14: Salary Negotiation Tactics Are Good, Gimmicks Are Bad               salary
+15: Is Your Accent Hurting Your Career?         career
+16: Dream Jobs: Executive Chef          career
+17: Salary Talk Episode 14: Work and Home No Longer Balance, They Blend         salary
+18: How to Negotiate Relocation Assistance With an Unwilling Employer           job
+19: Dream Jobs: Talent Producer at ESPN Radio           job
+20: How to Get Around Salary Boxes on an Online Job Application         resume
+21: Salary Talk Episode 13: How Introverts Can Get Noticed and Get Ahead at Work                salary
+22: 11 High-Paying Blue Collar Jobs with Mike Rowe              job
+23: Salary Talk Episode 12: Mike Rowe of Dirty Jobs             salary
+24: Salary Talk Episode 10: Why Women Don't Negotiate           salary
+25: How to Get a Raise When You're Underpaid and Overworked             salary
+26: Dream Jobs: Voice Actor Jennifer Hale               career
+27: Salary Talk Episode 9: How to Look and Act Like a Millionaire Even If You're Not            salary
+28: Dream Jobs: MTV Animation Director and Simpsons Storyboard Artist           career
+29: When Employers Want Salary Requirements Up Front, Make Them a Deal          salary
+30: How to Keep Your Cool When Emotions and Stakes Are High             job
+31: Ask the Salary Expert: How to Positively Discuss Salary History             salary
+32: 11 Great Jobs for Working Parents           job
+33: Salary Talk Episode 7: Get Paid What You're Worth           salary
+34: Ask the Salary Expert: How to Renegotiate a Lowball Offer           salary
+35: What We Have Here Is a Failure to Negotiate         salary
+36: Salary Talk Episode 6: Use Personal Branding to Get Hired and Stand Out In a Crowd          salary
+37: Ask the Salary Expert: What To Do When You Talk Salary Too Early            salary
+38: Salary Talk Episode 5: Find Out What Employees Want Most and Give It to Them                salary
+39: From Ballerinas to Fighter Pilots: Are you Living Your Chilhood Dream?              salary
+40: Ask the Salary Expert: Should I Negotiate Even Though I'm Broke?            job
+41: Salary Talk Episode 4: America's Job Search Guru, Donald Asher              salary
+42: Salary Talk Episode 3: Author/Career Advisor Jack Chapman           career
+43: Office Feng Shui: 7 Dos and Taboos          job
+44: Salary Talk Episode 2: Pulitzer Prize Winner Stuart Diamond         salary
+45: Dress Code Survey Results: The Lowdown on Low-Cut           salary
+46: Salary Talk: Author/Job Coach Katy Piotrowski               salary
+47: Body Talk: What Your Body Language Says About You           salary
+48: Avoid an Office Freak-out: 9 Ways to Beat Work Stress               salary
+49: Office Recreation: 10 Ways to Salvage Summer                salary
+50: Survey Results: For Love or Money?          salary
+51: The Job Hunter's Guide to Social Media              job
+52: 7 Salary Negotiation Tips for Women - How to Get Ahead Without Negative Feedback            salary
+53: Gaming Your Workday - How Video Games Can Help Your Career          job
+54: Horrible Bosses - Real-Life Tales of Workplace Terror               job
+55: Going Paperless: Is it time to buy a tablet?                job
+56: 15 More Must-Read Business Books That Could Change Your Life                salary
+57: Job Interview For Dads              job
+58: Salary.com's 2011 Dad Salary Survey - How Much Is Your Dad Worth?           job
+59: 2011 Best Places to Work for Recent Grads           job
+60: Spring Clean Your Way to Career Success: 12 Orderly Office Tips             job
+61: Going Green: 12 Awesome Earth-Friendly Jobs         career
+62: 10 Ways to Use Twitter to Get Recruiters' Attention         job
+63: What's Mom Worth? It's More Than You Think!         salary
+64: 13 Must-Read Business Books That Could Change Your Life             job
+65: Make Unemployment Work for You: 14 Dos and Don'ts           job
+66: Dos and Don'ts for Creating Your Online Presence            job
+67: 14 Common Job Hunting Blunders              job
+68: Right and Wrong Answers to 8 Classic Interview Questions            job
+69: From Forbes: Big Achievers Share The Greatest Risks They Ever Took          salary
+70: It's a Dog's Life: Six Animal Careers We'd Love to Have             job
+71: First Days on the Job: 15 Ways to Make a Great Impression           job
+72: Everything I Know about Business I Learned from My Pet              salary
+73: Avoid Foreign Faux Pas: 14 Office Customs around the World          salary
+74: It's Inappropriate, but Is It Illegal? 7 Iffy Office Scenarios              salary
+75: 12 Tips for Generating Strong Job Leads             job
+76: 14 Companies with Incredible Employee Perks         job
+77: 12 Jobs on the Brink: Will They Evolve or Go Extinct?               job
+78: Be a Joker, Not a Jerk: 7 Dos and Don'ts of Workplace Humor         job
+79: 15 Resolutions You Should Make this Year to Get Ahead               job
+80: How to Write a Resume               job
+81: Resume Formats              resume
+82: Resume Mistakes             resume
+83: Resume Cover Letter         resume
+84: Vacation Time? 12 Ways to Leave the Office Behind           job
+85: Know the Code: Work Wardrobe Dos and Don'ts         job
+86: Know the Code: Work Wardrobe Dos and Don'ts         job
+87: Sell Yourself: 14 Steps to Creating a Powerful Personal Brand               job
+88: Over 45? Rejuvenate Your Job Search and Get Hired           job
+89: Find the Right Job for Your Personality: 7 Types, 7 Tips            career
+90: Crimes of the Cubicle: 15 Desk Don'ts               job
+91: 14 Reasons to Make a Sideways Career Move           salary
+92: 14 Fatal Resume Mistakes            resume
+93: 7 Careers for the Future            job
+94: 14 Creative Strategies that Get You Hired           job
+95: Water Cooler Chat: 7 Dos and Don'ts         job
+96: Office Politics: 10 Ways to Play and Win            career
+97: What Employers Want: 12 HR Hot Buttons              job
+98: 7 Career Obstacles and How to Overcome Them         career
+99: Calling in Sick: 7 Good Reasons, 7 Lame Reasons             salary
+100: 12 Warning Signs Your Job Is Becoming Obsolete             salary

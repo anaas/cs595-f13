@@ -1,0 +1,378 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{rotating}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{%frame=tb,
+  language=Bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+%\usepackage{tabularx}
+\usepackage{url}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage[english]{babel}
+\usepackage{mathtools}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage[margin=3cm]{geometry}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+
+\newcommand\course{CS595}
+\newcommand\semester{Fall 2013}     
+\newcommand\hwnum{10}
+\newcommand\yourname{Amara Naas}
+\newcommand\login{anaas}
+\newcommand\DATE{12/13/2013}
+
+\newenvironment{answer}[1]{
+  \subsubsection*{Problem #1}
+}
+
+\pagestyle{fancyplain}
+\headheight 40pt
+\lhead{\yourname\ (\login)\\\course\ --- \semester}
+\chead{\textbf{\Large Assignment \hwnum}}
+\rhead{\DATE}
+\headsep 40pt
+
+\begin{document}
+
+\begin{answer}{1}
+In my approach to work this assignment I used some functions which available at chapter six of our text book\cite{source} and used the \url {http://www.salary.com/personal/feeds/slideshow_feed.xml} from \cite{blog}. I save the xml page in a file called {\it feedlist.xml}\footnote{File uploaded to github}. I Created four different categories for the first 100 entries in the feed and classified them manually base on the following classification:
+\begin{itemize}
+\item salary: pay, paid, cash.
+\item job: employee, employer, work, worker, coworker, boss.
+\item career: idea, gift, career, goal, dream, suggestion.
+\item resume: train, profession, instruct, teach, application, expert.
+\end{itemize}
+
+
+In first program {\it Q1.py} I used {\it getwords} function, the class {\it class classifier} from \cite{source} and the {\it feedlist.xml}\footnotemark[1] file.
+the program dose the following:
+\begin{itemize}
+\item Looping over the feed to read the entries from feedlist.xml and generates the word counts for each entries.
+\lstinputlisting[language=Python, firstline=9, lastline=22]{Q1.py}
+
+\item Train the classifier with my chosen categories.
+
+\lstinputlisting[language=Python, firstline=64, lastline=69]{Q1.py}
+\item Loop over the entries and manually identifies a category for each of them and print the result which saved in a file called {\it ActualCateg.txt}. 
+\lstinputlisting[language=Python, firstline=71, lastline=99]{Q1.py}
+
+\end{itemize}
+
+
+\end{answer}
+
+\begin{answer}{2}
+
+I add class {\it fisherclassifier} from \cite{source} to the program in question 1 and run the program from file call {\it Q2.py}\footnotemark[1]. This program will do the same as in question 1 and will do the following additional tasks:
+\begin{enumerate}
+
+\item The first fifty entries with its categories used to train the classifier.
+
+\lstinputlisting[language=Python, firstline=232, lastline=234]{Q2.py}
+
+\item Looping over the second fifty entries and get the predicted category for each entry from fisher classifier and train the classifier with each category prediction. Print the  result of both, the actual and the predicted category, and save them in file called {\it PredictActualCatprob.txt}.
+
+\lstinputlisting[language=Python, firstline=237, lastline=245]{Q2.py}
+
+
+\end{enumerate}
+
+
+Table 1 shows the results of title, the cprob(), predicted category, and actual category.
+\begin{table}[ht]
+
+\centering
+
+    \begin{tabular}{ p{8cm} | p{1.5cm} | p{1.5cm} | c }
+    \hline
+    title &  predicted category & actual category &cprob() \\ \hline\hline
+    
+  
+The Job Hunter's Guide to Social Media  &     job
+&job&0.987\\
+
+  
+7 Salary Negotiation Tips for Women - How to Get Ahead Without Negative Feedback        &     salary
+ &salary &0.995\\
+
+  
+Gaming Your Workday - How Video Games Can Help Your Career      &     job
+&job&0.937\\
+
+  
+Horrible Bosses - Real-Life Tales of Workplace Terror   &     job
+ &job&0.986\\
+
+  
+Going Paperless: Is it time to buy a tablet?    &     salary
+ &job&0.313\\
+
+  
+15 More Must-Read Business Books That Could Change Your Life    &     salary
+ &salary&0.987\\
+
+  
+Job Interview For Dads  &     job
+ &job&0.836\\
+
+  
+Salary.com's 2011 Dad Salary Survey - How Much Is Your Dad Worth?       &     job
+ &job&0.992\\
+
+  
+2011 Best Places to Work for Recent Grads       &     job
+ &job&0.947\\
+
+  
+Spring Clean Your Way to Career Success: 12 Orderly Office Tips         &     job
+ &job&0.993\\
+
+
+Going Green: 12 Awesome Earth-Friendly Jobs     &     job
+&career&0.736\\
+
+  
+10 Ways to Use Twitter to Get Recruiters' Attention     &     job
+ &job&0.913\\
+
+  
+What's Mom Worth? It's More Than You Think!     &     salary
+&salary&0.996\\
+
+  
+13 Must-Read Business Books That Could Change Your Life         &     salary
+ &job&0.141\\
+
+  
+Make Unemployment Work for You: 14 Dos and Don'ts       &     job
+ &job&0.942\\
+
+  
+Dos and Don'ts for Creating Your Online Presence        &     job
+ &job&0.929\\
+
+
+  
+14 Common Job Hunting Blunders  &     job
+ &job&0.946\\
+
+  
+Right and Wrong Answers to 8 Classic Interview Questions        &     job
+ &job&0.957\\
+
+  
+From Forbes: Big Achievers Share The Greatest Risks They Ever Took      &     salary
+ &salary&0.998\\
+
+  
+It's a Dog's Life: Six Animal Careers We'd Love to Have         &     job
+ &job&0.973\\
+
+  
+First Days on the Job: 15 Ways to Make a Great Impression       &     job
+ &job&0.939\\
+
+  
+Everything I Know about Business I Learned from My Pet  &     salary
+ &salary&0.998\\
+
+  
+Avoid Foreign Faux Pas: 14 Office Customs around the World      &     salary
+ &salary&0.989\\
+
+  
+It's Inappropriate, but Is It Illegal? 7 Iffy Office Scenarios  &     salary
+ &salary&0.990\\
+
+  
+12 Tips for Generating Strong Job Leads         &     job
+ &job&0.865\\
+
+  
+14 Companies with Incredible Employee Perks     &     salary
+ &job&0.154\\
+
+  
+12 Jobs on the Brink: Will They Evolve or Go Extinct?   &     job
+ &job&0.985\\
+
+  
+Be a Joker, Not a Jerk: 7 Dos and Don'ts of Workplace Humor     &     job
+ &job&0.992\\
+
+  
+15 Resolutions You Should Make this Year to Get Ahead   &     job
+ &job&0.916\\
+
+  
+How to Write a Resume   &     job
+ &job&0.701\\
+
+  
+Resume Formats  &     salary
+&resume&0.118\\
+
+  
+Resume Mistakes         &     job
+&resume&0.0449\\
+
+  
+Resume Cover Letter     &     job
+&resume&0.196\\
+
+  
+Vacation Time? 12 Ways to Leave the Office Behind       &     job
+ &job&0.944\\
+
+
+Know the Code: Work Wardrobe Dos and Don'ts     &     job
+&job&  0.974\\
+
+  
+Know the Code: Work Wardrobe Dos and Don'ts     &     job
+&job&0.970\\
+
+  
+Sell Yourself: 14 Steps to Creating a Powerful Personal Brand   &     job
+ &job&0.941\\
+
+  
+Over 45? Rejuvenate Your Job Search and Get Hired       &     job
+ &job&0.964\\
+
+  
+Find the Right Job for Your Personality: 7 Types, 7 Tips        &     job
+ &career&0.632\\
+
+
+Crimes of the Cubicle: 15 Desk Don'ts   &     job
+&job&  0.943\\
+
+  
+14 Reasons to Make a Sideways Career Move       &     salary
+ &salary&0.928\\
+
+  
+14 Fatal Resume Mistakes        &     job
+ &resume&0.057\\
+
+  
+7 Careers for the Future        &     job
+ &job&0.923\\
+
+  
+14 Creative Strategies that Get You Hired       &     job
+&job&0.948\\
+
+  
+Water Cooler Chat: 7 Dos and Don'ts     &     job
+ &job&0.986\\
+
+  
+Office Politics: 10 Ways to Play and Win        &     job
+&career&0.601\\
+
+  
+What Employers Want: 12 HR Hot Buttons  &     salary
+&job&0.039\\
+
+  
+7 Career Obstacles and How to Overcome Them     &     salary
+ &career&0.677\\
+
+  
+Calling in Sick: 7 Good Reasons, 7 Lame Reasons         &     salary
+ &salary&0.980\\
+
+  
+12 Warning Signs Your Job Is Becoming Obsolete  &     salary
+&salary&0.969\\
+    \hline
+    \end{tabular}
+
+\caption{Classification Results}
+
+\end{table}
+
+\end{answer}
+\clearpage
+\begin{answer}{3}
+
+I used kcluster function from \cite{source} to solve problem 3 which operates based on an algorithm called K-Means Clustering.
+This algorithm breaks the data into distinct groups because it is told in advance how many distinct clusters to generate. this function dose the following:
+
+
+Table 1 shows the results when k is 5, 10, and 20.
+\begin{table}[ht]
+
+\centering
+
+    \begin{tabular}{ c | c | c }
+    \hline
+     &  precision & recall\\ \hline\hline
+    
+salary   &  10/10 & 0 \\
+job & 28/33 & 4/28 \\
+career & 0 & 1/4 \\
+resume & 0 & 1/6 \\
+    \hline
+    \end{tabular}
+
+\caption{Preformance Measures}
+
+\end{table}
+\end{answer}
+\begin{answer}{4}
+
+For Q4 I used the function {\it entryfeatures} obtained from \cite{source}. It works on
+types more complicated than just strings where it takes the whole entry. In this function pairs of consecutive words are added as features. This function can be run from file called{\it Q4.py}\footnote{File uploaded to github}.
+
+
+\end{answer}
+
+\clearpage
+\bibliographystyle{plain}
+\begin{thebibliography}{2}
+
+
+\bibitem{source}
+ T. Segaran, CHAPTER 6 Document Filtering, pp.~29--53 in: 
+``Programming Collective Intelligence'', O'REILLY, Aug. 2007.
+
+\bibitem{blog}
+ \url {http://www.salary.com/}.
+\end{thebibliography}
+
+\end{document}
